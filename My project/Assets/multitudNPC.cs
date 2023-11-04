@@ -1,25 +1,41 @@
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
-public class ComportamientoRebano : MonoBehaviour
+public class multitudNPC : MonoBehaviour
 {
     public float velocidadMaxima = 5f;
     public float radioVecindad = 1.5f;
     public float fuerzaSeparacion = 1f;
     public float fuerzaCohesion = 1f;
     public float fuerzaAlineacion = 1f;
-
+    public Lider liderPos;
+    public float VelocidadHaciaElLider;
+    public float SeparacionMinimaDelLider;
+    private void Awake()
+    {
+        liderPos = GameObject.Find("Lider").GetComponent<Lider>();  
+    }
     void Update()
     {
         Vector2 separacion = Separacion();
         Vector2 cohesion = Cohesion();
         Vector2 alineacion = Alineacion();
-
+        
         // Combina las fuerzas para obtener el movimiento resultante
         Vector2 movimiento = separacion + cohesion + alineacion;
         movimiento = Vector2.ClampMagnitude(movimiento, velocidadMaxima);
 
         // Aplica el movimiento a la entidad
         transform.Translate(movimiento * Time.deltaTime);
+       
+        if (Vector3.Distance(transform.position, liderPos.transform.position) >= SeparacionMinimaDelLider)
+        {
+            transform.position += (liderPos.transform.position - transform.position).normalized * VelocidadHaciaElLider * Time.deltaTime;
+        }
+      
     }
 
     Vector2 Separacion()
@@ -66,9 +82,10 @@ public class ComportamientoRebano : MonoBehaviour
         Collider2D[] vecinos = Physics2D.OverlapCircleAll(transform.position, radioVecindad);
         foreach (Collider2D vecino in vecinos)
         {
-            if (vecino.gameObject != gameObject)
+            if (vecino.gameObject != gameObject   &&   vecino.GetComponent<multitudNPC>())
             {
-                direccionMedia += ((ComportamientoRebano)vecino.GetComponent(typeof(ComportamientoRebano))).transform.up;
+                direccionMedia += ((multitudNPC)vecino.GetComponent(typeof(multitudNPC))).liderPos.transform.position;
+                
                 cantidadVecinos++;
             }
         }
