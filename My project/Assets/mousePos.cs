@@ -36,6 +36,7 @@ public class MousePosition : MonoBehaviour
         {
             if (Input.GetMouseButton(0))
             {
+                lider.Hre.HudOn = true;
                 Time.timeScale = timeSlowed;
 
                 lider.liderSpeed = 0f;
@@ -65,14 +66,18 @@ public class MousePosition : MonoBehaviour
            liderbajoelmouse=true;
             
             //se abre menu de acomodar representantes
-            lider.Hre.HudOn = true;
+          
         }      
     }
   
     private void OnTriggerExit2D(Collider2D collision)
     {
-        liderbajoelmouse = false;
-        lider.Hre.HudOn = false;
+        if (collision.gameObject.layer == 6)
+        {
+            liderbajoelmouse = false;
+            lider.Hre.HudOn = false;
+        }
+       
     }
 
 }

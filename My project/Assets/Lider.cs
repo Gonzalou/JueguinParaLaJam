@@ -9,6 +9,7 @@ public class Lider : MonoBehaviour
     public float defaultLiderSpeed;
     public MousePosition mouse;
     public HudRepresentantes Hre;
+    public Transform[] reprePositions;
     // Start is called before the first frame update
     void Start()
     {

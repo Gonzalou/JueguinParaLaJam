@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6b06c215d557ae4d81c07530b7246b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderer: {fileID: 0}
+  rdr: {fileID: 0}
   layerCount: 0
 --- !u!1 &998996053279015337
 GameObject:
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6b06c215d557ae4d81c07530b7246b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderer: {fileID: 0}
+  rdr: {fileID: 0}
   layerCount: 0
 --- !u!1 &1984783759550449528
 GameObject:
@@ -286,9 +286,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.24282557}
+  m_Offset: {x: 0, y: 0.14499445}
   serializedVersion: 2
-  m_Radius: 0.34998775
+  m_Radius: 0.25215665
 --- !u!95 &8908612192399516200
 Animator:
   serializedVersion: 5

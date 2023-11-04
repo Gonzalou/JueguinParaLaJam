@@ -5,10 +5,11 @@ using UnityEngine;
 public class HudRepresentantes : MonoBehaviour
 {
     public bool HudOn;
+    public Representante rps;
     public Animator anim;
     // Start is called before the first frame update
     void Start()
-    {
+    {       
         HudOn = false;
     }
 

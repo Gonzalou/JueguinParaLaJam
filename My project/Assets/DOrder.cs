@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DOrder : MonoBehaviour
 {
-    public SpriteRenderer renderer;
+    public SpriteRenderer rdr;
    
     public int layerCount;
     // Update is called once per frame
@@ -13,21 +13,21 @@ public class DOrder : MonoBehaviour
     {
         if(gameObject.GetComponent<SpriteRenderer>() != null)
         {
-            renderer = gameObject.GetComponent<SpriteRenderer>();
+            rdr = gameObject.GetComponent<SpriteRenderer>();
         }
     }
 
     void Update()
     {
-        if (renderer.sprite.name == ("sombra"))
+        if (rdr.sprite.name == ("sombra"))
         {
-            renderer.sortingOrder = -(int)transform.position.y-1;
-            layerCount = renderer.sortingOrder;
+            rdr.sortingOrder = -(int)transform.position.y-1;
+            layerCount = rdr.sortingOrder;
         }
         else
         {
-            renderer.sortingOrder = -(int)transform.position.y;
-            layerCount = renderer.sortingOrder;
+            rdr.sortingOrder = -(int)transform.position.y;
+            layerCount = rdr.sortingOrder;
         }
      
 
