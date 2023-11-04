@@ -4093,12 +4093,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clipsDeSonido:
-  - {fileID: 8300000, guid: 978c6acfe4467484694ba724a442cd1e, type: 3}
-  - {fileID: 8300000, guid: 9da9904ddad2a084299ba8e235ac411c, type: 3}
+  - {fileID: 8300000, guid: 04a65013128a3714b9fe931b8ce3de0f, type: 3}
   - {fileID: 8300000, guid: f40af7731ff3c594e8bcbbbbbdabcef2, type: 3}
-  - {fileID: 8300000, guid: 5bd67fded366c2048b4d1bac3690c223, type: 3}
-  - {fileID: 8300000, guid: 48a6243762d65644daa489a6f4a080e5, type: 3}
-  clipDeEspera: {fileID: 8300000, guid: cc7507f358f06d84a8efe8d75d5b4ece, type: 3}
+  - {fileID: 8300000, guid: b2940db7023039f499c3b805f05ec8f3, type: 3}
+  - {fileID: 8300000, guid: 39ea7ee6c57e80f4d8c870b13fab666b, type: 3}
+  clipDeEspera: {fileID: 8300000, guid: 26619facd86bd3f47a18e514a508ce1c, type: 3}
 --- !u!1 &966143937
 GameObject:
   m_ObjectHideFlags: 0
