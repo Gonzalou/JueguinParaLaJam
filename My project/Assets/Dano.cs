@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Dano : MonoBehaviour
 {
-    public AudioSource SonidoDeDaño;
+    private AudioSource Audio;
+    public AudioClip sonidoDeDaño;
+    public AudioClip sonidoDeMuerte;
+   
     public int life;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -22,12 +25,14 @@ public class Dano : MonoBehaviour
     {
         if (collision.gameObject.layer==12)
         {
-            SonidoDeDaño.Play();
+            Audio.clip = sonidoDeDaño;
+            Audio.Play();
             life -= 1;
         }
         if (life<=0)
         {
-            Destroy(gameObject);
+            Audio.clip=sonidoDeMuerte;         
+
         }
     }
 }

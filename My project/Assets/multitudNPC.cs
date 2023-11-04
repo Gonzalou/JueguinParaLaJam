@@ -20,52 +20,72 @@ public class multitudNPC : MonoBehaviour
     public SpriteRenderer spr;
     public Transform target;
     public Color[] colors;
+
+
+    private Dano dmg;
     private void Awake()
     {
-        representanteINDEX = Random.Range(0, 4);
-        spr.color = colors[representanteINDEX];
+        dmg = GetComponent<Dano>();
+        representanteINDEX = Random.Range(0, 3);        
+       
+    }
+
+    private void Start()
+    {
         liderPos = GameObject.Find("Lider").GetComponent<Lider>();
+        spr.color = colors[representanteINDEX];
     }
     void Update()
     {
 
-        if (Vector3.Distance(transform.position, liderPos.transform.position) < liderPos.influenceRadius) //si ta muy lejos de lider ni va
+
+        
+
+        
+        if(liderPos != null)
         {
-            if (myRepresentant != null)
+              
+           
+            if (Vector3.Distance(transform.position, liderPos.transform.position) < liderPos.influenceRadius) //si ta muy lejos de lider ni va
             {
-                Vector2 separacion = Separacion();
-                Vector2 cohesion = Cohesion();
-                Vector2 alineacion = Alineacion();
-
-                // Combina las fuerzas para obtener el movimiento resultante
-                Vector2 movimiento = separacion + cohesion + alineacion;
-                movimiento = Vector2.ClampMagnitude(movimiento, velocidadMaxima);
-
-                // Aplica el movimiento a la entidad
-                transform.Translate(movimiento * Time.deltaTime);
-
-                if (Vector3.Distance(transform.position, liderPos.transform.position) >= SeparacionMinimaDelLider)
+                if (myRepresentant != null)
                 {
-                    transform.position += (liderPos.transform.position - transform.position).normalized * VelocidadHaciaElLider * Time.deltaTime;
-                }
+                    Vector2 separacion = Separacion();
+                    Vector2 cohesion = Cohesion();
+                    Vector2 alineacion = Alineacion();
 
-            }
-            else
-            {
-                List<Representante> repres = new List<Representante>();
-                repres.AddRange(GameObject.FindObjectsOfType<Representante>());
-                foreach (var item in repres)
-                {
-                    if (item.myIndex == representanteINDEX)
+                    // Combina las fuerzas para obtener el movimiento resultante
+                    Vector2 movimiento = separacion + cohesion + alineacion;
+                    movimiento = Vector2.ClampMagnitude(movimiento, velocidadMaxima);
+
+                    // Aplica el movimiento a la entidad
+                    transform.Translate(movimiento * Time.deltaTime);
+
+                    if (Vector3.Distance(transform.position, liderPos.transform.position) >= SeparacionMinimaDelLider)
                     {
-                        myRepresentant=item;
+                        transform.position += (target.transform.position - transform.position).normalized * VelocidadHaciaElLider * Time.deltaTime;
                     }
+
+                }
+                else
+                {
+                    List<Representante> repres = new List<Representante>();
+                    repres.AddRange(GameObject.FindObjectsOfType<Representante>());
+                    foreach (var item in repres)
+                    {
+                        if (item.myIndex == representanteINDEX)
+                        {
+                            myRepresentant = item;
+                            target = myRepresentant.transform;
+                        }
+                    }
+
+
                 }
 
-                
             }
-
         }
+       
 
     }
 

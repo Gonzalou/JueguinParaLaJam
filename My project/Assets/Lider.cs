@@ -15,7 +15,7 @@ public class Lider : MonoBehaviour
     public SpriteRenderer spr;
     // Start is called before the first frame update
     void Start()
-    {
+    {   
         defaultLiderSpeed = liderSpeed;
     }
 
@@ -29,7 +29,7 @@ public class Lider : MonoBehaviour
         }
         else
         {
-
+            spr.flipX = false;
         }
             transform.position += (Vector3.right * Input.GetAxis("Horizontal")) * liderSpeed * Time.deltaTime;   
               
