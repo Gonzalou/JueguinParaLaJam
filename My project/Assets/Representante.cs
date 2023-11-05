@@ -11,16 +11,35 @@ public class Representante : MonoBehaviour
     public GameObject highLight;
     public int myReprePosition;
     public int previousReprePos;
-    public float influencePower;
     public int myIndex;
     public float speed;
     public bool canMove;
     public bool canPlace;
     public bool agarrado;
     public bool MouseSOBREMI;
+
+
+    public SpriteRenderer spr;
+    public Color[] colors;
+
+
+    private bool sumoInfluencia;
+    public float myInfluence;
+
+
+   
+    public float maxInfluence;
+    public float minInfluence;
     // Start is called before the first frame update
+    private void Awake()
+    {
+        myInfluence=Random.Range(minInfluence, maxInfluence);
+        myIndex = Random.Range(0, 4);
+    }
     void Start()
     {
+        spr.color = colors[myIndex];
+        myReprePosition = Random.Range(0, 4);
         previousReprePos = myReprePosition;
         lider = GameObject.Find("Lider").GetComponent<Lider>();
         mousePosition = GameObject.Find("Puntero").GetComponent<MousePosition>();
@@ -29,6 +48,16 @@ public class Representante : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Vector3.Distance(lider.transform.position, transform.position) < mousePosition.liderRadius&&!sumoInfluencia)
+        {
+            Debug.Log("toma influencia");
+            sumoInfluencia = true;
+            lider.influenceRadius += myInfluence;
+        }
+      
+
+
 
         highLight.SetActive(canPlace);
         if (canMove)
@@ -41,9 +70,9 @@ public class Representante : MonoBehaviour
         }
         if (lider.Hre.HudOn)
         {
-            if (Input.GetMouseButton(0) && MouseSOBREMI)//ACA LO AGARRO
+            if (Input.GetMouseButton(0) && MouseSOBREMI&&!mousePosition.mouseOcupado)//ACA LO AGARRO
             {
-
+                mousePosition.mouseOcupado = true;
                 canMove = false;
                 agarrado = true;
                 previousReprePos = myReprePosition;
@@ -55,7 +84,9 @@ public class Representante : MonoBehaviour
                 Onagarrado();
             }
             if (canPlace && Input.GetMouseButtonUp(0))//ACA LO SUELTO SI PUEDO
-            {                
+            {
+                Debug.Log("puedo soltarlo y va a buscar lugar");
+                mousePosition.mouseOcupado = false;
                 ElegirMiPosicion();
                 agarrado = false;
                 canMove = true;
@@ -63,14 +94,16 @@ public class Representante : MonoBehaviour
             }
             else  //no lo puedo soltar pero deje de apretar clic
             {
-                if (Input.GetMouseButtonUp(0))
+                if (Input.GetMouseButtonUp(0) && myReprePosition != previousReprePos)
                 {
+                    mousePosition.mouseOcupado = false;
+                    Debug.Log("no encontre lugar");
                     myReprePosition = previousReprePos;
 
                     canMove = true;
                     canPlace = false;
                 }
-                
+
             }
         }
 
@@ -79,7 +112,7 @@ public class Representante : MonoBehaviour
     public void ElegirMiPosicion()
     {
 
-        Debug.Log("elijo Mi lugar");
+
         myReprePosition = -1;
         float distanciaMinima = float.MaxValue;
 
@@ -93,12 +126,15 @@ public class Representante : MonoBehaviour
             // Actualizar el índice del transform más cercano y la distancia mínima
             if (distancia < distanciaMinima)
             {
-                myReprePosition= i;
+
+                myReprePosition = i;
+                previousReprePos = i;
+
+
                 distanciaMinima = distancia;
             }
         }
-      
-        Debug.Log(myReprePosition.ToString("es mi lugar"));
+
     }
 
     public void Onagarrado()
@@ -113,17 +149,17 @@ public class Representante : MonoBehaviour
         {
             if (collision.gameObject.layer == 3)// si estoy tocando el mouse
             {
-                Debug.Log(collision.name);
                 MouseSOBREMI = true;
-
             }
 
             if (collision.gameObject.layer == 7 && agarrado) //lo puedo reposisionar
             {
-                Debug.Log(collision.name);
                 canPlace = true;
             }
-
+            if (collision.gameObject.layer == 9)
+            {
+                //  collision.gameObject.GetComponent<Representante>();
+            }
         }
 
     }
@@ -138,7 +174,6 @@ public class Representante : MonoBehaviour
         }
         if (collision.gameObject.layer == 7 && agarrado)
         {
-            Debug.Log(collision.name+("sali de"));
             canPlace = false;
 
         }

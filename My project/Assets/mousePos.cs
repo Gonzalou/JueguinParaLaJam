@@ -13,6 +13,8 @@ public class MousePosition : MonoBehaviour
     private bool liderbajoelmouse;
     public GameObject representantesHUD;
     private float minidelay;
+
+    public bool mouseOcupado;
     void Start()
     {
         lider = GameObject.Find("Lider").GetComponent<Lider>();

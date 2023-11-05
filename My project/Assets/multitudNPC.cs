@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
@@ -18,9 +19,16 @@ public class multitudNPC : MonoBehaviour
     public float SeparacionMinimaDelLider;
     public int representanteINDEX;
     public SpriteRenderer spr;
+    public Sprite sprMuerto;
+    public Animator anim;
     public Transform target;
     public Color[] colors;
 
+
+    private bool haciendoDano;
+
+    public float tiempoDeDano = 2f; // Duración del daño en segundos
+    public int cantidadDeDano = 10; // Cantidad de daño a aplicar
 
     private Dano dmg;
     private void Awake()
@@ -41,51 +49,64 @@ public class multitudNPC : MonoBehaviour
 
         
 
-        
-        if(liderPos != null)
+
+        if (dmg.life > 0)
         {
-              
-           
-            if (Vector3.Distance(transform.position, liderPos.transform.position) < liderPos.influenceRadius) //si ta muy lejos de lider ni va
+
+
+
+            if (liderPos != null)
             {
-                if (myRepresentant != null)
+
+
+                if (Vector3.Distance(transform.position, liderPos.transform.position) < liderPos.influenceRadius) //si ta muy lejos de lider ni va
                 {
-                    Vector2 separacion = Separacion();
-                    Vector2 cohesion = Cohesion();
-                    Vector2 alineacion = Alineacion();
-
-                    // Combina las fuerzas para obtener el movimiento resultante
-                    Vector2 movimiento = separacion + cohesion + alineacion;
-                    movimiento = Vector2.ClampMagnitude(movimiento, velocidadMaxima);
-
-                    // Aplica el movimiento a la entidad
-                    transform.Translate(movimiento * Time.deltaTime);
-
-                    if (Vector3.Distance(transform.position, liderPos.transform.position) >= SeparacionMinimaDelLider)
+                    if (myRepresentant != null)
                     {
-                        transform.position += (target.transform.position - transform.position).normalized * VelocidadHaciaElLider * Time.deltaTime;
-                    }
+                        Vector2 separacion = Separacion();
+                        Vector2 cohesion = Cohesion();
+                        Vector2 alineacion = Alineacion();
 
-                }
-                else
-                {
-                    List<Representante> repres = new List<Representante>();
-                    repres.AddRange(GameObject.FindObjectsOfType<Representante>());
-                    foreach (var item in repres)
-                    {
-                        if (item.myIndex == representanteINDEX)
+                        // Combina las fuerzas para obtener el movimiento resultante
+                        Vector2 movimiento = separacion + cohesion + alineacion;
+                        movimiento = Vector2.ClampMagnitude(movimiento, velocidadMaxima);
+
+                        // Aplica el movimiento a la entidad
+                        transform.Translate(movimiento * Time.deltaTime);
+
+                        if (Vector3.Distance(transform.position, liderPos.transform.position) >= SeparacionMinimaDelLider)
                         {
-                            myRepresentant = item;
-                            target = myRepresentant.transform;
+                            transform.position += (target.transform.position - transform.position).normalized * VelocidadHaciaElLider * Time.deltaTime;
                         }
+
+                    }
+                    else
+                    {
+                        List<Representante> repres = new List<Representante>();
+                        repres.AddRange(GameObject.FindObjectsOfType<Representante>());
+                        foreach (var item in repres)
+                        {
+                            if (item.myIndex == representanteINDEX)
+                            {
+                                myRepresentant = item;
+                                target = myRepresentant.transform;
+                            }
+                        }
+
+
                     }
 
-
                 }
-
             }
+
+
         }
-       
+        else
+        {
+            spr.sprite = sprMuerto;
+            spr.color = Color.white;
+            anim.speed = 0;
+        }
 
     }
 
@@ -146,6 +167,48 @@ public class multitudNPC : MonoBehaviour
             return direccionMedia.normalized * this.fuerzaAlineacion;
         }
         return Vector2.zero;
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 12&&!haciendoDano)
+        {
+
+           var e= collision.gameObject.GetComponent<Enemigo>();
+            HacerDano(e);
+        }
+    }
+    void HacerDano(Enemigo e)
+    {
+        if (e != null)
+        {
+            StartCoroutine(CausarDanoPorTiempo(e));
+        }
+    }
+
+    IEnumerator CausarDanoPorTiempo(Enemigo e)
+    {
+        while (true)
+        {
+            haciendoDano = false;
+            e.life -= 1;
+            // Aplicar daño aquí (por ejemplo, reducir la salud del enemigo)
+            // ...
+            // Esperar un segundo antes de aplicar el siguiente tick de daño
+            yield return new WaitForSeconds(1f);
+            // Reducir el tiempo de duración
+            tiempoDeDano -= 1f;
+
+            // Si el tiempo de duración llega a cero, salir de la corrutina
+            if (tiempoDeDano <= 0f)
+            {
+                haciendoDano = false;
+                break;
+            }
+        }
+
+        // Fin de la corrutina, puedes realizar acciones adicionales aquí si es necesario
+        // ...
     }
 }
 
