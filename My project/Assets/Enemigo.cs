@@ -13,10 +13,13 @@ public class Enemigo : MonoBehaviour
     public Animator anim;
     public AudioSource au;
     public AudioClip[] clips;
+    public float tiempomuerto;
+    public int InitialLife;
     // Start is called before the first frame update
     void Start()
     {
-
+        InitialLife = life;
+        speed = Random.Range(5, 8);
     }
 
     // Update is called once per frame
@@ -24,8 +27,11 @@ public class Enemigo : MonoBehaviour
     {
         if (life<=0)
         {
+            tiempomuerto += Time.deltaTime;
             transform.position -= (target.transform.position - transform.position).normalized * speed *1.3f * Time.deltaTime;
         }
+
+        if(tiempomuerto>7) { life = InitialLife; tiempomuerto = 0; }
         if (target != null&&target.life>0)
         {
             if (Vector3.Distance(target.transform.position, transform.position) > rangoDeAtaque)

@@ -104,14 +104,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   target: {fileID: 0}
-  life: 3
+  life: 8
   rangoDeAtaque: 1
-  DetectionRange: 20
+  DetectionRange: 9
   anim: {fileID: 8059492483839820367}
   au: {fileID: 53953448183871393}
   clips:
   - {fileID: 8300000, guid: e25ef3276bfdb18449621e10bfe88c0f, type: 3}
   - {fileID: 8300000, guid: 2cfcaf34b30b4b245a81db094001c56c, type: 3}
+  tiempomuerto: 0
+  InitialLife: 0
 --- !u!61 &2224503115072386820
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -231,13 +233,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2cfcaf34b30b4b245a81db094001c56c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.493
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 147
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

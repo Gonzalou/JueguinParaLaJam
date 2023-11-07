@@ -42,6 +42,21 @@ public class multitudNPC : MonoBehaviour
     {
         liderPos = GameObject.Find("Lider").GetComponent<Lider>();
         spr.color = colors[representanteINDEX];
+        switch(representanteINDEX)
+        {
+            case 0:
+                VelocidadHaciaElLider -= 0.5f;
+                
+                break;
+                case 1: VelocidadHaciaElLider = VelocidadHaciaElLider * 0.7f;
+                break;
+                case 2: VelocidadHaciaElLider = VelocidadHaciaElLider * 1.2f;
+                break;
+            case 3:
+                VelocidadHaciaElLider = VelocidadHaciaElLider * 1.4f;
+                break;
+
+        }
     }
     void Update()
     {

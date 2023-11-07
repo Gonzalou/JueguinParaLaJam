@@ -199,10 +199,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a3366de89de90e489dd06707985bc01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  liderSpeed: 5.2
+  liderSpeed: 4.29
   defaultLiderSpeed: 0
   defaultInfluenceRadious: 20
   influenceRadius: 20
+  MaxInfluence: 0
   mouse: {fileID: 0}
   Hre: {fileID: 605454497200284859}
   reprePositions:

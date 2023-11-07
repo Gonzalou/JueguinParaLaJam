@@ -17,7 +17,7 @@ public class Lider : MonoBehaviour
     public MousePosition mouse;
     public HudRepresentantes Hre;
     public Transform[] reprePositions;
-
+    public bool llegue;
     public SpriteRenderer spr;
     public ParticleSystem visualInfluence;
 
@@ -25,6 +25,7 @@ public class Lider : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        llegue = false;
         defaultLiderSpeed = liderSpeed;
         defaultInfluenceRadious = influenceRadius;
     }
@@ -32,6 +33,15 @@ public class Lider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Vector3.Distance(mouse.transform.position, transform.position) > 13)
+        {
+            Hre.transform.right = (mouse.transform.position - transform.position).normalized;
+        }
+        else
+        {
+            Hre.transform.right = Vector3.right;
+        }
+     
         if (defaultInfluenceRadious != influenceRadius)
         {
 
@@ -42,18 +52,22 @@ public class Lider : MonoBehaviour
         if(influenceRadius<=MaxInfluence) { influenceRadius = MaxInfluence; }
 
 
+        if(!llegue) {
 
-        if (Input.GetAxis("Horizontal") < 0)
-        {
-            spr.flipX = true;
-        }
-        else
-        {
-            spr.flipX = false;
-        }
-        transform.position += (Vector3.right * Input.GetAxis("Horizontal")) * liderSpeed * Time.deltaTime;
+            if (Input.GetAxis("Horizontal") < 0)
+            {
+                spr.flipX = true;
+            }
+            else
+            {
+                spr.flipX = false;
+            }
+            transform.position += (Vector3.right * Input.GetAxis("Horizontal")) * liderSpeed * Time.deltaTime;
 
-        transform.position += (Vector3.up * Input.GetAxis("Vertical")) * liderSpeed * Time.deltaTime;
+            transform.position += (Vector3.up * Input.GetAxis("Vertical")) * liderSpeed * Time.deltaTime;
+
+        }
+      
 
     }
 
@@ -67,5 +81,11 @@ public class Lider : MonoBehaviour
         // Asigna el nuevo radio a la variable nuevoRadio para futuras referencias
         nuevoRadio = influenceRadius;
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.layer==13)
+        {
+            llegue = true;
+        }
+    }
 }

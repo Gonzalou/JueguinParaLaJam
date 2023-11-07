@@ -9,7 +9,8 @@ public class MainMenu : MonoBehaviour
     public GameObject controlsUI;
     public GameObject buttonsParent;
     public GameObject optionsParent;
-    
+
+    private float tiempito;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,11 @@ public class MainMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        tiempito += Time.deltaTime;
+        if (Input.anyKeyDown&&tiempito>5)
+        {
+            PlayButton();
+        }
     }
 
     public void PlayButton()
