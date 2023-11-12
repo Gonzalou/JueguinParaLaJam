@@ -4,6 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
+
+public class GameManager : MonoBehaviour
+{
+    public static string dificultad;
+    public static string miRepresentante;
+    public static string reclamo;
+
+}
+
+
 public class MainMenu : MonoBehaviour
 {
     public GameObject controlsUI;
@@ -29,7 +40,8 @@ public class MainMenu : MonoBehaviour
 
     public void PlayButton()
     {
-        SceneManager.LoadScene("Level1");
+        //SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("ELIGE_REPRESENTANTE");
     }
     public void creditsButton()
     {

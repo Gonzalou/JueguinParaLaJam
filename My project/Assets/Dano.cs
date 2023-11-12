@@ -5,7 +5,7 @@ using UnityEngine;
 public class Dano : MonoBehaviour
 {
     private AudioSource Audio;
-    public AudioClip[] sonidosDeDaño;
+    public AudioClip[] sonidosDeDaÃ±o;
     public AudioClip sonidoDeMuerte;
     public ParticleSystem pS;
 
@@ -32,7 +32,7 @@ public class Dano : MonoBehaviour
 
             if (!Audio.isPlaying)
             {
-                Audio.clip = sonidosDeDaño[Random.Range(0, sonidosDeDaño.Length - 1)];
+                Audio.clip = sonidosDeDaÃ±o[Random.Range(0, sonidosDeDaÃ±o.Length - 1)];
                 Audio.Play();
                 pS.Play();
             }
