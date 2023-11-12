@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 7333adb0ef786734398569bc9c33467d
   - enabled: 1
+    path: Assets/Scenes/ELIGE_REPRESENTANTE.unity
+    guid: 991a9a1a2301145e3add066911b9759e
+  - enabled: 1
+    path: Assets/Scenes/ELIGE_DIFICULTAD.unity
+    guid: 72adeb0eab3c542a8b5a76722e90692f
+  - enabled: 1
+    path: Assets/Scenes/ELIGE_RECLAMO.unity
+    guid: 83ffc47a532fb4890bc7225e0e7610fc
+  - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 080542077050320498f1cbbef30b38da
   - enabled: 1
