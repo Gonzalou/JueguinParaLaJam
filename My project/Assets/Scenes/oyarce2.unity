@@ -16597,11 +16597,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3895813291389493505, guid: 6b26c1cf877c9bb46803846728a3726e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.73
+      value: -154.7
       objectReference: {fileID: 0}
     - target: {fileID: 3895813291389493505, guid: 6b26c1cf877c9bb46803846728a3726e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 41.589996
+      value: -94.3
       objectReference: {fileID: 0}
     - target: {fileID: 3895813291389493505, guid: 6b26c1cf877c9bb46803846728a3726e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -28516,6 +28516,7 @@ GameObject:
   - component: {fileID: 1828486143}
   - component: {fileID: 1828486146}
   - component: {fileID: 1828486147}
+  - component: {fileID: 1828486148}
   m_Layer: 20
   m_Name: Particle System
   m_TagString: awita
@@ -28732,7 +28733,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 300
+      scalar: 476.17
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -32352,14 +32353,14 @@ ParticleSystem:
         m_RotationOrder: 4
     minKillSpeed: 0
     maxKillSpeed: 10000
-    radiusScale: 0.7
+    radiusScale: 0.23
     collidesWith:
       serializedVersion: 2
       m_Bits: 768
-    maxCollisionShapes: 256
+    maxCollisionShapes: 110
     quality: 0
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
@@ -33375,6 +33376,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1828486148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828486142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe5ff98bffd5c714eb159a683187b0bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuerzaChorro: 1.23
+  part: {fileID: 0}
 --- !u!1001 &1831758410
 PrefabInstance:
   m_ObjectHideFlags: 0

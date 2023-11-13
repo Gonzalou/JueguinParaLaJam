@@ -1,35 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using static UnityEngine.ParticleSystem;
 
 public class chorroagua : MonoBehaviour
-    
+
 {
-    private Rigidbody2D rb2d;
     public float fuerzaChorro;
-    // Start is called before the first frame update
+    public ParticleSystem part;
+    public List<ParticleCollisionEvent> collisionEvents;
+
     void Start()
     {
-       rb2d = GetComponent<Rigidbody2D>();
-   
+        part = GetComponent<ParticleSystem>();
+        collisionEvents = new List<ParticleCollisionEvent>();
     }
-   
 
-    // Update is called once per frame
-    void Update()
+    void OnParticleCollision(GameObject other)
     {
-        
-    }
-   
-    private void OnParticleCollision(GameObject other)
-    {
-        if (other.gameObject.CompareTag("awita"))
+        int numCollisionEvents = part.GetCollisionEvents(other, collisionEvents);
+
+        Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
+        int i = 0;
+
+        while (i < numCollisionEvents)
         {
-            rb2d.AddForce((transform.position - other.transform.position).normalized * fuerzaChorro);
-            Debug.Log("choco");
+            if (rb && other.gameObject.layer == 8)
+            {
+                Vector3 pos = collisionEvents[i].intersection;
+                Vector3 force = collisionEvents[i].velocity * fuerzaChorro;
+                rb.AddForce(force);
+               
 
+            }
+            i++;
         }
-        Debug.Log(other.gameObject.tag);
     }
 }
