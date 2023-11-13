@@ -6,13 +6,7 @@ using UnityEngine.UI;
 
 
 
-public class GameManager : MonoBehaviour
-{
-    public static string dificultad;
-    public static string miRepresentante;
-    public static string reclamo;
 
-}
 
 
 public class MainMenu : MonoBehaviour
