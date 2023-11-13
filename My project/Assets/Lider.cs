@@ -7,7 +7,7 @@ public class Lider : MonoBehaviour
 {
     public float liderSpeed;
     public float defaultLiderSpeed;
-
+    public float maxSpeed;
 
     public float defaultInfluenceRadious;
     public float influenceRadius;
@@ -20,11 +20,12 @@ public class Lider : MonoBehaviour
     public bool llegue;
     public SpriteRenderer spr;
     public ParticleSystem visualInfluence;
-
+    public Rigidbody2D rb2d;
     private bool juegoEnMobile;
 
     private void Awake()
     {
+        rb2d = GetComponent<Rigidbody2D>();
         tchP = GetComponent<TouchPosition>();
         if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
         {
@@ -74,16 +75,18 @@ public class Lider : MonoBehaviour
                 {
                     spr.flipX = false;
                 }
-                transform.position += (Vector3.right * Input.GetAxis("Horizontal")) * liderSpeed * Time.deltaTime;
+                /*transform.position += (Vector3.right * Input.GetAxis("Horizontal")) * liderSpeed * Time.deltaTime;
 
-                transform.position += (Vector3.up * Input.GetAxis("Vertical")) * liderSpeed * Time.deltaTime;
+                transform.position += (Vector3.up * Input.GetAxis("Vertical")) * liderSpeed * Time.deltaTime;*/
+
+                rb2d.velocity += new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized * liderSpeed * Time.deltaTime;
             }
             else
             {
 
                 if (Vector3.Distance(transform.position, mouse.mousePosition) > 3)
                 {
-                    transform.position += (new Vector3( mouse.mousePosition.x,mouse.mousePosition.y,0) - transform.position).normalized * liderSpeed * Time.deltaTime;
+                    rb2d.velocity += (new Vector2( mouse.mousePosition.x,mouse.mousePosition.y) - new Vector2(transform.position.x,transform.position.y)).normalized * liderSpeed ;
                 }
 
             }

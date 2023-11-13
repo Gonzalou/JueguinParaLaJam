@@ -151,15 +151,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2f05b829d09d474eb1b7da9b7a02dd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMaxima: 5
-  radioVecindad: 1.5
-  fuerzaSeparacion: 1.81
-  fuerzaCohesion: 1
-  fuerzaAlineacion: 1
+  velocidadMaxima: 6.4
+  radioVecindad: 4.19
+  fuerzaSeparacion: 30.9
+  fuerzaCohesion: 3.24
+  fuerzaAlineacion: 6.4
   liderPos: {fileID: 0}
   myRepresentant: {fileID: 0}
-  VelocidadHaciaElLider: 10
-  SeparacionMinimaDelLider: 5.21
+  VelocidadHaciaElLider: 2.69
+  SeparacionMinimaDelLider: 17.6
   representanteINDEX: 0
   spr: {fileID: 9030741980485974902}
   sprMuerto: {fileID: 21300000, guid: 3e35e1efcb6f62444b3f39c2db290988, type: 3}
@@ -356,7 +356,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1.5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}

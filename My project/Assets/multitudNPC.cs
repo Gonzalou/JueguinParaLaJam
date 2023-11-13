@@ -23,7 +23,7 @@ public class multitudNPC : MonoBehaviour
     public Animator anim;
     public Transform target;
     public Color[] colors;
-
+    private Rigidbody2D rb2d;
 
     private bool haciendoDano;
 
@@ -35,7 +35,7 @@ public class multitudNPC : MonoBehaviour
     {
         dmg = GetComponent<Dano>();
         representanteINDEX = Random.Range(0, 3);        
-       
+       rb2d = GetComponent<Rigidbody2D>();
     }
 
     private void Start()
@@ -61,7 +61,7 @@ public class multitudNPC : MonoBehaviour
     void Update()
     {
 
-
+        LimitarVelocidad();
         
 
 
@@ -87,11 +87,12 @@ public class multitudNPC : MonoBehaviour
                         movimiento = Vector2.ClampMagnitude(movimiento, velocidadMaxima);
 
                         // Aplica el movimiento a la entidad
-                        transform.Translate(movimiento * Time.deltaTime);
+                        rb2d.velocity+=(movimiento * Time.deltaTime);
 
                         if (Vector3.Distance(transform.position, liderPos.transform.position) >= SeparacionMinimaDelLider)
                         {
-                            transform.position += (target.transform.position - transform.position).normalized * VelocidadHaciaElLider * Time.deltaTime;
+                         rb2d.velocity  +=  (new Vector2(target.transform.position.x, target.transform.position.y) -new Vector2(transform.position.x,transform.position.y)).normalized * VelocidadHaciaElLider ;
+                           
                         }
 
                     }
@@ -224,6 +225,18 @@ public class multitudNPC : MonoBehaviour
 
         // Fin de la corrutina, puedes realizar acciones adicionales aquí si es necesario
         // ...
+    }
+
+
+    private void LimitarVelocidad()
+    {
+        float maxSpeed = velocidadMaxima;  // Ajusta este valor según sea necesario
+
+        // Limitar la velocidad en el eje X y Y por separado
+        rb2d.velocity = new Vector2(
+            Mathf.Clamp(rb2d.velocity.x, -maxSpeed, maxSpeed),
+            Mathf.Clamp(rb2d.velocity.y, -maxSpeed, maxSpeed)
+        );
     }
 }
 
