@@ -25091,7 +25091,7 @@ Transform:
   m_GameObject: {fileID: 1638737495}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -120.8, y: -177.9, z: 0}
+  m_LocalPosition: {x: -112.2, y: -177.9, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -25165,7 +25165,7 @@ MonoBehaviour:
   speed: 10
   esDerecha: 1
   contadorT: 0
-  cambiodire: 15
+  cambiodire: 21
 --- !u!1001 &1650367729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28520,7 +28520,7 @@ GameObject:
   m_Layer: 20
   m_Name: Particle System
   m_TagString: awita
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -33347,8 +33347,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b74ecc7e3b7ff14db1a170cca154bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rango: 10
-  sistemaDeParticulas: {fileID: 0}
+  rango: 50.18
+  sistemaDeParticulas: {fileID: 1828486144}
 --- !u!50 &1828486147
 Rigidbody2D:
   serializedVersion: 4
