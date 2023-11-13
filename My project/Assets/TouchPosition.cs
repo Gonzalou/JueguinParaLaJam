@@ -33,7 +33,7 @@ public class TouchPosition : MonoBehaviour
         }
         else
         {
-            debug.transform.position =currentPos ;
+            //debug.transform.position =currentPos ;
         }
         
        

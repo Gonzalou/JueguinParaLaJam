@@ -114,6 +114,7 @@ GameObject:
   - component: {fileID: 6909192648753874587}
   - component: {fileID: 4797858714120435861}
   - component: {fileID: 5942259713122168901}
+  - component: {fileID: 4490758628222135806}
   m_Layer: 8
   m_Name: Protestante joven
   m_TagString: Untagged
@@ -370,6 +371,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &4490758628222135806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4415617464082126630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe5ff98bffd5c714eb159a683187b0bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuerzaChorro: 100
 --- !u!1 &4780334191382997178
 GameObject:
   m_ObjectHideFlags: 0
