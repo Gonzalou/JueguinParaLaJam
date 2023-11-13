@@ -5,7 +5,8 @@ using UnityEngine;
 public class TouchPosition : MonoBehaviour
 {
     public Vector3 worldPosition;
-   
+    private Vector3 currentPos;
+    public GameObject debug;
     void Update()
     {
         // Verificar si se ha tocado la pantalla
@@ -24,12 +25,17 @@ public class TouchPosition : MonoBehaviour
                 worldPosition =new Vector3( Camera.main.ScreenToWorldPoint(touchPosition).x, Camera.main.ScreenToWorldPoint(touchPosition).y,0);
 
                 // Ahora worldPosition contiene la posición en el mundo 2D donde se tocó la pantalla
-                Debug.Log("Posición del toque: " + worldPosition);
-
+               
+                debug.transform.position = worldPosition;
+                currentPos = worldPosition;
                 // Puedes realizar otras acciones con la posición obtenida, como mover un objeto a esa posición, etc.
             }
         }
-        else { worldPosition = Vector3.zero; }
+        else
+        {
+            debug.transform.position =currentPos ;
+        }
+        
        
     }
     

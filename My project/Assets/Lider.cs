@@ -25,6 +25,7 @@ public class Lider : MonoBehaviour
 
     private void Awake()
     {
+        tchP = GetComponent<TouchPosition>();
         if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
         {
             juegoEnMobile = true;
@@ -77,13 +78,18 @@ public class Lider : MonoBehaviour
 
                 transform.position += (Vector3.up * Input.GetAxis("Vertical")) * liderSpeed * Time.deltaTime;
             }
-
-
-            /*if (tchP.worldPosition == Vector3.zero) 
+            else
             {
-                transform.position += (tchP.worldPosition - transform.position).normalized * liderSpeed * Time.deltaTime;
+
+                if (Vector3.Distance(transform.position, mouse.mousePosition) > 3)
+                {
+                    transform.position += (new Vector3( mouse.mousePosition.x,mouse.mousePosition.y,0) - transform.position).normalized * liderSpeed * Time.deltaTime;
+                }
+
             }
-            */
+
+
+
 
         }
 

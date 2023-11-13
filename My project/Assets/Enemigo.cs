@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemigo : MonoBehaviour
@@ -19,9 +20,12 @@ public class Enemigo : MonoBehaviour
     public float tiempomuerto;
     public int InitialLife;
 
+
+    private SpriteRenderer spr;
     // Start is called before the first frame update
     void Start()
     {
+        spr= GetComponent<SpriteRenderer>();
         InitialLife = life;
         speed = Random.Range(5, 8);
         rb2d = GetComponent<Rigidbody2D>();
@@ -30,6 +34,15 @@ public class Enemigo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (myDir.x > 0)
+        {
+            spr.flipX = true;
+        }
+        else { spr.flipX= false; }
+
+
+
+
         if (life <= 0) // mientras está muertito
         {
             tiempomuerto += Time.deltaTime;
@@ -135,7 +148,8 @@ public class Enemigo : MonoBehaviour
         );
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+   
+    private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.layer == 8)
         {
