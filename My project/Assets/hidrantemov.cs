@@ -27,14 +27,16 @@ public class hidrantemov : MonoBehaviour
     {
      
         
-        if (esDerecha == true)
+        if (esDerecha == true)   //Esto es para donde mira, para donde va a ir wachin
         {
             transform.position += Vector3.right * speed * Time.deltaTime;
+            transform.localScale = new Vector3(4, 4, 4); //gira sprite segun para a donde va
         }
       
-        if (esDerecha == false)
+        if (esDerecha == false) //es derecha falsa asique esto es IZQUIERDA
         {
             transform.position += Vector3.left* speed * Time.deltaTime;
+            transform.localScale = new Vector3(-4, -4, -4);  //esto gira el sprite según pa donde va 
         }
         
         //esta parte es el contador en funcionamiento, a la inversa y reseteo del contador YA TE DIJE QUE ERA CONTADOR? no me kemeeee
