@@ -79,11 +79,11 @@ public class Lider : MonoBehaviour
             }
 
 
-            if (tchP.worldPosition == Vector3.zero)
+            /*if (tchP.worldPosition == Vector3.zero) 
             {
                 transform.position += (tchP.worldPosition - transform.position).normalized * liderSpeed * Time.deltaTime;
             }
-
+            */
 
         }
 

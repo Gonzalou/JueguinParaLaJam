@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class Enemigo : MonoBehaviour
 {
+    public float repulsion;
+    private Vector2 myDir;
+    public Rigidbody2D rb2d;
     public int speed;
     public Dano target;
     public int life;
@@ -15,35 +18,59 @@ public class Enemigo : MonoBehaviour
     public AudioClip[] clips;
     public float tiempomuerto;
     public int InitialLife;
+
     // Start is called before the first frame update
     void Start()
     {
         InitialLife = life;
         speed = Random.Range(5, 8);
+        rb2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (life<=0)
+        if (life <= 0) // mientras está muertito
         {
             tiempomuerto += Time.deltaTime;
-            transform.position -= (target.transform.position - transform.position).normalized * speed *1.3f * Time.deltaTime;
+            ObtenerDireccion();
+
+            Vector2 limitedVelocity = -myDir * speed;
+            rb2d.velocity = limitedVelocity;
         }
 
-        if(tiempomuerto>7) { life = InitialLife; tiempomuerto = 0; }
-        if (target != null&&target.life>0)
+        if (tiempomuerto > 7) { life = InitialLife; tiempomuerto = 0; }
+        if (target != null && target.life > 0)  // pasa si está vivo y tiene objetivo
         {
             if (Vector3.Distance(target.transform.position, transform.position) > rangoDeAtaque)
-                transform.position += (target.transform.position - transform.position).normalized * speed * Time.deltaTime;
+            {
+                ObtenerDireccion();
 
+                // Calcular la nueva velocidad limitada
+                Vector2 limitedVelocity = myDir * speed;
+
+                // Aplicar la nueva velocidad
+                rb2d.velocity = limitedVelocity;
+
+                Vector2 repulsionDirection = (transform.position - target.transform.position).normalized;
+                rb2d.AddForce(repulsionDirection * repulsion);
+            }
             else
             {
-                transform.position -= (target.transform.position - transform.position).normalized * speed * 2 * Time.deltaTime;
+                // Calcular la dirección de la repulsión
+                Vector2 repulsionDirection = (transform.position - target.transform.position).normalized;
+
+                // Aplicar la fuerza de repulsión
+                rb2d.AddForce(repulsionDirection * repulsion);
             }
         }
         else
         {
+            // Después de eliminar al objetivo, detener la aplicación de la fuerza de repulsión
+            rb2d.velocity = new Vector2(6f, 6f);
+
+            // Opcional: Ajustar la velocidad a un valor específico si es necesario
+            // rb2d.velocity = new Vector2(0f, 0f);
 
             Collider2D[] gente = Physics2D.OverlapCircleAll(transform.position, DetectionRange, 1 << 8);
             if (gente.Any())
@@ -51,41 +78,63 @@ public class Enemigo : MonoBehaviour
                 float distanciaMinima = float.MaxValue;
                 for (int i = 0; i < gente.Length; i++)
                 {
-                    // Calcular la distancia entre la posición objetivo y la transformación actual
                     float distancia = Vector3.Distance(gente[i].transform.position, transform.position);
 
-                    // Si la distancia actual es menor que la distancia mínima encontrada hasta ahora
-                    // Actualizar el índice del transform más cercano y la distancia mínima
                     if (distancia < distanciaMinima)
                     {
                         target = gente[i].GetComponent<Dano>();
                         distanciaMinima = distancia;
                     }
                 }
-
             }
-
-
-
         }
     }
 
     public void Golpeando()
     {
-
         if (!au.isPlaying)
         {
             au.clip = clips[0];
             au.Play();
         }
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.layer == 8)
         {
             anim.SetBool("Atacando", true);
+
+            // Calcular la dirección de la repulsión al colisionar
+            Vector2 repulsionDirection = (transform.position - collision.transform.position).normalized;
+
+            float repulsionDistanceMultiplier = 15000.0f;  // Ajustar este valor si es necesario
+            Vector2 repulsionForce = repulsionDirection * repulsion * repulsionDistanceMultiplier;
+
+            // Aplicar la fuerza de repulsión al colisionar
+            //rb2d.AddForce(repulsionDirection * repulsion);
+
+            // Aplicar la fuerza de repulsión al colisionar
+            rb2d.AddForce(repulsionForce);
+
+            // Ajustar la velocidad después de aplicar la fuerza
+            LimitarVelocidad();
+
+
         }
     }
+    // Método para limitar la velocidad del Rigidbody2D
+    private void LimitarVelocidad()
+    {
+        float maxSpeed = 5f;  // Ajusta este valor según sea necesario
+
+        // Limitar la velocidad en el eje X y Y por separado
+        rb2d.velocity = new Vector2(
+            Mathf.Clamp(rb2d.velocity.x, -maxSpeed, maxSpeed),
+            Mathf.Clamp(rb2d.velocity.y, -maxSpeed, maxSpeed)
+        );
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 8)
@@ -96,7 +145,7 @@ public class Enemigo : MonoBehaviour
 
     public void MeHacenDano(int dmg)
     {
-        if (life>0)
+        if (life > 0)
         {
             life -= dmg;
             au.clip = clips[1];
@@ -105,7 +154,10 @@ public class Enemigo : MonoBehaviour
                 au.Play();
             }
         }
-       
     }
 
+    public void ObtenerDireccion()
+    {
+        myDir = (new Vector2(target.transform.position.x, target.transform.position.y) - new Vector2(transform.position.x, transform.position.y)).normalized;
+    }
 }

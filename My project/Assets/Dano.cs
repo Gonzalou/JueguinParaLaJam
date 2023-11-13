@@ -13,6 +13,8 @@ public class Dano : MonoBehaviour
 
     public int life;
     // Start is called before the first frame update
+
+    private bool canMove = true;
     void Start()
     {
         Audio = GetComponent<AudioSource>();
@@ -21,10 +23,18 @@ public class Dano : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Si la entidad no puede moverse, retorna sin hacer nada
+        if (!canMove)
+        {
+            return;
+        }
 
+        // Aquí deberías tener el código que controla el movimiento de la entidad.
+        // Puedes mover la entidad en función de su vida o cualquier otro parámetro.
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
+
     {
         if (collision.gameObject.layer == 12)
         {
@@ -38,7 +48,10 @@ public class Dano : MonoBehaviour
             }
             if (life <= 0)
             {
-                Audio.clip = sonidoDeMuerte;
+                    // Detener el movimiento al llegar a cero vida
+                    canMove = false;
+
+                    Audio.clip = sonidoDeMuerte;
 
             }
         }
