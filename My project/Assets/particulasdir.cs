@@ -5,67 +5,33 @@ using UnityEngine;
 public class particulasdir : MonoBehaviour
 {
 
-    public float rango = 50f; // Rango de detección
+    public float rango = 10f; // Rango de detección
     public ParticleSystem sistemaDeParticulas; // Referencia al sistema de partículas
 
     // Start is called before the first frame update
     void Start()
     {
-        if (sistemaDeParticulas == null)
-        {
-            // Si no se asigna un sistema de partículas, intenta obtenerlo automáticamente
-            sistemaDeParticulas = GetComponent<ParticleSystem>();
-        }
-
-        if (sistemaDeParticulas == null)
-        {
-            Debug.LogError("Se requiere un componente ParticleSystem en el objeto o asignado manualmente.");
-        }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Verifica si hay objetivos cercanos y activa/desactiva
         EnfocarParticulasEnObjetivoCercano();
     }
 
     void EnfocarParticulasEnObjetivoCercano()
     {
-        Collider2D[] objetosEnRango = Physics2D.OverlapCircleAll(transform.position, rango, 1 << 8);
+        Collider2D[] objetosEnRango = Physics2D.OverlapCircleAll(transform.position, rango, 1<<8);
 
         if (objetosEnRango.Length > 0)
         {
-            // Hay objetivos cercanos, activa el sistema de partículas
-            ActivarParticulas();
-
             Transform objetivoCercano = BuscarObjetivoCercano(objetosEnRango);
 
             if (objetivoCercano != null)
             {
                 ApuntarParticulasAObjetivo(objetivoCercano.position);
             }
-        }
-        else
-        {
-            // No hay objetivos cercanos, desactiva el sistema de partículas
-            DesactivarParticulas();
-        }
-    }
-
-    void ActivarParticulas()
-    {
-        if (!sistemaDeParticulas.isPlaying)
-        {
-            sistemaDeParticulas.Play();
-        }
-    }
-
-    void DesactivarParticulas()
-    {
-        if (sistemaDeParticulas.isPlaying)
-        {
-            sistemaDeParticulas.Stop();
         }
     }
 
