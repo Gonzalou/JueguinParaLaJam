@@ -9,7 +9,7 @@ public class chorroagua : MonoBehaviour
     public float fuerzaChorro;
     public ParticleSystem part;
     public List<ParticleCollisionEvent> collisionEvents;
-
+    public multitudNPC npc;
     void Start()
     {
         part = GetComponent<ParticleSystem>();
@@ -21,6 +21,7 @@ public class chorroagua : MonoBehaviour
         int numCollisionEvents = part.GetCollisionEvents(other, collisionEvents);
 
         Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
+        npc = other.GetComponent<multitudNPC>();
         int i = 0;
 
         while (i < numCollisionEvents)
@@ -30,7 +31,7 @@ public class chorroagua : MonoBehaviour
                 Vector3 pos = collisionEvents[i].intersection;
                 Vector3 force = collisionEvents[i].velocity * fuerzaChorro;
                 rb.AddForce(force);
-               
+                npc.stunTime += 0.3f;
 
             }
             i++;

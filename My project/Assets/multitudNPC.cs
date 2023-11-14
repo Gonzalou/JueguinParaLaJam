@@ -24,33 +24,37 @@ public class multitudNPC : MonoBehaviour
     public Transform target;
     public Color[] colors;
     private Rigidbody2D rb2d;
-
+    public float stunTime;
     private bool haciendoDano;
 
     public float tiempoDeDano = 2f; // Duración del daño en segundos
     public int cantidadDeDano = 10; // Cantidad de daño a aplicar
 
+    public bool canMove;
     private Dano dmg;
     private void Awake()
     {
         dmg = GetComponent<Dano>();
-        representanteINDEX = Random.Range(0, 3);        
-       rb2d = GetComponent<Rigidbody2D>();
+        representanteINDEX = Random.Range(0, 3);
+        rb2d = GetComponent<Rigidbody2D>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     private void Start()
     {
         liderPos = GameObject.Find("Lider").GetComponent<Lider>();
         spr.color = colors[representanteINDEX];
-        switch(representanteINDEX)
+        switch (representanteINDEX)
         {
             case 0:
                 VelocidadHaciaElLider -= 0.5f;
-                
+
                 break;
-                case 1: VelocidadHaciaElLider = VelocidadHaciaElLider * 0.7f;
+            case 1:
+                VelocidadHaciaElLider = VelocidadHaciaElLider * 0.7f;
                 break;
-                case 2: VelocidadHaciaElLider = VelocidadHaciaElLider * 1.2f;
+            case 2:
+                VelocidadHaciaElLider = VelocidadHaciaElLider * 1.2f;
                 break;
             case 3:
                 VelocidadHaciaElLider = VelocidadHaciaElLider * 1.4f;
@@ -62,59 +66,72 @@ public class multitudNPC : MonoBehaviour
     {
 
         LimitarVelocidad();
-        
+        if (stunTime >= 0)
+        {
+            canMove = false;
+
+            stunTime -= Time.deltaTime;
+        }
+        else
+        {
+            canMove = true;
+        }
 
 
         if (dmg.life > 0)
         {
-
-
-
-            if (liderPos != null)
+            if (canMove)
             {
 
 
-                if (Vector3.Distance(transform.position, liderPos.transform.position) < liderPos.influenceRadius) //si ta muy lejos de lider ni va
+
+
+                if (liderPos != null)
                 {
-                    if (myRepresentant != null)
+
+
+                    if (Vector3.Distance(transform.position, liderPos.transform.position) < liderPos.influenceRadius) //si ta muy lejos de lider ni va
                     {
-                        Vector2 separacion = Separacion();
-                        Vector2 cohesion = Cohesion();
-                        Vector2 alineacion = Alineacion();
-
-                        // Combina las fuerzas para obtener el movimiento resultante
-                        Vector2 movimiento = separacion + cohesion + alineacion;
-                        movimiento = Vector2.ClampMagnitude(movimiento, velocidadMaxima);
-
-                        // Aplica el movimiento a la entidad
-                        rb2d.velocity+=(movimiento * Time.deltaTime);
-
-                        if (Vector3.Distance(transform.position, liderPos.transform.position) >= SeparacionMinimaDelLider)
+                        if (myRepresentant != null)
                         {
-                         rb2d.velocity  +=  (new Vector2(target.transform.position.x, target.transform.position.y) -new Vector2(transform.position.x,transform.position.y)).normalized * VelocidadHaciaElLider ;
-                           
-                        }
+                            Vector2 separacion = Separacion();
+                            Vector2 cohesion = Cohesion();
+                            Vector2 alineacion = Alineacion();
 
-                    }
-                    else
-                    {
-                        List<Representante> repres = new List<Representante>();
-                        repres.AddRange(GameObject.FindObjectsOfType<Representante>());
-                        foreach (var item in repres)
-                        {
-                            if (item.myIndex == representanteINDEX)
+                            // Combina las fuerzas para obtener el movimiento resultante
+                            Vector2 movimiento = separacion + cohesion + alineacion;
+                            movimiento = Vector2.ClampMagnitude(movimiento, velocidadMaxima);
+
+                            // Aplica el movimiento a la entidad
+                            rb2d.velocity += (movimiento * Time.deltaTime);
+
+                            if (Vector3.Distance(transform.position, liderPos.transform.position) >= SeparacionMinimaDelLider)
                             {
-                                myRepresentant = item;
-                                target = myRepresentant.transform;
+                                rb2d.velocity += (new Vector2(target.transform.position.x, target.transform.position.y) - new Vector2(transform.position.x, transform.position.y)).normalized * VelocidadHaciaElLider;
+
                             }
+
+                        }
+                        else
+                        {
+                            List<Representante> repres = new List<Representante>();
+                            repres.AddRange(GameObject.FindObjectsOfType<Representante>());
+                            foreach (var item in repres)
+                            {
+                                if (item.myIndex == representanteINDEX)
+                                {
+                                    myRepresentant = item;
+                                    target = myRepresentant.transform;
+                                }
+                            }
+
+
                         }
 
-
                     }
-
                 }
-            }
 
+            }
 
         }
         else
@@ -187,10 +204,10 @@ public class multitudNPC : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == 12&&!haciendoDano)
+        if (collision.gameObject.layer == 12 && !haciendoDano)
         {
 
-           var e= collision.gameObject.GetComponent<Enemigo>();
+            var e = collision.gameObject.GetComponent<Enemigo>();
             HacerDano(e);
         }
     }
