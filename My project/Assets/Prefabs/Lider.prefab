@@ -179,8 +179,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -35.57, y: -4.92, z: 4.9294}
-  m_LocalScale: {x: 1.5834, y: 1.5834, z: 1.5834}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 9089337852070149939}
   - {fileID: 2570767793473659035}
@@ -200,11 +200,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a3366de89de90e489dd06707985bc01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  liderSpeed: 5.07
+  liderSpeed: 8
   defaultLiderSpeed: 0
-  defaultInfluenceRadious: 5
-  influenceRadius: 5
-  MaxInfluence: 0
+  maxSpeed: 0
+  defaultInfluenceRadious: 20
+  influenceRadius: 20
+  MaxInfluence: 500
   tchP: {fileID: 0}
   mouse: {fileID: 0}
   Hre: {fileID: 605454497200284859}
@@ -216,6 +217,7 @@ MonoBehaviour:
   llegue: 0
   spr: {fileID: 717736179044485713}
   visualInfluence: {fileID: 4595659824731935833}
+  rb2d: {fileID: 0}
 --- !u!95 &4577920987371495735
 Animator:
   serializedVersion: 5
@@ -269,7 +271,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.019385308, y: 0.48680735}
+  m_Offset: {x: -0.00086948276, y: 0.06854731}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -280,7 +282,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.86577475, y: 1.1451566}
+  m_Size: {x: 0.70530385, y: 0.30863655}
   m_EdgeRadius: 0
 --- !u!50 &1202255312337783461
 Rigidbody2D:
@@ -295,7 +297,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 2.57
-  m_LinearDrag: 0
+  m_LinearDrag: 0.25
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -333,7 +335,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9089337852070149939}
   - component: {fileID: 717736179044485713}
-  - component: {fileID: 515515374141697274}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -408,21 +409,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!114 &515515374141697274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919150283485106174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6b06c215d557ae4d81c07530b7246b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rdr: {fileID: 0}
-  layerCount: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &2092652916104572609
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,7 +684,6 @@ GameObject:
   m_Component:
   - component: {fileID: 91646731678511198}
   - component: {fileID: 2792917726756317251}
-  - component: {fileID: 2313924587425142391}
   m_Layer: 0
   m_Name: Cartel
   m_TagString: Untagged
@@ -772,20 +758,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2313924587425142391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3882772828903825382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6b06c215d557ae4d81c07530b7246b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rdr: {fileID: 0}
-  layerCount: 0
 --- !u!1 &4082558274181833974
 GameObject:
   m_ObjectHideFlags: 0
