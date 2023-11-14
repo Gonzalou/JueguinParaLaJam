@@ -23,6 +23,8 @@ public class Lider : MonoBehaviour
     public Rigidbody2D rb2d;
     private bool juegoEnMobile;
 
+    private VirtualDPad DPad;
+
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -41,9 +43,14 @@ public class Lider : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DPad = GameObject.Find("DPad").GetComponent<VirtualDPad>();
         llegue = false;
         defaultLiderSpeed = liderSpeed;
         defaultInfluenceRadious = influenceRadius;
+        if (!juegoEnMobile)
+        {
+            DPad.gameObject.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -83,11 +90,8 @@ public class Lider : MonoBehaviour
             }
             else
             {
-
-                if (Vector3.Distance(transform.position, mouse.mousePosition) > 3)
-                {
-                    rb2d.velocity += (new Vector2( mouse.mousePosition.x,mouse.mousePosition.y) - new Vector2(transform.position.x,transform.position.y)).normalized * liderSpeed ;
-                }
+                
+                rb2d.velocity += DPad.dir * liderSpeed * Time.deltaTime;
 
             }
 
