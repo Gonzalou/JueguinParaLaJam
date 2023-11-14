@@ -38247,7 +38247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b74ecc7e3b7ff14db1a170cca154bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rango: 35
+  rango: 40
   sistemaDeParticulas: {fileID: 1828486144}
 --- !u!50 &1828486147
 Rigidbody2D:

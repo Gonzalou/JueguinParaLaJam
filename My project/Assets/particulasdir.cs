@@ -5,7 +5,7 @@ using UnityEngine;
 public class particulasdir : MonoBehaviour
 {
 
-    public float rango = 10f; // Rango de detección
+    public float rango = 40f; // Rango de detección
     public ParticleSystem sistemaDeParticulas; // Referencia al sistema de partículas
 
     // Start is called before the first frame update
@@ -41,7 +41,7 @@ public class particulasdir : MonoBehaviour
         }
     }
 
-    Transform BuscarObjetivoCercano(Collider2D[] objetos)
+    Transform BuscarObjetivoCercano(Collider2D[] objetos)  //TODO ESTO EL LA PRIORIDAD DE APUNTADO DEL CHORRO
     {
         Transform objetivoCercano = null;
         float distanciaMinima = Mathf.Infinity;
@@ -60,7 +60,7 @@ public class particulasdir : MonoBehaviour
         return objetivoCercano;
     }
 
-    void ApuntarParticulasAObjetivo(Vector3 posicionObjetivo)
+    void ApuntarParticulasAObjetivo(Vector3 posicionObjetivo)  //TODO ESTO ES EL MOVIMIENTO APUNTADO DEL CHORRO
     {
         // Calcular la dirección hacia el objetivo
         Vector3 direccion = posicionObjetivo - transform.position;
