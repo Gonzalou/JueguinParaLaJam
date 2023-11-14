@@ -12,7 +12,7 @@ public class InvocadorAgua : MonoBehaviour
     void Start()
     {
         // Obtener el componente ParticleSystem del mismo objeto
-        sistemaDeParticulas = GetComponent<ParticleSystem>();
+        sistemaDeParticulas =GetComponentInChildren<ParticleSystem>();
 
         if (sistemaDeParticulas == null)
         {
@@ -56,7 +56,7 @@ public class InvocadorAgua : MonoBehaviour
     void ActivarParticulas()
     {
         // Verificar que el sistema de partículas no sea nulo y no esté reproduciéndose
-        if (sistemaDeParticulas != null && !sistemaDeParticulas.isPlaying)
+        if (sistemaDeParticulas.isPlaying)
         {
             sistemaDeParticulas.Play();
             Debug.Log("Partículas activadas");
@@ -66,10 +66,10 @@ public class InvocadorAgua : MonoBehaviour
     void DesactivarParticulas()
     {
         // Verificar que el sistema de partículas no sea nulo y esté reproduciéndose
-        if (sistemaDeParticulas != null && sistemaDeParticulas.isPlaying)
+        if (sistemaDeParticulas.isPlaying)
         {
             sistemaDeParticulas.Stop();
-            sistemaDeParticulas.Clear(); // Limpiar las partículas existentes
+           
             Debug.Log("Partículas desactivadas");
         }
     }

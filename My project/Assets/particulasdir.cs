@@ -26,12 +26,18 @@ public class particulasdir : MonoBehaviour
 
         if (objetosEnRango.Length > 0)
         {
+            sistemaDeParticulas.Play();
             Transform objetivoCercano = BuscarObjetivoCercano(objetosEnRango);
 
             if (objetivoCercano != null)
             {
                 ApuntarParticulasAObjetivo(objetivoCercano.position);
             }
+        }
+
+        else
+        {
+            sistemaDeParticulas.Stop();
         }
     }
 
