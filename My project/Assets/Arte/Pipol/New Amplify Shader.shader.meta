@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: c9e1cff4df9fb2b46af84f8257859921
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _PERSONA_RANDOM_1__SPRITESHEET: {fileID: 2800000, guid: 034877212b5d86044a9a8b9210988c1c, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

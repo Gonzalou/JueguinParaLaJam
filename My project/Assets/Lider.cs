@@ -66,7 +66,7 @@ public class Lider : MonoBehaviour
 
         }
 
-        if (influenceRadius <= MaxInfluence) { influenceRadius = MaxInfluence; }
+        if (influenceRadius >= MaxInfluence) { influenceRadius = MaxInfluence; }
 
 
         if (!llegue)

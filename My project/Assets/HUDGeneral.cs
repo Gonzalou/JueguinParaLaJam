@@ -11,7 +11,7 @@ public class HUDGeneral : MonoBehaviour
     public GameObject WinHud;
     public TextMeshProUGUI totalpipol;
     public pipolCounter pp;
-    
+    public LogicaBarra laBarra;
     public Lider ld;
     // Start is called before the first frame update
     void Start()
@@ -25,7 +25,7 @@ public class HUDGeneral : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene("Level1");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         if (ld.llegue)
         {
@@ -36,10 +36,16 @@ public class HUDGeneral : MonoBehaviour
             WinHud.SetActive(true);
             totalpipol.text = (pp.pipolCount+pp.repres.Length+1) + " personas se presentaron frente a la Casa de Gobierno!";
         }
+
+        if(laBarra.valorActual<=0)
+        {
+            LoseHud.SetActive(true);
+            Time.timeScale = 0.5f;
+        }
     }
     public void playAgain()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void Credits()
     {
