@@ -846,6 +846,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerEsentials
       objectReference: {fileID: 0}
+    - target: {fileID: 2357371312118115835, guid: 766f8a4c9ba8e1b4487f4e2c5561fde5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357371312118115835, guid: 766f8a4c9ba8e1b4487f4e2c5561fde5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3575581476279679423, guid: 766f8a4c9ba8e1b4487f4e2c5561fde5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 201
