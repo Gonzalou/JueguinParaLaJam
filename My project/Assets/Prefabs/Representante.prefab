@@ -233,15 +233,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f513a7e1fe51a7242acd503732ad1a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocidadMaxima: 1.26
+  radioVecindad: 4.2
+  fuerzaSeparacion: 30
+  fuerzaCohesion: 3
+  fuerzaAlineacion: 7
+  separacionMinimaDelTarget: 17
+  rb2d: {fileID: 0}
   lider: {fileID: 0}
   mousePosition: {fileID: 0}
   highLight: {fileID: 941106240781797550}
-  myReprePosition: 3
-  previousReprePos: 0
   myIndex: 3
-  speed: 10
+  speed: 3.65
   canMove: 1
-  canPlace: 0
   agarrado: 0
   MouseSOBREMI: 0
   spr: {fileID: 1578609244209310168}
@@ -250,8 +254,10 @@ MonoBehaviour:
   - {r: 0.9851752, g: 1, b: 0.2216981, a: 1}
   - {r: 0, g: 1, b: 0.3643589, a: 1}
   - {r: 0.2216981, g: 0.6570504, b: 1, a: 1}
+  sumoInfluencia: 0
   myInfluence: 0
-  maxInfluence: 4
+  myTarget: {fileID: 0}
+  maxInfluence: 2
   minInfluence: 1
 --- !u!61 &7999618571691058534
 BoxCollider2D:
@@ -306,12 +312,12 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3771423172542901799}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 2.17
-  m_LinearDrag: 0
+  m_LinearDrag: 1.5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}

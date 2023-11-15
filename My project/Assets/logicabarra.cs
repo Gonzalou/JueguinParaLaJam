@@ -7,14 +7,22 @@ public class LogicaBarra : MonoBehaviour
 {
     public LayerMask capaProtestante;
     public float velocidadDecremento = 1.0f;
+    public float valorDeDecremento = 1;
     public float velocidadIncremento = 1.0f;
     public float valorMaximo = 100.0f;
-
-    private float valorActual;
+    public Lider ld;
+    public float valorActual;
     private Slider barraInfluencia;
+    private List<Dano> nPCs = new List<Dano>();
+
+
+    public int valorPorNpc;
+
+    
 
     void Start()
     {
+        ld = GameObject.Find("Lider").GetComponent<Lider>();
         barraInfluencia = GetComponent<Slider>();
 
         if (barraInfluencia == null)
@@ -27,23 +35,38 @@ public class LogicaBarra : MonoBehaviour
 
     void Update()
     {
-                        // bajar la barra de influencia si no hay objetos de la capa "Protestante" cerca
+        // bajar la barra de influencia si no hay objetos de la capa "Protestante" cerca
         bool hayProtestantesCerca = HayProtestantesCerca();
+        velocidadDecremento = valorDeDecremento / nPCs.Count;
 
-        if (!hayProtestantesCerca)
+        if (velocidadDecremento < 1.8)
         {
-            DecrementarBarra();
+            velocidadDecremento = 1.8f;
         }
-        else
-        {
-            IncrementarBarra();
-        }
+        DecrementarBarra();
+        
+
     }
 
     bool HayProtestantesCerca()
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 100f, capaProtestante);
-        bool hayProtestantes = colliders.Length > 10;
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(ld.transform.position, ld.influenceRadius, 1 << 8);
+
+        foreach (Collider2D c in colliders)
+        {
+            Dano p = c.gameObject.GetComponent<Dano>();
+            if (p.life > 0 && !nPCs.Contains(p))
+            {
+
+                nPCs.Add(p);
+                IncrementarBarra();
+            }
+            if (nPCs.Contains(p) && p.life < 0)
+            {
+                nPCs.Remove(p);
+            }
+        }
+        bool hayProtestantes = colliders.Length > 1;
 
         if (hayProtestantes)
         {
@@ -67,9 +90,9 @@ public class LogicaBarra : MonoBehaviour
 
     void IncrementarBarra()
     {
-        valorActual += velocidadIncremento * Time.deltaTime;
-        valorActual = Mathf.Clamp(valorActual, 0.0f, valorMaximo);
-
+        /* valorActual += velocidadIncremento * Time.deltaTime;
+         valorActual = Mathf.Clamp(valorActual, 0.0f, valorMaximo);*/
+        valorActual += valorPorNpc;
         ActualizarInterfaz();
     }
 
