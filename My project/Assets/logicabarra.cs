@@ -27,7 +27,7 @@ public class LogicaBarra : MonoBehaviour
 
     void Update()
     {
-        // bajar la barra de influencia si no hay objetos de la capa "Protestante" cerca
+                        // bajar la barra de influencia si no hay objetos de la capa "Protestante" cerca
         bool hayProtestantesCerca = HayProtestantesCerca();
 
         if (!hayProtestantesCerca)

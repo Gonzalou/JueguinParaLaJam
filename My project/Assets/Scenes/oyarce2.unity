@@ -14855,6 +14855,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8ee7f90367072c4392900c791c7a8d6, type: 3}
+--- !u!20 &1039621526 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 5894461190731530170, guid: 766f8a4c9ba8e1b4487f4e2c5561fde5, type: 3}
+  m_PrefabInstance: {fileID: 1651170838778816947}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1056484203
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23982,10 +23987,10 @@ Canvas:
   m_GameObject: {fileID: 1268979033}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1039621526}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -32332,7 +32337,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.77
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -32350,9 +32355,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   capaProtestante:
     serializedVersion: 2
-    m_Bits: 1280
-  velocidadDecremento: 2
-  velocidadIncremento: 10
+    m_Bits: 1
+  velocidadDecremento: 20
+  velocidadIncremento: 15
   valorMaximo: 100
 --- !u!1 &1760121859
 GameObject:
@@ -38297,6 +38302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuerzaChorro: 1.23
   part: {fileID: 1828486144}
+  npc: {fileID: 0}
 --- !u!1001 &1831758410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43891,6 +43897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerEsentials
       objectReference: {fileID: 0}
+    - target: {fileID: 3079687306164232343, guid: 766f8a4c9ba8e1b4487f4e2c5561fde5, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3575581476279679423, guid: 766f8a4c9ba8e1b4487f4e2c5561fde5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -43930,6 +43940,14 @@ PrefabInstance:
     - target: {fileID: 3575581476279679423, guid: 766f8a4c9ba8e1b4487f4e2c5561fde5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5171935508708671848, guid: 766f8a4c9ba8e1b4487f4e2c5561fde5, type: 3}
+      propertyPath: MaxInfluence
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6047069829389909856, guid: 766f8a4c9ba8e1b4487f4e2c5561fde5, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6502111783508904504, guid: 766f8a4c9ba8e1b4487f4e2c5561fde5, type: 3}
       propertyPath: m_LocalPosition.x
