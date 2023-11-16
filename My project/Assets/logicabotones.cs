@@ -5,11 +5,10 @@ using UnityEngine.UI;
 
 public class BotonHabilidad : MonoBehaviour
 {
+    public int numeroHabilidad = 1; // Número de la habilidad asociada a este botón
     public float cooldown = 5.0f;
     private float tiempoRestante = 0.0f;
     private bool estaDisponible = true;
-
-   
 
     void Start()
     {
@@ -26,11 +25,12 @@ public class BotonHabilidad : MonoBehaviour
             {
                 estaDisponible = true;
                 tiempoRestante = cooldown;
-                Debug.Log("Habilidad lista");
+                Debug.Log("Habilidad " + numeroHabilidad + " lista");
             }
         }
-        // Verificador de la tecla "1" presionada, activa la habilidad si está lista
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+
+        // Verifica la tecla asociada a la habilidad y activa la habilidad si está lista
+        if (Input.GetKeyDown(KeyCode.Alpha0 + numeroHabilidad))
         {
             ActivarHabilidad();
         }
@@ -40,12 +40,12 @@ public class BotonHabilidad : MonoBehaviour
     {
         if (estaDisponible)
         {
-            Debug.Log("Habilidad activada wachin");
+            Debug.Log("Habilidad " + numeroHabilidad + " activada wachin");
             estaDisponible = false;
         }
         else
         {
-            Debug.Log("Habilidad en cooldown baja un cambio manija" + tiempoRestante.ToString("F1") + " segundos.");
+            Debug.Log("Habilidad " + numeroHabilidad + " en cooldown baja un cambio manija " + tiempoRestante.ToString("F1") + " segundos.");
         }
     }
 }
