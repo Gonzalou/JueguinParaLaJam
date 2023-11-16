@@ -70,11 +70,11 @@ public class LogicaBarra : MonoBehaviour
 
         if (hayProtestantes)
         {
-            Debug.Log("¡Protestantes cerca!");
+       
         }
         else
         {
-            Debug.Log("No hay protestantes cerca.");
+          
         }
 
         return hayProtestantes;

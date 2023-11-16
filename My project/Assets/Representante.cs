@@ -7,13 +7,10 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Representante : MonoBehaviour
 {
-    //Cosas de comportamiento rebaño
+    //Velocidade
     public float velocidadMaxima = 5f;
-    public float radioVecindad = 1.5f;
-    public float fuerzaSeparacion = 1f;
-    public float fuerzaCohesion = 1f;
-    public float fuerzaAlineacion = 1f;
     public float separacionMinimaDelTarget;
+    public float speed;
     //--------------------------------
 
 
@@ -22,7 +19,6 @@ public class Representante : MonoBehaviour
     public MousePosition mousePosition;
     public GameObject highLight;
     public int myIndex;
-    public float speed;
     public bool canMove;
 
     public bool agarrado;
@@ -35,7 +31,7 @@ public class Representante : MonoBehaviour
 
     public bool sumoInfluencia;
     public float myInfluence;
-    public Transform myTarget;
+    public PlataformaR myTarget;
 
 
     public float maxInfluence;
@@ -45,11 +41,11 @@ public class Representante : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         myInfluence = Random.Range(minInfluence, maxInfluence);
-        myIndex = Random.Range(0, 4);
+
     }
     void Start()
     {
-        spr.color = colors[myIndex];
+        spr.color = colors[myIndex - 1];
         lider = GameObject.Find("Lider").GetComponent<Lider>();
         mousePosition = GameObject.Find("Puntero").GetComponent<MousePosition>();
     }
@@ -57,38 +53,34 @@ public class Representante : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         highLight.SetActive(MouseSOBREMI);
         if (Vector3.Distance(lider.transform.position, transform.position) < lider.influenceRadius && !sumoInfluencia) //sistema para agrandar el rango de influencia
         {
             Debug.Log("toma influencia");
             sumoInfluencia = true;
             lider.influenceRadius += myInfluence;
-            
+
         }
         if (Vector3.Distance(transform.position, lider.transform.position) < lider.influenceRadius) //si ta muy lejos de lider ni va
         {
-            //-----Sistema de Rebaño hacia myTarget-----------
-            BuscarTarget();
 
+            if (myTarget == null)
+            {
+                BuscarTarget();
+            }
+            LimitarVelocidad();
             if (canMove && myTarget != null)
             {
 
-                Vector2 separacion = Separacion();
-                Vector2 cohesion = Cohesion();
-                Vector2 alineacion = Alineacion();
-
-                // Combina las fuerzas para obtener el movimiento resultante
-                Vector2 movimiento = separacion + cohesion + alineacion;
-                movimiento = Vector2.ClampMagnitude(movimiento, velocidadMaxima);
-
                 // Aplica el movimiento a la entidad
-                rb2d.velocity += (movimiento * Time.deltaTime);
+
 
                 if (Vector3.Distance(transform.position, lider.transform.position) >= separacionMinimaDelTarget)
                 {
                     rb2d.velocity += (new Vector2(myTarget.transform.position.x, myTarget.transform.position.y) - new Vector2(transform.position.x, transform.position.y)).normalized * speed;
                 }
-                
+
             }
 
 
@@ -106,7 +98,7 @@ public class Representante : MonoBehaviour
                 {
                     Onagarrado();
                 }
-                if (Input.GetMouseButtonUp(0)&&agarrado)//ACA LO SUELTO SI PUEDO
+                if (Input.GetMouseButtonUp(0) && agarrado)//ACA LO SUELTO SI PUEDO
                 {
                     if (myTarget == null)
                     {
@@ -136,22 +128,43 @@ public class Representante : MonoBehaviour
             float distanciaAlObjetivo = Vector3.Distance(t.transform.position, transform.position);
 
             // Compara si la distancia actual es menor que la distancia más cercana registrada
-            if (distanciaAlObjetivo < distanciaMasCercana)
+            if (distanciaAlObjetivo < distanciaMasCercana && t.GetComponent<PlataformaR>().repreInMe == 0)
             {
                 // Actualiza el objeto más cercano y la distancia más cercana
                 transformMasCercano = t.transform;
                 distanciaMasCercana = distanciaAlObjetivo;
             }
         }
-        myTarget = transformMasCercano;
+        if (transformMasCercano != null)
+        {
+            myTarget = transformMasCercano.GetComponent<PlataformaR>();
+
+            myTarget.repreInMe = myIndex;
+        }
     }
 
     public void Onagarrado()
     {
         transform.position = mousePosition.transform.position;
+        myTarget.repreInMe = 0;
         myTarget = null;
 
     }
+
+
+
+    private void LimitarVelocidad()
+    {
+        float maxSpeed = velocidadMaxima;  // Ajusta este valor según sea necesario
+
+        // Limitar la velocidad en el eje X y Y por separado
+        rb2d.velocity = new Vector2(
+            Mathf.Clamp(rb2d.velocity.x, -maxSpeed, maxSpeed),
+            Mathf.Clamp(rb2d.velocity.y, -maxSpeed, maxSpeed)
+        );
+    }
+
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -183,62 +196,9 @@ public class Representante : MonoBehaviour
 
 
     }
-    Vector2 Separacion()
-    {
-        Vector2 fuerzaSeparacion = Vector2.zero;
-        Collider2D[] vecinos = Physics2D.OverlapCircleAll(transform.position, radioVecindad);
-        foreach (Collider2D vecino in vecinos)
-        {
-            if (vecino.gameObject != gameObject)
-            {
-                Vector2 direccion = transform.position - vecino.transform.position;
-                fuerzaSeparacion += direccion.normalized / direccion.magnitude;
-            }
-        }
-        return fuerzaSeparacion.normalized * this.fuerzaSeparacion;
-    }
 
-    Vector2 Cohesion()
-    {
-        Vector2 centroRebano = Vector2.zero;
-        int cantidadVecinos = 0;
-        Collider2D[] vecinos = Physics2D.OverlapCircleAll(transform.position, radioVecindad);
-        foreach (Collider2D vecino in vecinos)
-        {
-            if (vecino.gameObject != gameObject)
-            {
-                centroRebano += (Vector2)vecino.transform.position;
-                cantidadVecinos++;
-            }
-        }
-        if (cantidadVecinos > 0)
-        {
-            centroRebano /= cantidadVecinos;
-            Vector2 direccion = centroRebano - (Vector2)transform.position;
-            return direccion.normalized * this.fuerzaCohesion;
-        }
-        return Vector2.zero;
-    }
 
-    Vector2 Alineacion()
-    {
-        Vector3 direccionMedia = Vector3.zero;
-        int cantidadVecinos = 0;
-        Collider2D[] vecinos = Physics2D.OverlapCircleAll(transform.position, radioVecindad);
-        foreach (Collider2D vecino in vecinos)
-        {
-            if (vecino.gameObject != gameObject && vecino.GetComponent<multitudNPC>())
-            {
-                direccionMedia += ((multitudNPC)vecino.GetComponent(typeof(multitudNPC))).liderPos.transform.position;
 
-                cantidadVecinos++;
-            }
-        }
-        if (cantidadVecinos > 0)
-        {
-            direccionMedia /= cantidadVecinos;
-            return direccionMedia.normalized * this.fuerzaAlineacion;
-        }
-        return Vector2.zero;
-    }
+
+
 }

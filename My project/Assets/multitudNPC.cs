@@ -18,11 +18,11 @@ public class multitudNPC : MonoBehaviour
     public float VelocidadHaciaElLider;
     public float SeparacionMinimaDelLider;
     public int representanteINDEX;
-    public SpriteRenderer spr;
-    public Sprite sprMuerto;
+   
+ 
     public Animator anim;
     public Transform target;
-    public Color[] colors;
+   
     private Rigidbody2D rb2d;
     public float stunTime;
     private bool haciendoDano;
@@ -35,7 +35,7 @@ public class multitudNPC : MonoBehaviour
     private void Awake()
     {
         dmg = GetComponent<Dano>();
-        representanteINDEX = Random.Range(0, 3);
+        representanteINDEX = Random.Range(1, 8);
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
     }
@@ -43,7 +43,7 @@ public class multitudNPC : MonoBehaviour
     private void Start()
     {
         liderPos = GameObject.Find("Lider").GetComponent<Lider>();
-        spr.color = colors[representanteINDEX];
+      
         switch (representanteINDEX)
         {
             case 0:
@@ -105,7 +105,7 @@ public class multitudNPC : MonoBehaviour
                             // Aplica el movimiento a la entidad
                             rb2d.velocity += (movimiento * Time.deltaTime);
 
-                            if (Vector3.Distance(transform.position, liderPos.transform.position) >= SeparacionMinimaDelLider)
+                            if (Vector3.Distance(transform.position, target.transform.position) >= SeparacionMinimaDelLider)
                             {
                                 rb2d.velocity += (new Vector2(target.transform.position.x, target.transform.position.y) - new Vector2(transform.position.x, transform.position.y)).normalized * VelocidadHaciaElLider;
 
@@ -136,8 +136,7 @@ public class multitudNPC : MonoBehaviour
         }
         else
         {
-            spr.sprite = sprMuerto;
-            spr.color = Color.white;
+           
             anim.speed = 0;
         }
 
@@ -182,14 +181,14 @@ public class multitudNPC : MonoBehaviour
 
     Vector2 Alineacion()
     {
-        Vector3 direccionMedia = Vector3.zero;
+        Vector2 direccionMedia = Vector2.zero;
         int cantidadVecinos = 0;
         Collider2D[] vecinos = Physics2D.OverlapCircleAll(transform.position, radioVecindad);
         foreach (Collider2D vecino in vecinos)
         {
             if (vecino.gameObject != gameObject && vecino.GetComponent<multitudNPC>())
             {
-                direccionMedia += ((multitudNPC)vecino.GetComponent(typeof(multitudNPC))).liderPos.transform.position;
+                direccionMedia += ((multitudNPC)vecino.GetComponent(typeof(multitudNPC))).rb2d.velocity.normalized;
 
                 cantidadVecinos++;
             }

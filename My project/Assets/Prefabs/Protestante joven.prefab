@@ -50,27 +50,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2f05b829d09d474eb1b7da9b7a02dd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMaxima: 6.4
+  velocidadMaxima: 7.39
   radioVecindad: 4.19
-  fuerzaSeparacion: 30.9
+  fuerzaSeparacion: 27.1
   fuerzaCohesion: 3.24
-  fuerzaAlineacion: 6.4
+  fuerzaAlineacion: 10.7
   liderPos: {fileID: 0}
   myRepresentant: {fileID: 0}
-  VelocidadHaciaElLider: 2.69
-  SeparacionMinimaDelLider: 17.6
-  representanteINDEX: 0
-  spr: {fileID: 9030741980485974902}
-  sprMuerto: {fileID: 21300000, guid: 3e35e1efcb6f62444b3f39c2db290988, type: 3}
+  VelocidadHaciaElLider: 4.522
+  SeparacionMinimaDelLider: 8.16
+  representanteINDEX: 1
   anim: {fileID: 0}
   target: {fileID: 0}
-  colors:
-  - {r: 1, g: 0.65777344, b: 0.4669811, a: 1}
-  - {r: 1, g: 0.8807123, b: 0.504717, a: 1}
-  - {r: 0.3732344, g: 0.8113208, b: 0.3099858, a: 1}
-  - {r: 0.3726415, g: 0.7847042, b: 1, a: 1}
+  stunTime: -0.02
   tiempoDeDano: 2
   cantidadDeDano: 10
+  canMove: 1
 --- !u!58 &6885926700794757171
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -260,6 +255,7 @@ GameObject:
   - component: {fileID: 9030741980485974902}
   - component: {fileID: 1137931550507447293}
   - component: {fileID: 725978429972110859}
+  - component: {fileID: 7323134304905143611}
   m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
@@ -324,7 +320,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1270523354, guid: 034877212b5d86044a9a8b9210988c1c, type: 3}
-  m_Color: {r: 0.52705586, g: 0.7924528, b: 0.5562582, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -370,6 +366,37 @@ MonoBehaviour:
   anim: {fileID: 0}
   spr: {fileID: 0}
   rb2d: {fileID: 0}
+--- !u!114 &7323134304905143611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4780334191382997178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c06d266a47ce7d44fba7f4e8e7025324, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myNPC: {fileID: 2375731643931504911}
+  material: {fileID: 2100000, guid: f2b430536fad2774584b61c39c06d616, type: 2}
+  spr: {fileID: 9030741980485974902}
+  coloresDePelo:
+  - {r: 0.9150943, g: 0.8168871, b: 0.42733178, a: 1}
+  - {r: 0.24528301, g: 0.12536569, b: 0.09371662, a: 1}
+  - {r: 0.11320752, g: 0.103061564, b: 0.103061564, a: 1}
+  coloresDeRopa:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0, b: 0.009601116, a: 1}
+  - {r: 0, g: 0.5660378, b: 0.20643726, a: 1}
+  - {r: 1, g: 0.95084655, b: 0, a: 1}
+  - {r: 0.12904951, g: 0.58557713, b: 0.9433962, a: 1}
+  - {r: 0.4923076, g: 0.1273585, b: 1, a: 1}
+  - {r: 0.8614066, g: 0.18396229, b: 1, a: 1}
+  coloresDePiel:
+  - {r: 0.9150943, g: 0.67299825, b: 0.58272517, a: 1}
+  - {r: 0.745283, g: 0.56920564, b: 0.45349768, a: 1}
+  - {r: 0.3207547, g: 0.22763884, b: 0.18004628, a: 1}
 --- !u!1 &8034198972328626933
 GameObject:
   m_ObjectHideFlags: 0
