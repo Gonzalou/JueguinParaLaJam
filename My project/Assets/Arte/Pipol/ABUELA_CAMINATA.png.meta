@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cc58580dcbe8302408b8710d883bedb8
+guid: 1a7fd57159a609d4f82705d4a677a472
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,511 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 7560
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b92a69bf1547350419f3c19dbfda748a
-      internalID: 968129920
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_1
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 7560
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0de4453c55e3374a8ed1b858f09d9e6
-      internalID: -1073569990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_2
-      rect:
-        serializedVersion: 2
-        x: 2160
-        y: 7560
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2cb08d187eac025459b57a1a85418f55
-      internalID: -2047981884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_3
-      rect:
-        serializedVersion: 2
-        x: 3240
-        y: 7560
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7933004948f295142a3358a2e3072ace
-      internalID: 310180211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_4
-      rect:
-        serializedVersion: 2
-        x: 4320
-        y: 7560
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8beeee72ad669b246bf6f73aa291a619
-      internalID: -1240978410
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_5
-      rect:
-        serializedVersion: 2
-        x: 5400
-        y: 7560
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: abac844e072b571438e5be8781c10e10
-      internalID: 1424804445
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_6
-      rect:
-        serializedVersion: 2
-        x: 6480
-        y: 7560
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ebe8e8debd8072842b444f93d692064d
-      internalID: -1711514750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_7
-      rect:
-        serializedVersion: 2
-        x: 7560
-        y: 7560
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ee8a0873a8885b489b32f50b32ec4d9
-      internalID: 371880262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_8
-      rect:
-        serializedVersion: 2
-        x: 8640
-        y: 7560
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f9ac803f3f74d94c9529e0e86e0420a
-      internalID: -425160154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_9
-      rect:
-        serializedVersion: 2
-        x: 9720
-        y: 7560
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8736a366c1ec85f4a81424ea52aa7a87
-      internalID: 1518118019
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_10
-      rect:
-        serializedVersion: 2
-        x: 10800
-        y: 7560
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ab344630e469404d9a28bfc4196dc68
-      internalID: -665652677
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_11
-      rect:
-        serializedVersion: 2
-        x: 11880
-        y: 7560
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cddadebf30f51ab4589ebd8974481bb3
-      internalID: -323457431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 6480
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f8de52aaf0c72d47a0640a699cd4824
-      internalID: 1233299215
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_13
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 6480
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: caddb72e2d1426649ab04e15ac4a01ec
-      internalID: -567525255
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_14
-      rect:
-        serializedVersion: 2
-        x: 2160
-        y: 6480
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01425c8506e176e48b0cc89adc08af3f
-      internalID: 460374373
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_15
-      rect:
-        serializedVersion: 2
-        x: 3240
-        y: 6480
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21f39e6c363555a41bd94293a122538a
-      internalID: -1289511442
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_16
-      rect:
-        serializedVersion: 2
-        x: 4320
-        y: 6480
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3a0b3d617f81e24fa09e8e5db8bdb9f
-      internalID: -884810411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_17
-      rect:
-        serializedVersion: 2
-        x: 5400
-        y: 6480
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9c812b63c170ef4aa5b75702326f670
-      internalID: 746650631
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_18
-      rect:
-        serializedVersion: 2
-        x: 6480
-        y: 6480
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7306c208192c2774ebd1fa344b94fa80
-      internalID: -1635581176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_19
-      rect:
-        serializedVersion: 2
-        x: 7560
-        y: 6480
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1f6e52baf67cd34dac47636c64775c0
-      internalID: 30154619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_20
-      rect:
-        serializedVersion: 2
-        x: 8640
-        y: 6480
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42f2b250f0da7574daa23f50683b2dba
-      internalID: 343228940
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_21
-      rect:
-        serializedVersion: 2
-        x: 9720
-        y: 6480
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 714387410043d924090502c3daf90bd5
-      internalID: -1184594018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_22
-      rect:
-        serializedVersion: 2
-        x: 10800
-        y: 6480
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 544919858d052124f80c241b3fb000ce
-      internalID: -1868104335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_23
-      rect:
-        serializedVersion: 2
-        x: 11880
-        y: 6480
-        width: 1080
-        height: 1080
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5280bfe60902b6848b0d062c9e5e1ec4
-      internalID: -241839064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ABUELA_QUIETITA_24
+      name: ABUELA_CAMINATA_0
       rect:
         serializedVersion: 2
         x: 0
@@ -641,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67804a47cbf676b44b044e5a900acc2c
-      internalID: -437594081
+      spriteID: 34a96d8bb3213b24c8b3c068642cadb7
+      internalID: 1997171046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_25
+      name: ABUELA_CAMINATA_1
       rect:
         serializedVersion: 2
         x: 1080
@@ -662,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51eb216d2cc9d8644b43c04b20582be0
-      internalID: -40011867
+      spriteID: 4076a062c9f2303418467c8395e54cdc
+      internalID: 905325996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_26
+      name: ABUELA_CAMINATA_2
       rect:
         serializedVersion: 2
         x: 2160
@@ -683,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f33eddfafa3a4e42a3993c37a46f617
-      internalID: 2016456179
+      spriteID: e10f2ddc52f0e0440a39244e65c1b5fd
+      internalID: 150420973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_27
+      name: ABUELA_CAMINATA_3
       rect:
         serializedVersion: 2
         x: 3240
@@ -704,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3f39f2527b64cc4d901adbfbde2f5dc
-      internalID: 466189406
+      spriteID: 996a22d11cd8f454280290205b6079ab
+      internalID: -1972415733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_28
+      name: ABUELA_CAMINATA_4
       rect:
         serializedVersion: 2
         x: 4320
@@ -725,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1144400dcde7ca41992c27f23fb3f75
-      internalID: -266606476
+      spriteID: d038a02a32d955645a1324398bcd6629
+      internalID: -833370941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_29
+      name: ABUELA_CAMINATA_5
       rect:
         serializedVersion: 2
         x: 5400
@@ -746,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 433a9e1b5aca27d4ab8e0490c29d2813
-      internalID: -1249852313
+      spriteID: 11d8013889243084a84ce54b8806718c
+      internalID: 303342471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_30
+      name: ABUELA_CAMINATA_6
       rect:
         serializedVersion: 2
         x: 6480
@@ -767,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 671bb864c6c7de84dabfbd2170e5c9d4
-      internalID: 1506501788
+      spriteID: dba526b328ac65045842cf2f5f09f716
+      internalID: 1513704423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_31
+      name: ABUELA_CAMINATA_7
       rect:
         serializedVersion: 2
         x: 7560
@@ -788,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9dbb0fe7ed157b46a160e4999dc683a
-      internalID: 782018226
+      spriteID: 40133c9e39e12e14eb1e4162bc4b7ff0
+      internalID: -1701246518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_32
+      name: ABUELA_CAMINATA_8
       rect:
         serializedVersion: 2
         x: 8640
@@ -809,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e282d3a91212532468647d7409696ad4
-      internalID: 1089530553
+      spriteID: 3b79d9e8725aa9e46899a407bfaedee6
+      internalID: -890711035
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_33
+      name: ABUELA_CAMINATA_9
       rect:
         serializedVersion: 2
         x: 9720
@@ -830,14 +326,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 997f8f5c5ef30124a941e84922ead0ba
-      internalID: -170535600
+      spriteID: b7afd5223bb4d7944933ffe16d3404ab
+      internalID: 1322190270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_34
+      name: ABUELA_CAMINATA_10
       rect:
         serializedVersion: 2
         x: 10800
@@ -851,14 +347,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5a0d703d19d13a40a013919518d0fc5
-      internalID: 273534610
+      spriteID: 1eb033d658724694ca101f65892d0c53
+      internalID: -673743092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_35
+      name: ABUELA_CAMINATA_11
       rect:
         serializedVersion: 2
         x: 11880
@@ -872,14 +368,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b14721771f6116e4b9f3fcc8b26b09ca
-      internalID: 1472378050
+      spriteID: 7f405b38e63dc6e4aa809bccc996c5c9
+      internalID: -2108711789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_36
+      name: ABUELA_CAMINATA_12
       rect:
         serializedVersion: 2
         x: 0
@@ -893,14 +389,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2fb867ca96a30b40ae876adc52af8a5
-      internalID: 1924602781
+      spriteID: d726ac0bcfbf6294b9dbe0083d294051
+      internalID: 2052777313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_37
+      name: ABUELA_CAMINATA_13
       rect:
         serializedVersion: 2
         x: 1080
@@ -914,14 +410,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c451a371078109468b38476a7ee5131
-      internalID: -1410332147
+      spriteID: ac6cd9ba7454b0d4981c9b22192d2a87
+      internalID: -1876878023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_38
+      name: ABUELA_CAMINATA_14
       rect:
         serializedVersion: 2
         x: 2160
@@ -935,14 +431,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad094678d29acf948a023cfda51bbec8
-      internalID: 201689221
+      spriteID: 89a3d87c137e6ce41820302ac48a690b
+      internalID: -809515480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_39
+      name: ABUELA_CAMINATA_15
       rect:
         serializedVersion: 2
         x: 3240
@@ -956,14 +452,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be0fb5b66917b1d4581d026dec4db1b0
-      internalID: 1850531566
+      spriteID: 1ae8f625862d9be40b8f96cdd2f4ce94
+      internalID: -1184867632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_40
+      name: ABUELA_CAMINATA_16
       rect:
         serializedVersion: 2
         x: 4320
@@ -977,14 +473,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fa3798b90121274fbfa86cef6d08bb7
-      internalID: 1220361809
+      spriteID: 050271ddebdeea3498fff44f8e9cc5fd
+      internalID: 212864443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_41
+      name: ABUELA_CAMINATA_17
       rect:
         serializedVersion: 2
         x: 5400
@@ -998,14 +494,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 358d36b7728a04644a9a00309808b66d
-      internalID: 122292461
+      spriteID: 53be001f5098dac4d8f58c8c16482126
+      internalID: -1342849292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_42
+      name: ABUELA_CAMINATA_18
       rect:
         serializedVersion: 2
         x: 6480
@@ -1019,14 +515,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c219bed1dfeba284e99ce733e55bf0e5
-      internalID: 1554737001
+      spriteID: d2d8ff3226fa6e249a465a83f7866006
+      internalID: -216550991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_43
+      name: ABUELA_CAMINATA_19
       rect:
         serializedVersion: 2
         x: 7560
@@ -1040,14 +536,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6392ea9b8b7fa9a42a8de479447bd07a
-      internalID: 1346885304
+      spriteID: 7a93eaae91c78154db52b2040e56b2ce
+      internalID: -227276421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_44
+      name: ABUELA_CAMINATA_20
       rect:
         serializedVersion: 2
         x: 8640
@@ -1061,14 +557,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1b2c4d3617546c488e4168883a39631
-      internalID: 1674711626
+      spriteID: 15cd6aa5c7090424d9747f90994277c0
+      internalID: -718512343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_45
+      name: ABUELA_CAMINATA_21
       rect:
         serializedVersion: 2
         x: 9720
@@ -1082,14 +578,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c2ad14eab29d9743a4b2d76c859eeb1
-      internalID: 1926523116
+      spriteID: 978ce484a9ec73b4ba35508b2a374a1f
+      internalID: -1124091494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_46
+      name: ABUELA_CAMINATA_22
       rect:
         serializedVersion: 2
         x: 10800
@@ -1103,14 +599,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c91afb824b944f41bc5aaa5bd058a97
-      internalID: -450421079
+      spriteID: 22e636e82904d3843844a416cd4c6077
+      internalID: -1881551021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_47
+      name: ABUELA_CAMINATA_23
       rect:
         serializedVersion: 2
         x: 11880
@@ -1124,14 +620,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0e2dce48e7dfdd459583721ddb53a8e
-      internalID: 1520137686
+      spriteID: dd94e2ed9e317674790f0fa5a513c099
+      internalID: 141554689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_48
+      name: ABUELA_CAMINATA_24
       rect:
         serializedVersion: 2
         x: 0
@@ -1145,14 +641,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70283f1fe634f6142b898785db9e6d47
-      internalID: 1525824026
+      spriteID: 193a7682efc3bd24e969f5d344e8e297
+      internalID: 1914927553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_49
+      name: ABUELA_CAMINATA_25
       rect:
         serializedVersion: 2
         x: 1080
@@ -1166,14 +662,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 605521e4ec7135e47854aee920034487
-      internalID: -1394287399
+      spriteID: 55e0b23869de868489c5ad305f30e0d4
+      internalID: -1738710318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_50
+      name: ABUELA_CAMINATA_26
       rect:
         serializedVersion: 2
         x: 2160
@@ -1187,14 +683,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 023c66518aa7021478220083d843293b
-      internalID: -1523322322
+      spriteID: ddf5082eae6cb98429127859e706b1d3
+      internalID: -880102625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_51
+      name: ABUELA_CAMINATA_27
       rect:
         serializedVersion: 2
         x: 3240
@@ -1208,14 +704,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2598ea94ecb38b946a214e4704b9ff31
-      internalID: -1239363382
+      spriteID: 3671a36eb820978498eb41d899c3d4ca
+      internalID: -239035896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_52
+      name: ABUELA_CAMINATA_28
       rect:
         serializedVersion: 2
         x: 4320
@@ -1229,14 +725,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1231dd7b7e12b00479b1fbe5d5b16d4e
-      internalID: -28796404
+      spriteID: 08ecafd3e58f10f4abf7809f03555cda
+      internalID: -1802123012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_53
+      name: ABUELA_CAMINATA_29
       rect:
         serializedVersion: 2
         x: 5400
@@ -1250,14 +746,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c4675903befca14599ded01a3f4cf82
-      internalID: -1415342683
+      spriteID: 61558faaa53975648bfb1c656a4aa8c6
+      internalID: -1276895494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_54
+      name: ABUELA_CAMINATA_30
       rect:
         serializedVersion: 2
         x: 6480
@@ -1271,14 +767,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f95cdd39840e3643a4cc582ebfac194
-      internalID: 1348101706
+      spriteID: 150dad4f9ae0a2146920fdbe4330db12
+      internalID: 1966685630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_55
+      name: ABUELA_CAMINATA_31
       rect:
         serializedVersion: 2
         x: 7560
@@ -1292,14 +788,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e88eff7088da58246b5ae75f36bbfdf2
-      internalID: -896924237
+      spriteID: 759e7d19c49656f48957ac4487cc9de2
+      internalID: 1055781631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_56
+      name: ABUELA_CAMINATA_32
       rect:
         serializedVersion: 2
         x: 8640
@@ -1313,14 +809,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76903b1e8820e424a9368192cbc95ba7
-      internalID: 1440058389
+      spriteID: 0dd6b65454dfb6645a7d96c8bc2586dc
+      internalID: -1520918609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_57
+      name: ABUELA_CAMINATA_33
       rect:
         serializedVersion: 2
         x: 9720
@@ -1334,14 +830,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 831e9641b8dc4da4294ca09f0674eb26
-      internalID: -678476799
+      spriteID: 967bc2c1cdef37541aea18f399fdb7ba
+      internalID: 2139749341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_58
+      name: ABUELA_CAMINATA_34
       rect:
         serializedVersion: 2
         x: 10800
@@ -1355,14 +851,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c50bab89a6a06994885f1c2ade42be6b
-      internalID: -1085182685
+      spriteID: 02e6aaaab60a8c343965356b1925d020
+      internalID: -1915418819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_59
+      name: ABUELA_CAMINATA_35
       rect:
         serializedVersion: 2
         x: 11880
@@ -1376,14 +872,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7ce252f4964bf1478e5cac4ceaeaa3e
-      internalID: -988258273
+      spriteID: b5fc7a20dd175a34eb4c3001fb5dd713
+      internalID: 1963622827
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_60
+      name: ABUELA_CAMINATA_36
       rect:
         serializedVersion: 2
         x: 0
@@ -1397,14 +893,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3e701575addecb4bbef9434d8814a48
-      internalID: -1023333023
+      spriteID: cc11392ae6062ab49aaf461a549f4cf4
+      internalID: 859170562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_61
+      name: ABUELA_CAMINATA_37
       rect:
         serializedVersion: 2
         x: 1080
@@ -1418,14 +914,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ec329229a4ed374dbe7b35aadb6a776
-      internalID: 1183586008
+      spriteID: 31f3aa1d171dee2418e886e59cea6bbc
+      internalID: -1994991670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_62
+      name: ABUELA_CAMINATA_38
       rect:
         serializedVersion: 2
         x: 2160
@@ -1439,14 +935,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffb1ea02d2b2f0e46a098b1a93f1616e
-      internalID: -1894705703
+      spriteID: 1ef2e0ab4950a504ebf4f171ef947524
+      internalID: -1939674591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_63
+      name: ABUELA_CAMINATA_39
       rect:
         serializedVersion: 2
         x: 3240
@@ -1460,14 +956,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da64d3ed59c48a448bb7490ef344e449
-      internalID: 477481403
+      spriteID: 41556079f650f0d4ab8c24b234170d47
+      internalID: 1824667794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_64
+      name: ABUELA_CAMINATA_40
       rect:
         serializedVersion: 2
         x: 4320
@@ -1481,14 +977,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72d16606853c91341b7dfefb743407e1
-      internalID: -1811724487
+      spriteID: c8ce5d076c1981e4abbc0e2425c4d195
+      internalID: 357261786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_65
+      name: ABUELA_CAMINATA_41
       rect:
         serializedVersion: 2
         x: 5400
@@ -1502,14 +998,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 224c2f6c902141c44993c9be3d2af795
-      internalID: -585725836
+      spriteID: e1fb55f6ceb07a442a0f823e4b85123f
+      internalID: 1749352308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_66
+      name: ABUELA_CAMINATA_42
       rect:
         serializedVersion: 2
         x: 6480
@@ -1523,14 +1019,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a412f3f45937d994daf8cbcff948c8f5
-      internalID: -1904406255
+      spriteID: 2e6ff74747440d448b30a8578513cd9b
+      internalID: 133544686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_67
+      name: ABUELA_CAMINATA_43
       rect:
         serializedVersion: 2
         x: 7560
@@ -1544,14 +1040,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4153bc4f505066b4da81a8e9d92b8c3a
-      internalID: 2146812221
+      spriteID: 6b625c213adde844eb71ac5ff1bafd1a
+      internalID: -1026146172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_68
+      name: ABUELA_CAMINATA_44
       rect:
         serializedVersion: 2
         x: 8640
@@ -1565,14 +1061,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d24582f621e50240b9ab0d9e83c3791
-      internalID: -1587899664
+      spriteID: 53cc4b0186220e048a39941f3fd45013
+      internalID: -1910083398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_69
+      name: ABUELA_CAMINATA_45
       rect:
         serializedVersion: 2
         x: 9720
@@ -1586,14 +1082,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 578ed09717e4f0d44a2ebe695df38d74
-      internalID: -2114269055
+      spriteID: 9c9f5176c7197494395dbfe48cbc4915
+      internalID: 892461094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_70
+      name: ABUELA_CAMINATA_46
       rect:
         serializedVersion: 2
         x: 10800
@@ -1607,14 +1103,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f4ffc99049d60146b6c2e9bc5978651
-      internalID: 136436601
+      spriteID: f5ff29ec2b74e08418d667fadaa411a0
+      internalID: -1757195823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_71
+      name: ABUELA_CAMINATA_47
       rect:
         serializedVersion: 2
         x: 11880
@@ -1628,14 +1124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 901cad6668b80074ab94833c1f86a39b
-      internalID: -2134354568
+      spriteID: b3ad499eb0c1062478b6cca72d9ec481
+      internalID: -1387196075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_72
+      name: ABUELA_CAMINATA_48
       rect:
         serializedVersion: 2
         x: 0
@@ -1649,14 +1145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 327fb0a06f780f34dbe76318a8fbe04d
-      internalID: 893407306
+      spriteID: a4941ec423cb02e4fbfef11f9ca09602
+      internalID: 808674058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_73
+      name: ABUELA_CAMINATA_49
       rect:
         serializedVersion: 2
         x: 1080
@@ -1670,14 +1166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd101bfb693027443bd95a80efe2b9ca
-      internalID: 2045019118
+      spriteID: ecf42c322d80dd646a307b28c0fc3506
+      internalID: 1932104006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_74
+      name: ABUELA_CAMINATA_50
       rect:
         serializedVersion: 2
         x: 2160
@@ -1691,14 +1187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6698ca69fb6492e4a9276055df89bcc5
-      internalID: 546000358
+      spriteID: 40cfef473635f7d4fa22dbed64fbfd5c
+      internalID: -579643086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_75
+      name: ABUELA_CAMINATA_51
       rect:
         serializedVersion: 2
         x: 3240
@@ -1712,14 +1208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e559c028ff2c0a41b811f773655798e
-      internalID: -1260920530
+      spriteID: 18766541bfb25f84ba4e56a6e73f628a
+      internalID: 1210631215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_76
+      name: ABUELA_CAMINATA_52
       rect:
         serializedVersion: 2
         x: 4320
@@ -1733,14 +1229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c7d674fb568e314c90e55ae57c625ab
-      internalID: 2108553756
+      spriteID: 4128dd3a8ece3ab4ea215b779b9f24e2
+      internalID: 1281180307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_77
+      name: ABUELA_CAMINATA_53
       rect:
         serializedVersion: 2
         x: 5400
@@ -1754,14 +1250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a549882c3f52f054ba9021e70d77fcc2
-      internalID: -1221539874
+      spriteID: 5e02327f94aa20d4ca65971f891b36ef
+      internalID: -244027380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_78
+      name: ABUELA_CAMINATA_54
       rect:
         serializedVersion: 2
         x: 6480
@@ -1775,14 +1271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 523e37e1a0dbbee44a05a21432679efd
-      internalID: 511523948
+      spriteID: 4cc150f7432e3874598466e3e0a3d24e
+      internalID: -413570081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_79
+      name: ABUELA_CAMINATA_55
       rect:
         serializedVersion: 2
         x: 7560
@@ -1796,14 +1292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ed958d9136212f4ba8d6cd5b91d2bfa
-      internalID: 593618112
+      spriteID: 56e3161da87721b49bb19b87bc15d77a
+      internalID: 636271573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_80
+      name: ABUELA_CAMINATA_56
       rect:
         serializedVersion: 2
         x: 8640
@@ -1817,14 +1313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 796ce05f6a8038644b7e6349e0a10a06
-      internalID: 1828499447
+      spriteID: feb9ccdd7c6e2a045a7a1c8fa6c5a242
+      internalID: 618693399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_81
+      name: ABUELA_CAMINATA_57
       rect:
         serializedVersion: 2
         x: 9720
@@ -1838,14 +1334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95ee8ac94e111374a8956b989028f375
-      internalID: -263217742
+      spriteID: dcb8649a69866e14c914bf1aa34763ab
+      internalID: 705217817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_82
+      name: ABUELA_CAMINATA_58
       rect:
         serializedVersion: 2
         x: 10800
@@ -1859,14 +1355,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98795dbd0e1a83445b09493b3007e89a
-      internalID: -47782057
+      spriteID: 61fc5da64f777294f9e961b986cd8a17
+      internalID: -1960599631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_83
+      name: ABUELA_CAMINATA_59
       rect:
         serializedVersion: 2
         x: 11880
@@ -1880,14 +1376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46ae8017112d823438b95861571155fd
-      internalID: -1710214609
+      spriteID: e6a75dca9d199484fb74c0a18ca2b6b9
+      internalID: -26240060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABUELA_QUIETITA_84
+      name: ABUELA_CAMINATA_60
       rect:
         serializedVersion: 2
         x: 0
@@ -1901,8 +1397,197 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5771aa83018cdb44f8a4f57835130075
-      internalID: 1659015977
+      spriteID: 5f6a9b1c5f65bd948a85ea60a06a3032
+      internalID: -143984410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABUELA_CAMINATA_61
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 1080
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.5, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8c9a7bcea1b114bac34b41f5e8111f
+      internalID: -1071514345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABUELA_CAMINATA_62
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 0
+        width: 1080
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.5, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87db22101f6a1684c86c1b24494f6eae
+      internalID: -1269610479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABUELA_CAMINATA_63
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 0
+        width: 1080
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.5, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86dc801a892ac24cb8e845cff9904a4
+      internalID: 1171485322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABUELA_CAMINATA_64
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 0
+        width: 1080
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.5, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f46063f046dc64b840e9911c60c23c
+      internalID: -424497113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABUELA_CAMINATA_65
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 0
+        width: 1080
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.5, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7b6466b50c077419f0030c389838a9
+      internalID: -55239181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABUELA_CAMINATA_66
+      rect:
+        serializedVersion: 2
+        x: 6480
+        y: 0
+        width: 1080
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.5, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b689524f897e847be560aa42141e0e
+      internalID: 278241839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABUELA_CAMINATA_67
+      rect:
+        serializedVersion: 2
+        x: 7560
+        y: 0
+        width: 1080
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.5, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cebeddf0b6cb2764d99be634f51b2863
+      internalID: 50118753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABUELA_CAMINATA_68
+      rect:
+        serializedVersion: 2
+        x: 8640
+        y: 0
+        width: 1080
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.5, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b1ec2f7e000d34082561f33efad6a2
+      internalID: 523226589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABUELA_CAMINATA_69
+      rect:
+        serializedVersion: 2
+        x: 9720
+        y: 0
+        width: 1080
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.5, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674126e32f58f0146a061f3288ca1767
+      internalID: 1833408122
       vertices: []
       indices: 
       edges: []
@@ -1910,7 +1595,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f39224de707cb2045a9a536b5b19cfd6
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -1918,91 +1603,76 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ABUELA_QUIETITA_0: 968129920
-      ABUELA_QUIETITA_1: -1073569990
-      ABUELA_QUIETITA_10: -665652677
-      ABUELA_QUIETITA_11: -323457431
-      ABUELA_QUIETITA_12: 1233299215
-      ABUELA_QUIETITA_13: -567525255
-      ABUELA_QUIETITA_14: 460374373
-      ABUELA_QUIETITA_15: -1289511442
-      ABUELA_QUIETITA_16: -884810411
-      ABUELA_QUIETITA_17: 746650631
-      ABUELA_QUIETITA_18: -1635581176
-      ABUELA_QUIETITA_19: 30154619
-      ABUELA_QUIETITA_2: -2047981884
-      ABUELA_QUIETITA_20: 343228940
-      ABUELA_QUIETITA_21: -1184594018
-      ABUELA_QUIETITA_22: -1868104335
-      ABUELA_QUIETITA_23: -241839064
-      ABUELA_QUIETITA_24: -437594081
-      ABUELA_QUIETITA_25: -40011867
-      ABUELA_QUIETITA_26: 2016456179
-      ABUELA_QUIETITA_27: 466189406
-      ABUELA_QUIETITA_28: -266606476
-      ABUELA_QUIETITA_29: -1249852313
-      ABUELA_QUIETITA_3: 310180211
-      ABUELA_QUIETITA_30: 1506501788
-      ABUELA_QUIETITA_31: 782018226
-      ABUELA_QUIETITA_32: 1089530553
-      ABUELA_QUIETITA_33: -170535600
-      ABUELA_QUIETITA_34: 273534610
-      ABUELA_QUIETITA_35: 1472378050
-      ABUELA_QUIETITA_36: 1924602781
-      ABUELA_QUIETITA_37: -1410332147
-      ABUELA_QUIETITA_38: 201689221
-      ABUELA_QUIETITA_39: 1850531566
-      ABUELA_QUIETITA_4: -1240978410
-      ABUELA_QUIETITA_40: 1220361809
-      ABUELA_QUIETITA_41: 122292461
-      ABUELA_QUIETITA_42: 1554737001
-      ABUELA_QUIETITA_43: 1346885304
-      ABUELA_QUIETITA_44: 1674711626
-      ABUELA_QUIETITA_45: 1926523116
-      ABUELA_QUIETITA_46: -450421079
-      ABUELA_QUIETITA_47: 1520137686
-      ABUELA_QUIETITA_48: 1525824026
-      ABUELA_QUIETITA_49: -1394287399
-      ABUELA_QUIETITA_5: 1424804445
-      ABUELA_QUIETITA_50: -1523322322
-      ABUELA_QUIETITA_51: -1239363382
-      ABUELA_QUIETITA_52: -28796404
-      ABUELA_QUIETITA_53: -1415342683
-      ABUELA_QUIETITA_54: 1348101706
-      ABUELA_QUIETITA_55: -896924237
-      ABUELA_QUIETITA_56: 1440058389
-      ABUELA_QUIETITA_57: -678476799
-      ABUELA_QUIETITA_58: -1085182685
-      ABUELA_QUIETITA_59: -988258273
-      ABUELA_QUIETITA_6: -1711514750
-      ABUELA_QUIETITA_60: -1023333023
-      ABUELA_QUIETITA_61: 1183586008
-      ABUELA_QUIETITA_62: -1894705703
-      ABUELA_QUIETITA_63: 477481403
-      ABUELA_QUIETITA_64: -1811724487
-      ABUELA_QUIETITA_65: -585725836
-      ABUELA_QUIETITA_66: -1904406255
-      ABUELA_QUIETITA_67: 2146812221
-      ABUELA_QUIETITA_68: -1587899664
-      ABUELA_QUIETITA_69: -2114269055
-      ABUELA_QUIETITA_7: 371880262
-      ABUELA_QUIETITA_70: 136436601
-      ABUELA_QUIETITA_71: -2134354568
-      ABUELA_QUIETITA_72: 893407306
-      ABUELA_QUIETITA_73: 2045019118
-      ABUELA_QUIETITA_74: 546000358
-      ABUELA_QUIETITA_75: -1260920530
-      ABUELA_QUIETITA_76: 2108553756
-      ABUELA_QUIETITA_77: -1221539874
-      ABUELA_QUIETITA_78: 511523948
-      ABUELA_QUIETITA_79: 593618112
-      ABUELA_QUIETITA_8: -425160154
-      ABUELA_QUIETITA_80: 1828499447
-      ABUELA_QUIETITA_81: -263217742
-      ABUELA_QUIETITA_82: -47782057
-      ABUELA_QUIETITA_83: -1710214609
-      ABUELA_QUIETITA_84: 1659015977
-      ABUELA_QUIETITA_9: 1518118019
+      ABUELA_CAMINATA_0: 1997171046
+      ABUELA_CAMINATA_1: 905325996
+      ABUELA_CAMINATA_10: -673743092
+      ABUELA_CAMINATA_11: -2108711789
+      ABUELA_CAMINATA_12: 2052777313
+      ABUELA_CAMINATA_13: -1876878023
+      ABUELA_CAMINATA_14: -809515480
+      ABUELA_CAMINATA_15: -1184867632
+      ABUELA_CAMINATA_16: 212864443
+      ABUELA_CAMINATA_17: -1342849292
+      ABUELA_CAMINATA_18: -216550991
+      ABUELA_CAMINATA_19: -227276421
+      ABUELA_CAMINATA_2: 150420973
+      ABUELA_CAMINATA_20: -718512343
+      ABUELA_CAMINATA_21: -1124091494
+      ABUELA_CAMINATA_22: -1881551021
+      ABUELA_CAMINATA_23: 141554689
+      ABUELA_CAMINATA_24: 1914927553
+      ABUELA_CAMINATA_25: -1738710318
+      ABUELA_CAMINATA_26: -880102625
+      ABUELA_CAMINATA_27: -239035896
+      ABUELA_CAMINATA_28: -1802123012
+      ABUELA_CAMINATA_29: -1276895494
+      ABUELA_CAMINATA_3: -1972415733
+      ABUELA_CAMINATA_30: 1966685630
+      ABUELA_CAMINATA_31: 1055781631
+      ABUELA_CAMINATA_32: -1520918609
+      ABUELA_CAMINATA_33: 2139749341
+      ABUELA_CAMINATA_34: -1915418819
+      ABUELA_CAMINATA_35: 1963622827
+      ABUELA_CAMINATA_36: 859170562
+      ABUELA_CAMINATA_37: -1994991670
+      ABUELA_CAMINATA_38: -1939674591
+      ABUELA_CAMINATA_39: 1824667794
+      ABUELA_CAMINATA_4: -833370941
+      ABUELA_CAMINATA_40: 357261786
+      ABUELA_CAMINATA_41: 1749352308
+      ABUELA_CAMINATA_42: 133544686
+      ABUELA_CAMINATA_43: -1026146172
+      ABUELA_CAMINATA_44: -1910083398
+      ABUELA_CAMINATA_45: 892461094
+      ABUELA_CAMINATA_46: -1757195823
+      ABUELA_CAMINATA_47: -1387196075
+      ABUELA_CAMINATA_48: 808674058
+      ABUELA_CAMINATA_49: 1932104006
+      ABUELA_CAMINATA_5: 303342471
+      ABUELA_CAMINATA_50: -579643086
+      ABUELA_CAMINATA_51: 1210631215
+      ABUELA_CAMINATA_52: 1281180307
+      ABUELA_CAMINATA_53: -244027380
+      ABUELA_CAMINATA_54: -413570081
+      ABUELA_CAMINATA_55: 636271573
+      ABUELA_CAMINATA_56: 618693399
+      ABUELA_CAMINATA_57: 705217817
+      ABUELA_CAMINATA_58: -1960599631
+      ABUELA_CAMINATA_59: -26240060
+      ABUELA_CAMINATA_6: 1513704423
+      ABUELA_CAMINATA_60: -143984410
+      ABUELA_CAMINATA_61: -1071514345
+      ABUELA_CAMINATA_62: -1269610479
+      ABUELA_CAMINATA_63: 1171485322
+      ABUELA_CAMINATA_64: -424497113
+      ABUELA_CAMINATA_65: -55239181
+      ABUELA_CAMINATA_66: 278241839
+      ABUELA_CAMINATA_67: 50118753
+      ABUELA_CAMINATA_68: 523226589
+      ABUELA_CAMINATA_69: 1833408122
+      ABUELA_CAMINATA_7: -1701246518
+      ABUELA_CAMINATA_8: -890711035
+      ABUELA_CAMINATA_9: 1322190270
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

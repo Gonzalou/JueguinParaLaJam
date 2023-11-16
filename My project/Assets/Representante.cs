@@ -80,7 +80,10 @@ public class Representante : MonoBehaviour
                 {
                     rb2d.velocity += (new Vector2(myTarget.transform.position.x, myTarget.transform.position.y) - new Vector2(transform.position.x, transform.position.y)).normalized * speed;
                 }
-
+                else
+                {
+                    rb2d.velocity = Vector2.zero;
+                }
             }
 
 
