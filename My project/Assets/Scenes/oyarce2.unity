@@ -838,7 +838,6 @@ GameObject:
   - component: {fileID: 40102688}
   - component: {fileID: 40102687}
   - component: {fileID: 40102686}
-  - component: {fileID: 40102685}
   m_Layer: 5
   m_Name: Habilidad 3
   m_TagString: Untagged
@@ -866,18 +865,6 @@ RectTransform:
   m_AnchoredPosition: {x: 845, y: 70}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &40102685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40102683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a3e2251ff15b344b2c9c6228925cfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &40102686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -890,6 +877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11d6a0f88c834a34592d6e379ad9b5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numeroHabilidad: 3
   cooldown: 5
 --- !u!114 &40102687
 MonoBehaviour:
@@ -2137,7 +2125,6 @@ GameObject:
   - component: {fileID: 104938327}
   - component: {fileID: 104938326}
   - component: {fileID: 104938325}
-  - component: {fileID: 104938324}
   m_Layer: 5
   m_Name: Habilidad 5
   m_TagString: Untagged
@@ -2165,18 +2152,6 @@ RectTransform:
   m_AnchoredPosition: {x: 845, y: -75}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &104938324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104938322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a3e2251ff15b344b2c9c6228925cfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &104938325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2189,6 +2164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11d6a0f88c834a34592d6e379ad9b5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numeroHabilidad: 5
   cooldown: 5
 --- !u!114 &104938326
 MonoBehaviour:
@@ -6523,6 +6499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11d6a0f88c834a34592d6e379ad9b5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numeroHabilidad: 1
   cooldown: 5
 --- !u!114 &419987774
 MonoBehaviour:
@@ -6827,7 +6804,6 @@ GameObject:
   - component: {fileID: 442715476}
   - component: {fileID: 442715475}
   - component: {fileID: 442715474}
-  - component: {fileID: 442715473}
   m_Layer: 5
   m_Name: Habilidad 2
   m_TagString: Untagged
@@ -6855,18 +6831,6 @@ RectTransform:
   m_AnchoredPosition: {x: 845, y: 142}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &442715473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 442715471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a3e2251ff15b344b2c9c6228925cfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &442715474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6879,6 +6843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11d6a0f88c834a34592d6e379ad9b5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numeroHabilidad: 2
   cooldown: 5
 --- !u!114 &442715475
 MonoBehaviour:
@@ -12542,7 +12507,6 @@ GameObject:
   - component: {fileID: 776586173}
   - component: {fileID: 776586172}
   - component: {fileID: 776586171}
-  - component: {fileID: 776586170}
   m_Layer: 5
   m_Name: Habilidad 7
   m_TagString: Untagged
@@ -12570,18 +12534,6 @@ RectTransform:
   m_AnchoredPosition: {x: 845, y: -221}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &776586170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776586168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a3e2251ff15b344b2c9c6228925cfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &776586171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12594,6 +12546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11d6a0f88c834a34592d6e379ad9b5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numeroHabilidad: 7
   cooldown: 5
 --- !u!114 &776586172
 MonoBehaviour:
@@ -16706,7 +16659,6 @@ GameObject:
   - component: {fileID: 1087270591}
   - component: {fileID: 1087270590}
   - component: {fileID: 1087270589}
-  - component: {fileID: 1087270588}
   m_Layer: 5
   m_Name: Habilidad 4
   m_TagString: Untagged
@@ -16734,18 +16686,6 @@ RectTransform:
   m_AnchoredPosition: {x: 845, y: -3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1087270588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1087270586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a3e2251ff15b344b2c9c6228925cfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1087270589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16758,6 +16698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11d6a0f88c834a34592d6e379ad9b5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numeroHabilidad: 4
   cooldown: 5
 --- !u!114 &1087270590
 MonoBehaviour:
@@ -42860,7 +42801,6 @@ GameObject:
   - component: {fileID: 1995019002}
   - component: {fileID: 1995019001}
   - component: {fileID: 1995019000}
-  - component: {fileID: 1995018999}
   m_Layer: 5
   m_Name: Habilidad 6
   m_TagString: Untagged
@@ -42888,18 +42828,6 @@ RectTransform:
   m_AnchoredPosition: {x: 845, y: -148}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1995018999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995018997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a3e2251ff15b344b2c9c6228925cfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1995019000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42912,6 +42840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11d6a0f88c834a34592d6e379ad9b5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numeroHabilidad: 6
   cooldown: 5
 --- !u!114 &1995019001
 MonoBehaviour:
