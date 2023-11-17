@@ -1,9 +1,6 @@
 using System.Linq;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.UIElements;
-using static UnityEngine.GraphicsBuffer;
+using UnityEngine.UI;
 
 public class Representante : MonoBehaviour
 {
@@ -36,12 +33,16 @@ public class Representante : MonoBehaviour
 
     public float maxInfluence;
     public float minInfluence;
+
+    public bool habilidadOn=false;
+    public Button myButton;
+    
     // Start is called before the first frame update
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
         myInfluence = Random.Range(minInfluence, maxInfluence);
-
+        UnlockSkill();
     }
     void Start()
     {
@@ -74,11 +75,13 @@ public class Representante : MonoBehaviour
             {
 
                 // Aplica el movimiento a la entidad
-
+                habilidadOn = true;
+                
+                
 
                 if (Vector3.Distance(transform.position, lider.transform.position) >= separacionMinimaDelTarget)
                 {
-                    rb2d.velocity += (new Vector2(myTarget.transform.position.x, myTarget.transform.position.y) - new Vector2(transform.position.x, transform.position.y)).normalized * speed;
+                    rb2d.velocity += (new Vector2(myTarget.transform.position.x, myTarget.transform.position.y) - new Vector2(transform.position.x, transform.position.y)).normalized * speed*Time.deltaTime;
                 }
                 else
                 {
@@ -117,7 +120,17 @@ public class Representante : MonoBehaviour
 
             }
         }
+        else
+        {
+            habilidadOn = false;    
 
+        }
+
+    }
+
+    private void LateUpdate()
+    {
+        myButton.interactable = habilidadOn;
     }
 
     public void BuscarTarget()
@@ -167,6 +180,10 @@ public class Representante : MonoBehaviour
         );
     }
 
+    public void UnlockSkill()
+    {
+      myButton= GameObject.Find("Habilidad "+myIndex).GetComponent<Button>();
+    }
 
 
     private void OnTriggerEnter2D(Collider2D collision)

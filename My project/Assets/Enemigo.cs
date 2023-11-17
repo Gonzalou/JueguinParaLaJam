@@ -19,13 +19,17 @@ public class Enemigo : MonoBehaviour
     public AudioClip[] clips;
     public float tiempomuerto;
     public int InitialLife;
+    public bool stuned;
+    public float tiempoStuneado;
 
+    public bool seHizoGay;
+    public Enemigo gayTarget;
 
     private SpriteRenderer spr;
     // Start is called before the first frame update
     void Start()
     {
-        spr= GetComponent<SpriteRenderer>();
+        spr = GetComponent<SpriteRenderer>();
         InitialLife = life;
         speed = Random.Range(5, 8);
         rb2d = GetComponent<Rigidbody2D>();
@@ -38,7 +42,7 @@ public class Enemigo : MonoBehaviour
         {
             spr.flipX = true;
         }
-        else { spr.flipX= false; }
+        else { spr.flipX = false; }
 
 
 
@@ -53,50 +57,82 @@ public class Enemigo : MonoBehaviour
         }
 
         if (tiempomuerto > 7) { life = InitialLife; tiempomuerto = 0; }
-        if (target != null && target.life > 0)  // pasa si está vivo y tiene objetivo
+
+
+        if (tiempoStuneado > 0)
         {
-            if (Vector3.Distance(target.transform.position, transform.position) > rangoDeAtaque)
+            tiempoStuneado -= Time.deltaTime;
+        }
+
+        else
+        {
+
+            if (target != null && target.life > 0)  // pasa si está vivo y tiene objetivo
             {
-                ObtenerDireccion();
+                if (Vector3.Distance(target.transform.position, transform.position) > rangoDeAtaque)
+                {
+                    ObtenerDireccion();
 
-                // Calcular la nueva velocidad limitada
-                Vector2 limitedVelocity = myDir * speed;
+                    // Calcular la nueva velocidad limitada
+                    Vector2 limitedVelocity = myDir * speed;
 
-                // Aplicar la nueva velocidad
-                rb2d.velocity = limitedVelocity;
+                    // Aplicar la nueva velocidad
+                    rb2d.velocity = limitedVelocity;
 
-                Vector2 repulsionDirection = (transform.position - target.transform.position).normalized;
-                rb2d.AddForce(repulsionDirection * repulsion);
+                    Vector2 repulsionDirection = (transform.position - target.transform.position).normalized;
+                    rb2d.AddForce(repulsionDirection * repulsion);
+                }
+                else
+                {
+                    // Calcular la dirección de la repulsión
+                    Vector2 repulsionDirection = (transform.position - target.transform.position).normalized;
+
+                    // Aplicar la fuerza de repulsión
+                    rb2d.AddForce(repulsionDirection * repulsion);
+                }
             }
             else
             {
-                // Calcular la dirección de la repulsión
-                Vector2 repulsionDirection = (transform.position - target.transform.position).normalized;
 
-                // Aplicar la fuerza de repulsión
-                rb2d.AddForce(repulsionDirection * repulsion);
-            }
-        }
-        else
-        {
-            // Después de eliminar al objetivo, detener la aplicación de la fuerza de repulsión
-            rb2d.velocity = new Vector2(6f, 6f);
 
-            // Opcional: Ajustar la velocidad a un valor específico si es necesario
-            // rb2d.velocity = new Vector2(0f, 0f);
-
-            Collider2D[] gente = Physics2D.OverlapCircleAll(transform.position, DetectionRange, 1 << 8);
-            if (gente.Any())
-            {
-                float distanciaMinima = float.MaxValue;
-                for (int i = 0; i < gente.Length; i++)
+                // Opcional: Ajustar la velocidad a un valor específico si es necesario
+                // rb2d.velocity = new Vector2(0f, 0f);
+                if (!seHizoGay)
                 {
-                    float distancia = Vector3.Distance(gente[i].transform.position, transform.position);
 
-                    if (distancia < distanciaMinima)
+                    Collider2D[] gente = Physics2D.OverlapCircleAll(transform.position, DetectionRange, 1 << 8);
+                    if (gente.Any())
                     {
-                        target = gente[i].GetComponent<Dano>();
-                        distanciaMinima = distancia;
+                        float distanciaMinima = float.MaxValue;
+                        for (int i = 0; i < gente.Length; i++)
+                        {
+                            float distancia = Vector3.Distance(gente[i].transform.position, transform.position);
+
+                            if (distancia < distanciaMinima)
+                            {
+                                target = gente[i].GetComponent<Dano>();
+                                distanciaMinima = distancia;
+                            }
+                        }
+                    }
+
+                }
+                else
+                {
+                    Collider2D[] gente = Physics2D.OverlapCircleAll(transform.position, DetectionRange, 1 << 12);
+                    if (gente.Any())
+                    {
+                        float distanciaMinima = float.MaxValue;
+                        for (int i = 0; i < gente.Length; i++)
+                        {
+                            float distancia = Vector3.Distance(gente[i].transform.position, transform.position);
+
+                            if (distancia < distanciaMinima)
+                            {
+                                gayTarget = gente[i].GetComponent<Enemigo>();
+                                distanciaMinima = distancia;
+                            }
+                        }
                     }
                 }
             }
@@ -135,6 +171,13 @@ public class Enemigo : MonoBehaviour
 
 
         }
+        if (collision.gameObject.layer == 12 && seHizoGay)
+        {
+            anim.SetBool("Atacando", true);
+           Enemigo e= collision.gameObject.GetComponent<Enemigo>();
+            e.MeHacenDano(3);
+            e.tiempoStuneado += 0.5f;
+        }
     }
     // Método para limitar la velocidad del Rigidbody2D
     private void LimitarVelocidad()
@@ -148,7 +191,7 @@ public class Enemigo : MonoBehaviour
         );
     }
 
-   
+
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.layer == 8)
@@ -172,6 +215,10 @@ public class Enemigo : MonoBehaviour
 
     public void ObtenerDireccion()
     {
+        if (seHizoGay)
+        {
+            myDir = (new Vector2(gayTarget.transform.position.x, gayTarget.transform.position.y) - new Vector2(transform.position.x, transform.position.y)).normalized;
+        }
         myDir = (new Vector2(target.transform.position.x, target.transform.position.y) - new Vector2(transform.position.x, transform.position.y)).normalized;
     }
 }

@@ -179,7 +179,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3406407241219424759}
   - component: {fileID: 7949778959047015141}
-  - component: {fileID: 1623050211990576939}
   - component: {fileID: 5828869961571260562}
   - component: {fileID: 3874535134743949394}
   m_Layer: 0
@@ -248,7 +247,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 968129920, guid: cc58580dcbe8302408b8710d883bedb8, type: 3}
-  m_Color: {r: 1, g: 0.76230633, b: 0.740566, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -258,20 +257,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1623050211990576939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7989270573326773214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6b06c215d557ae4d81c07530b7246b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rdr: {fileID: 0}
-  layerCount: 0
 --- !u!95 &5828869961571260562
 Animator:
   serializedVersion: 5
@@ -5206,6 +5191,8 @@ GameObject:
   - component: {fileID: 4736009454978747311}
   - component: {fileID: 6580592821237234498}
   - component: {fileID: 6977036444011898444}
+  - component: {fileID: 4851969680888421959}
+  - component: {fileID: 3765465942055400579}
   m_Layer: 9
   m_Name: ABUELA
   m_TagString: Untagged
@@ -5243,7 +5230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidadMaxima: 8.32
   separacionMinimaDelTarget: 10.82
-  speed: 10.46
+  speed: 16.05
   rb2d: {fileID: 0}
   lider: {fileID: 0}
   mousePosition: {fileID: 0}
@@ -5264,8 +5251,10 @@ MonoBehaviour:
   sumoInfluencia: 0
   myInfluence: 0
   myTarget: {fileID: 0}
-  maxInfluence: 2
-  minInfluence: 1
+  maxInfluence: 10
+  minInfluence: 3
+  habilidadOn: 0
+  myButton: {fileID: 0}
 --- !u!61 &6580592821237234498
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5338,3 +5327,47 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &4851969680888421959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9209300034097050378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07562382219f32246abedee1f529f30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desaparecido: {fileID: 4415617464082126630, guid: c8ee7f90367072c4392900c791c7a8d6, type: 3}
+  cantidadDeDesaparecidos: 5
+  randoDeAparicion: 0
+  buttonNum: 0
+  buttons: []
+  repres: []
+  rangoDeStun: 0
+  TiempoDeStun: 0
+  panfletosParticle: {fileID: 0}
+  fuerzaDeEmpuje: 0
+--- !u!114 &3765465942055400579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9209300034097050378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07562382219f32246abedee1f529f30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desaparecido: {fileID: 0}
+  cantidadDeDesaparecidos: 0
+  randoDeAparicion: 0
+  buttonNum: 0
+  buttons: []
+  repres: []
+  rangoDeStun: 0
+  TiempoDeStun: 0
+  panfletosParticle: {fileID: 0}
+  fuerzaDeEmpuje: 0

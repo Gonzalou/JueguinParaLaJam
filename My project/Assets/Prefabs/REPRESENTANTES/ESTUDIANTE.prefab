@@ -163,17 +163,19 @@ MonoBehaviour:
   spr: {fileID: 8727312935731532364}
   colors:
   - {r: 1, g: 1, b: 1, a: 1}
-  - {r: 1, g: 0, b: 0.009601116, a: 1}
-  - {r: 0, g: 0.5660378, b: 0.20643726, a: 1}
+  - {r: 0, g: 0.5647059, b: 0.20784315, a: 1}
+  - {r: 0.86274517, g: 0.18431373, b: 1, a: 1}
   - {r: 1, g: 0.95084655, b: 0, a: 1}
   - {r: 0.12904951, g: 0.58557713, b: 0.9433962, a: 1}
-  - {r: 0.4923076, g: 0.1273585, b: 1, a: 1}
-  - {r: 0.8614066, g: 0.18396229, b: 1, a: 1}
+  - {r: 1, g: 0, b: 0.08203983, a: 1}
+  - {r: 0.31769323, g: 0, b: 0.6886792, a: 1}
   sumoInfluencia: 0
   myInfluence: 0
   myTarget: {fileID: 0}
-  maxInfluence: 2
-  minInfluence: 1
+  maxInfluence: 10
+  minInfluence: 3
+  habilidadOn: 0
+  myButton: {fileID: 0}
 --- !u!61 &8478389671001263732
 BoxCollider2D:
   m_ObjectHideFlags: 0

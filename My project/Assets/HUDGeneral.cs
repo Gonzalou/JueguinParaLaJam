@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class HUDGeneral : MonoBehaviour
 {
+    public Button[] listaBotones;
     public GameObject LoseHud;
     public GameObject WinHud;
     public TextMeshProUGUI totalpipol;
@@ -14,10 +15,16 @@ public class HUDGeneral : MonoBehaviour
     public LogicaBarra laBarra;
     public Lider ld;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         WinHud.SetActive(false);
         LoseHud.SetActive(false);
+        List<Skills> repres = new List<Skills>();
+        repres.AddRange( GameObject.FindObjectsOfType<Skills>());
+        foreach(Skills rep in repres )
+        {
+            rep.buttons = listaBotones;
+        }
     }
 
     // Update is called once per frame
@@ -34,10 +41,10 @@ public class HUDGeneral : MonoBehaviour
                 LoseHud.SetActive(true);
             }
             WinHud.SetActive(true);
-            totalpipol.text = (pp.pipolCount+pp.repres.Length+1) + " personas se presentaron frente a la Casa de Gobierno!";
+            totalpipol.text = (pp.pipolCount + pp.repres.Length + 1) + " personas se presentaron frente a la Casa de Gobierno!";
         }
 
-        if(laBarra.valorActual<=0)
+        if (laBarra.valorActual <= 0)
         {
             LoseHud.SetActive(true);
             Time.timeScale = 0.5f;
@@ -51,5 +58,5 @@ public class HUDGeneral : MonoBehaviour
     {
         SceneManager.LoadScene("Credits");
     }
-   
+
 }

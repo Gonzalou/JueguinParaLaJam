@@ -12,12 +12,13 @@ public class representanteview : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb2d = gameObject.GetComponentInParent<Rigidbody2D>();
+        anim.SetBool("walk", false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (rb2d.velocity.magnitude >= 0.5f)
+        if (rb2d.velocity.magnitude >0)
         {
             anim.SetBool("walk", false);
         }

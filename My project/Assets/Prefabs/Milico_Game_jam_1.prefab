@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   repulsion: 1
   rb2d: {fileID: 0}
-  speed: 4
+  speed: 9
   target: {fileID: 0}
   life: 8
   rangoDeAtaque: 1
@@ -115,6 +115,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2cfcaf34b30b4b245a81db094001c56c, type: 3}
   tiempomuerto: 0
   InitialLife: 0
+  stuned: 0
+  tiempoStuneado: 0
+  seHizoGay: 0
+  gayTarget: {fileID: 0}
 --- !u!61 &2224503115072386820
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -194,7 +198,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1.5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}

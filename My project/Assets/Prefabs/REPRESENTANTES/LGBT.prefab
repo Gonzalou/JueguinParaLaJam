@@ -4984,6 +4984,7 @@ GameObject:
   - component: {fileID: 3520270598499424779}
   - component: {fileID: 1711112145742555772}
   - component: {fileID: 3172570125103033415}
+  - component: {fileID: 7111936958127040330}
   m_Layer: 9
   m_Name: LGBT
   m_TagString: Untagged
@@ -5026,24 +5027,26 @@ MonoBehaviour:
   lider: {fileID: 0}
   mousePosition: {fileID: 0}
   highLight: {fileID: 318960217263978286}
-  myIndex: 7
+  myIndex: 3
   canMove: 1
   agarrado: 0
   MouseSOBREMI: 0
   spr: {fileID: 7472686983066531405}
   colors:
   - {r: 1, g: 1, b: 1, a: 1}
-  - {r: 1, g: 0, b: 0.009601116, a: 1}
-  - {r: 0, g: 0.5660378, b: 0.20643726, a: 1}
+  - {r: 0, g: 0.5647059, b: 0.20784315, a: 1}
+  - {r: 0.86274517, g: 0.18431373, b: 1, a: 1}
   - {r: 1, g: 0.95084655, b: 0, a: 1}
   - {r: 0.12904951, g: 0.58557713, b: 0.9433962, a: 1}
-  - {r: 0.4923076, g: 0.1273585, b: 1, a: 1}
-  - {r: 0.8614066, g: 0.18396229, b: 1, a: 1}
+  - {r: 1, g: 0, b: 0.08203983, a: 1}
+  - {r: 0.31769323, g: 0, b: 0.6886792, a: 1}
   sumoInfluencia: 0
   myInfluence: 0
   myTarget: {fileID: 0}
-  maxInfluence: 2
-  minInfluence: 1
+  maxInfluence: 10
+  minInfluence: 3
+  habilidadOn: 0
+  myButton: {fileID: 0}
 --- !u!61 &3520270598499424779
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5137,6 +5140,28 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7111936958127040330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5451040433308524337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07562382219f32246abedee1f529f30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desaparecido: {fileID: 5818007603067217957, guid: 26e709ad8178d4d4a8e513a9c6cd00a9, type: 3}
+  cantidadDeDesaparecidos: 0
+  randoDeAparicion: 0
+  buttonNum: 0
+  buttons: []
+  repres: []
+  rangoDeStun: 0
+  TiempoDeStun: 0
+  panfletosParticle: {fileID: 0}
+  fuerzaDeEmpuje: 0
 --- !u!1 &5990244421311908659
 GameObject:
   m_ObjectHideFlags: 0

@@ -40,6 +40,7 @@ public class BotonHabilidad : MonoBehaviour
     {
         if (estaDisponible)
         {
+
             Debug.Log("Habilidad " + numeroHabilidad + " activada wachin");
             estaDisponible = false;
         }
