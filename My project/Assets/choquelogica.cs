@@ -9,6 +9,7 @@ public class choquelogica : MonoBehaviour
     public float maxRadius;
     public float speed;
     public float startWidth;
+    public float force;
 
     private LineRenderer lineRenderer;
 
@@ -25,7 +26,23 @@ public class choquelogica : MonoBehaviour
         {
             currentRadius += Time.deltaTime * speed;
             Draw(currentRadius);
+            Damage(currentRadius);
             yield return null;
+        }
+    }
+    private void Damage(float currentRadius)
+    {
+        Collider[] hittingObjects = Physics.OverlapSphere(transform.position, currentRadius);
+        
+        for(int i = 0; i < hittingObjects.Length; i++)
+        {
+            Rigidbody rb= hittingObjects[i].GetComponent<Rigidbody>();
+
+            if (!rb)
+                continue;
+
+            Vector3 direction = (hittingObjects[i].transform.position - transform.position).normalized;
+            rb.AddForce(direction*force,ForceMode.Impulse);
         }
     }
     private void Draw(float currentRadius)
