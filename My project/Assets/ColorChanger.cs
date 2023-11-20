@@ -6,12 +6,14 @@ public class ColorChanger : MonoBehaviour
     public multitudNPC myNPC;
     public Material material; // Asigna tu material con el shader a través del Inspector
     public SpriteRenderer spr;
+    public Animator anim;
     public Color[] coloresDePelo;
     public Color[] coloresDeRopa;
     public Color[] coloresDePiel;
 
     private void Awake()
     {
+        anim= GetComponent<Animator>();
         material = Instantiate(material);       
 
 

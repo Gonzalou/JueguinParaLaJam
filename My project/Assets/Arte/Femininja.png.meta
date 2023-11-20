@@ -1,0 +1,1020 @@
+fileFormatVersion: 2
+guid: d823441036806a24bb1b26e7d6a88d92
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 350
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Femininja_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4925.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb24cdf1e9e0cd54eb58da63af676cf1
+      internalID: -1460536386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_1
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 4925.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f20e45d9536e64eb2152ecf8e59c15
+      internalID: -54537431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_2
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 4925.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b291e2c9b5840f41aa90641f4c1dd65
+      internalID: 381474289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_3
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 4925.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b494e5a61c24c49a813493380fc321
+      internalID: -781970319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_4
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 4925.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f5cb3529db062459ddbd9f8a2b1f99
+      internalID: -1603129792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_5
+      rect:
+        serializedVersion: 2
+        x: 7040
+        y: 4925.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd54e904bd3222245ac92768969ca857
+      internalID: 1363558591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_6
+      rect:
+        serializedVersion: 2
+        x: 8448
+        y: 4925.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86112a23a75b734ca8e656e2f8dd851
+      internalID: -1522151839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_7
+      rect:
+        serializedVersion: 2
+        x: 9856
+        y: 4925.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823d2b1f8e5af5e48a4a786d84f4a45f
+      internalID: 1923872352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3694.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c14662417bd07d40984a86c04ba1dbd
+      internalID: 2068958665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_9
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 3694.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d592b27375e344cbf85440caa91083
+      internalID: 1469494840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_10
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 3694.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65893b114e418834e9a65d5548ae503d
+      internalID: 1730718328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_11
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 3694.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeda36109e411004086f0e1dc843b50a
+      internalID: 1425053531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_12
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 3694.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d9889d2970bcf43b76b6417fbc448f
+      internalID: -1571199433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_13
+      rect:
+        serializedVersion: 2
+        x: 7040
+        y: 3694.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6f6f24619d38248be45e6d7ba9dea2
+      internalID: -937790461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_14
+      rect:
+        serializedVersion: 2
+        x: 8448
+        y: 3694.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173e623c251d8e34e82df93fb4e0853b
+      internalID: 229552898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_15
+      rect:
+        serializedVersion: 2
+        x: 9856
+        y: 3694.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f792c7b1f4d55347a4d5aff3e695e44
+      internalID: -2046110207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2463.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41eeb5484b759dc42b19d4fb3d87953e
+      internalID: 1733213577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_17
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2463.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2233f747e81982941b50a7bbf45ad6da
+      internalID: 1266187998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_18
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 2463.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd36d71161ccb1488935d587b103455
+      internalID: 73212563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_19
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 2463.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25fe9a5f16bc004b8f3abd12da39c80
+      internalID: 1381043342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_20
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 2463.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008fbf24898b24b42bb63cfbf41920e1
+      internalID: -956170547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_21
+      rect:
+        serializedVersion: 2
+        x: 7040
+        y: 2463.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2fe241858a03ce45bc90b5475b6028d
+      internalID: 1403930529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_22
+      rect:
+        serializedVersion: 2
+        x: 8448
+        y: 2463.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db4659da7e2bd0438c0490a0ee1b3d0
+      internalID: 1206346808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_23
+      rect:
+        serializedVersion: 2
+        x: 9856
+        y: 2463.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f326a13ada5cd4899133fd9b0b0631
+      internalID: 1904700196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1232.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f9a44085f8f854491cfade2e402d8f
+      internalID: 101613486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_25
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1232.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380f9f5ca72fc0144af28bd957875c1f
+      internalID: -2067337972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_26
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 1232.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e802b1ef62de6944a039a214e5eddc8
+      internalID: 1432899022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_27
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 1232.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8cb08d634931ca45bf7df0c42ff8b37
+      internalID: -370303025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_28
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 1232.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f26ca87238154d4b848bcb2d8d8b7f9
+      internalID: 1351450470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_29
+      rect:
+        serializedVersion: 2
+        x: 7040
+        y: 1232.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d05e7821f48f743b4b31f83ae7271c
+      internalID: -483135099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_30
+      rect:
+        serializedVersion: 2
+        x: 8448
+        y: 1232.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fc1ccea46c36d449b77f976bc3049a
+      internalID: -593654429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_31
+      rect:
+        serializedVersion: 2
+        x: 9856
+        y: 1232.6
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746bf3d56b20d804ca5701f9c5638d4e
+      internalID: -1704347523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5999756
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144cd8beecbf88f4e907a2828c1ce426
+      internalID: -1544055123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_33
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1.5999756
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adff176de6862a144a03db848fecf18a
+      internalID: -96927184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_34
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 1.5999756
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5829f6f618b129144a3c620e0de913f7
+      internalID: -776033084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_35
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 1.5999756
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09443abd08cf25b4d89bc12973d2988d
+      internalID: -634145330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_36
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 1.5999756
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a949c265fbfec4785741664c923007
+      internalID: -728888721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_37
+      rect:
+        serializedVersion: 2
+        x: 7040
+        y: 1.5999756
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f5ba964e26e1f489177b4c6d106dcf
+      internalID: -1656740584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_38
+      rect:
+        serializedVersion: 2
+        x: 8448
+        y: 1.5999756
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d24118761560cd42a089fa006de42c5
+      internalID: 1534182468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Femininja_39
+      rect:
+        serializedVersion: 2
+        x: 9856
+        y: 1.5999756
+        width: 1408
+        height: 1231.4
+      alignment: 9
+      pivot: {x: 0.3321578, y: 0.0498238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba983e03a52844b4a97c574363e77413
+      internalID: -1167555495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9c784547a821dcf46b81e2596d078a8c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Femininja_0: -1460536386
+      Femininja_1: -54537431
+      Femininja_10: 1730718328
+      Femininja_11: 1425053531
+      Femininja_12: -1571199433
+      Femininja_13: -937790461
+      Femininja_14: 229552898
+      Femininja_15: -2046110207
+      Femininja_16: 1733213577
+      Femininja_17: 1266187998
+      Femininja_18: 73212563
+      Femininja_19: 1381043342
+      Femininja_2: 381474289
+      Femininja_20: -956170547
+      Femininja_21: 1403930529
+      Femininja_22: 1206346808
+      Femininja_23: 1904700196
+      Femininja_24: 101613486
+      Femininja_25: -2067337972
+      Femininja_26: 1432899022
+      Femininja_27: -370303025
+      Femininja_28: 1351450470
+      Femininja_29: -483135099
+      Femininja_3: -781970319
+      Femininja_30: -593654429
+      Femininja_31: -1704347523
+      Femininja_32: -1544055123
+      Femininja_33: -96927184
+      Femininja_34: -776033084
+      Femininja_35: -634145330
+      Femininja_36: -728888721
+      Femininja_37: -1656740584
+      Femininja_38: 1534182468
+      Femininja_39: -1167555495
+      Femininja_4: -1603129792
+      Femininja_5: 1363558591
+      Femininja_6: -1522151839
+      Femininja_7: 1923872352
+      Femininja_8: 2068958665
+      Femininja_9: 1469494840
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

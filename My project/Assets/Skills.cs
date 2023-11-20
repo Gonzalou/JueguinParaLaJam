@@ -180,7 +180,7 @@ public class Skills : MonoBehaviour
                     Enemigo e = enemigos[0].GetComponent<Enemigo>();
                     e.gameObject.layer = 22;
                     e.seHizoGay = true;
-                   Instantiate(desaparecido,e.transform);
+                   Instantiate(desaparecido,e.transform); //en el lgbt cambio el prefab desaparecido por el de la bandera
                    
                 }
             }

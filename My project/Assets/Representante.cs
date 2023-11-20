@@ -22,8 +22,7 @@ public class Representante : MonoBehaviour
     public bool MouseSOBREMI;
 
 
-    public SpriteRenderer spr;
-    public Color[] colors;
+    public SpriteRenderer spr;  
 
 
     public bool sumoInfluencia;
@@ -45,8 +44,7 @@ public class Representante : MonoBehaviour
         UnlockSkill();
     }
     void Start()
-    {
-        spr.color = colors[myIndex - 1];
+    {        
         lider = GameObject.Find("Lider").GetComponent<Lider>();
         mousePosition = GameObject.Find("Puntero").GetComponent<MousePosition>();
     }

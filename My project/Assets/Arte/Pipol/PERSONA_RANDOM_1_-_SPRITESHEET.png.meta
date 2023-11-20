@@ -127,7 +127,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 8442
+        y: 4825
         width: 586
         height: 938
       alignment: 7
@@ -148,7 +148,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 586
-        y: 8442
+        y: 4825
         width: 586
         height: 938
       alignment: 7
@@ -169,7 +169,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1172
-        y: 8442
+        y: 4825
         width: 586
         height: 938
       alignment: 7
@@ -190,7 +190,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1758
-        y: 8442
+        y: 4825
         width: 586
         height: 938
       alignment: 7
@@ -211,7 +211,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2344
-        y: 8442
+        y: 4825
         width: 586
         height: 938
       alignment: 7
@@ -232,7 +232,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2930
-        y: 8442
+        y: 4825
         width: 586
         height: 938
       alignment: 7
@@ -253,7 +253,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3516
-        y: 8442
+        y: 4825
         width: 586
         height: 938
       alignment: 7
@@ -274,7 +274,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4102
-        y: 8442
+        y: 4825
         width: 586
         height: 938
       alignment: 7
@@ -295,7 +295,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4688
-        y: 8442
+        y: 4825
         width: 586
         height: 938
       alignment: 7
@@ -316,7 +316,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5274
-        y: 8442
+        y: 4825
         width: 586
         height: 938
       alignment: 7
@@ -337,7 +337,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5860
-        y: 8442
+        y: 4825
         width: 586
         height: 938
       alignment: 7
@@ -358,7 +358,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6446
-        y: 8442
+        y: 4825
         width: 586
         height: 938
       alignment: 7
@@ -379,7 +379,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 7504
+        y: 3887
         width: 586
         height: 938
       alignment: 7
@@ -400,7 +400,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 586
-        y: 7504
+        y: 3887
         width: 586
         height: 938
       alignment: 7
@@ -421,7 +421,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1172
-        y: 7504
+        y: 3887
         width: 586
         height: 938
       alignment: 7
@@ -442,7 +442,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1758
-        y: 7504
+        y: 3887
         width: 586
         height: 938
       alignment: 7
@@ -463,7 +463,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2344
-        y: 7504
+        y: 3887
         width: 586
         height: 938
       alignment: 7
@@ -484,7 +484,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2930
-        y: 7504
+        y: 3887
         width: 586
         height: 938
       alignment: 7
@@ -505,7 +505,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3516
-        y: 7504
+        y: 3887
         width: 586
         height: 938
       alignment: 7
@@ -526,7 +526,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4102
-        y: 7504
+        y: 3887
         width: 586
         height: 938
       alignment: 7
@@ -547,7 +547,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4688
-        y: 7504
+        y: 3887
         width: 586
         height: 938
       alignment: 7
@@ -568,7 +568,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5274
-        y: 7504
+        y: 3887
         width: 586
         height: 938
       alignment: 7
@@ -589,7 +589,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5860
-        y: 7504
+        y: 3887
         width: 586
         height: 938
       alignment: 7
@@ -610,7 +610,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6446
-        y: 7504
+        y: 3887
         width: 586
         height: 938
       alignment: 7
@@ -630,9 +630,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 6566
-        width: 586
+        x: 48
+        y: 2949
+        width: 402
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -641,8 +641,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebb322d76707a434c8b710b7fc40cd28
-      internalID: 658110371
+      spriteID: 34efda08d5663584090ee86286f58060
+      internalID: -491053550
       vertices: []
       indices: 
       edges: []
@@ -651,9 +651,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_25
       rect:
         serializedVersion: 2
-        x: 586
-        y: 6566
-        width: 586
+        x: 704
+        y: 2949
+        width: 400
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -662,8 +662,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7f675f42539fe44296aefba70349531
-      internalID: 600047576
+      spriteID: 7bf8c46aac83d734aaeb51605c231094
+      internalID: 1644014526
       vertices: []
       indices: 
       edges: []
@@ -672,9 +672,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_26
       rect:
         serializedVersion: 2
-        x: 1172
-        y: 6566
-        width: 586
+        x: 1357
+        y: 2949
+        width: 402
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -683,8 +683,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad070ea911f0c394f8986523dc4c339e
-      internalID: 1944344261
+      spriteID: 95de76c09095cdc47a0ac6c32e6dca98
+      internalID: 314435997
       vertices: []
       indices: 
       edges: []
@@ -693,9 +693,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_27
       rect:
         serializedVersion: 2
-        x: 1758
-        y: 6566
-        width: 586
+        x: 2007
+        y: 2949
+        width: 405
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -704,8 +704,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89cb8109694bd8c4eb3eb9ede5a97b76
-      internalID: -4240746
+      spriteID: d5edff9f65766364386486a36051ce6e
+      internalID: 973934118
       vertices: []
       indices: 
       edges: []
@@ -714,9 +714,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_28
       rect:
         serializedVersion: 2
-        x: 2344
-        y: 6566
-        width: 586
+        x: 2663
+        y: 2949
+        width: 404
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -725,8 +725,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6178b0b19dd094498edc176a63442d6
-      internalID: 156940877
+      spriteID: 8c57e403a6d9c704981969e0bdf52543
+      internalID: -220814356
       vertices: []
       indices: 
       edges: []
@@ -735,9 +735,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_29
       rect:
         serializedVersion: 2
-        x: 2930
-        y: 6566
-        width: 586
+        x: 3315
+        y: 2949
+        width: 410
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -746,8 +746,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9f5ecd4f38d30d4db1114379b8a3cb3
-      internalID: 487292590
+      spriteID: d33ae17b7fc331149a298432123ec4f0
+      internalID: -1284023918
       vertices: []
       indices: 
       edges: []
@@ -756,9 +756,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_30
       rect:
         serializedVersion: 2
-        x: 3516
-        y: 6566
-        width: 586
+        x: 3969
+        y: 2949
+        width: 406
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -767,29 +767,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9253eb2ce01206d4ebc960291e802b55
-      internalID: -1338396404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_31
-      rect:
-        serializedVersion: 2
-        x: 4102
-        y: 6566
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74999bdecb9899d49ab4cc1a28f5e332
-      internalID: 1660415400
+      spriteID: 12e1439174c96c349b192b9bd2fca53a
+      internalID: 1834490034
       vertices: []
       indices: 
       edges: []
@@ -798,9 +777,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_32
       rect:
         serializedVersion: 2
-        x: 4688
-        y: 6566
-        width: 586
+        x: 4624
+        y: 2949
+        width: 406
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -809,8 +788,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ef3e3e65a9206d48b8b92f91e0be62b
-      internalID: 1793567246
+      spriteID: c2abdf471424beb438e83fd48c8bde49
+      internalID: -1681259942
       vertices: []
       indices: 
       edges: []
@@ -819,9 +798,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_33
       rect:
         serializedVersion: 2
-        x: 5274
-        y: 6566
-        width: 586
+        x: 5284
+        y: 2949
+        width: 398
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -830,8 +809,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: badd2a4315d74d648aa79430c6e3fb2b
-      internalID: -402299622
+      spriteID: bde915d5f59ddac409c8ecc4c7a7d0b3
+      internalID: 1452124012
       vertices: []
       indices: 
       edges: []
@@ -840,9 +819,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_34
       rect:
         serializedVersion: 2
-        x: 5860
-        y: 6566
-        width: 586
+        x: 5931
+        y: 2949
+        width: 407
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -851,8 +830,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc039a57b967f4f46a38fa2ea5950b81
-      internalID: -1270523354
+      spriteID: 28ea6f245a43a7a42a5c09f817c8b7df
+      internalID: 576022316
       vertices: []
       indices: 
       edges: []
@@ -861,9 +840,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_35
       rect:
         serializedVersion: 2
-        x: 6446
-        y: 6566
-        width: 586
+        x: 6580
+        y: 2949
+        width: 411
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -872,8 +851,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 673aea88e13a1834bb3cabd5698d328a
-      internalID: 2094896393
+      spriteID: e3ce6782b4666e04a9a71b6642042c74
+      internalID: -1490775853
       vertices: []
       indices: 
       edges: []
@@ -882,9 +861,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_36
       rect:
         serializedVersion: 2
-        x: 0
-        y: 5628
-        width: 586
+        x: 48
+        y: 2011
+        width: 402
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -893,8 +872,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec5485a55890a8240b7c10109fb1ece0
-      internalID: -967566782
+      spriteID: 05d705287829d0c459dd09d4c7c9533d
+      internalID: -546045222
       vertices: []
       indices: 
       edges: []
@@ -903,9 +882,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_37
       rect:
         serializedVersion: 2
-        x: 586
-        y: 5628
-        width: 586
+        x: 704
+        y: 2011
+        width: 400
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -914,8 +893,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab6869f92a729644782e3653f5cc393c
-      internalID: 155416820
+      spriteID: 650a695195c24b64d8d25240371f456f
+      internalID: -50700755
       vertices: []
       indices: 
       edges: []
@@ -924,9 +903,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_38
       rect:
         serializedVersion: 2
-        x: 1172
-        y: 5628
-        width: 586
+        x: 1356
+        y: 2011
+        width: 403
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -935,8 +914,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2aa61b03b6622c45a9f1cd14ab10bff
-      internalID: -382342774
+      spriteID: d211cab74bf4d0e4f8e1114c012a7dc2
+      internalID: 1071606606
       vertices: []
       indices: 
       edges: []
@@ -945,9 +924,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_39
       rect:
         serializedVersion: 2
-        x: 1758
-        y: 5628
-        width: 586
+        x: 2007
+        y: 2011
+        width: 405
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -956,29 +935,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41d18c705a3bae24f8ade1ca7d8cf7d6
-      internalID: 2126624365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_40
-      rect:
-        serializedVersion: 2
-        x: 2344
-        y: 5628
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc48689b42772b84c889a55668d4ec01
-      internalID: 960421415
+      spriteID: 21deea64528960a48bdbfb37c0b4f4a7
+      internalID: -546825485
       vertices: []
       indices: 
       edges: []
@@ -987,9 +945,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_41
       rect:
         serializedVersion: 2
-        x: 2930
-        y: 5628
-        width: 586
+        x: 2663
+        y: 2011
+        width: 404
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -998,8 +956,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59fd5f76838920a4f8912950cfec77a7
-      internalID: -689092946
+      spriteID: 9d8de3e5ce5a7da428f38b5f38a071b7
+      internalID: -971538328
       vertices: []
       indices: 
       edges: []
@@ -1008,9 +966,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_42
       rect:
         serializedVersion: 2
-        x: 3516
-        y: 5628
-        width: 586
+        x: 3315
+        y: 2011
+        width: 409
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1019,8 +977,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13c7516093363584091cc522d40b1e29
-      internalID: -472550055
+      spriteID: 73b8b4543c5c8294b877d8436d4c72e2
+      internalID: 1237337425
       vertices: []
       indices: 
       edges: []
@@ -1029,9 +987,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_43
       rect:
         serializedVersion: 2
-        x: 4102
-        y: 5628
-        width: 586
+        x: 3969
+        y: 2011
+        width: 406
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1040,8 +998,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7fbd0cbd5214c14a8669a0bdc4d5435
-      internalID: -1146318120
+      spriteID: cd646388761af4e4f885002366f4cae1
+      internalID: -1212708698
       vertices: []
       indices: 
       edges: []
@@ -1050,9 +1008,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_44
       rect:
         serializedVersion: 2
-        x: 4688
-        y: 5628
-        width: 586
+        x: 4624
+        y: 2011
+        width: 405
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1061,8 +1019,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fe121332ec2d004cbfe4e7772f72acf
-      internalID: -255512946
+      spriteID: 038cb4e5ce445314c9179df097406e4d
+      internalID: 70776777
       vertices: []
       indices: 
       edges: []
@@ -1071,9 +1029,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_45
       rect:
         serializedVersion: 2
-        x: 5274
-        y: 5628
-        width: 586
+        x: 5283
+        y: 2011
+        width: 399
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1082,8 +1040,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a9b6e61315c3bc4a92bbe6c5c1cfd16
-      internalID: -826302123
+      spriteID: b15b54e63d3e2a54284b74d7514e0727
+      internalID: 730755475
       vertices: []
       indices: 
       edges: []
@@ -1092,9 +1050,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_46
       rect:
         serializedVersion: 2
-        x: 5860
-        y: 5628
-        width: 586
+        x: 5931
+        y: 2011
+        width: 407
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1103,8 +1061,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fb52bdf64cfb664b8951fe60c5c92ae
-      internalID: -1082601943
+      spriteID: 7416e7ef4d4beb44aafe9a9be82733a2
+      internalID: 1771956123
       vertices: []
       indices: 
       edges: []
@@ -1113,9 +1071,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_47
       rect:
         serializedVersion: 2
-        x: 6446
-        y: 5628
-        width: 586
+        x: 6580
+        y: 2011
+        width: 410
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1124,8 +1082,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d2dd4f4e99e2b643b675e66cae3453e
-      internalID: 812491137
+      spriteID: 14f3c36d963462140aac3ddfe0e6eb14
+      internalID: -1781396374
       vertices: []
       indices: 
       edges: []
@@ -1134,9 +1092,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_48
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4690
-        width: 586
+        x: 100
+        y: 1073
+        width: 416
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1145,8 +1103,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f0ed35afd2e7f04aac1642028a74269
-      internalID: -2012495174
+      spriteID: 94bf006ed96ac7440a33f727e575a669
+      internalID: -368063402
       vertices: []
       indices: 
       edges: []
@@ -1155,9 +1113,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_49
       rect:
         serializedVersion: 2
-        x: 586
-        y: 4690
-        width: 586
+        x: 753
+        y: 1073
+        width: 427
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1166,8 +1124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17406597b3f8c084d9e29153b47ea797
-      internalID: 770871676
+      spriteID: 75c9f4fdea1f75441922c3f0ef9316bf
+      internalID: -1936197970
       vertices: []
       indices: 
       edges: []
@@ -1176,9 +1134,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_50
       rect:
         serializedVersion: 2
-        x: 1172
-        y: 4690
-        width: 586
+        x: 1402
+        y: 1073
+        width: 420
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1187,8 +1145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 007f09e979760014e9cfe5abdf0e3afd
-      internalID: -1790768564
+      spriteID: 98d90eaebf41b40439bd254aeddb76d9
+      internalID: 1446661183
       vertices: []
       indices: 
       edges: []
@@ -1197,9 +1155,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_51
       rect:
         serializedVersion: 2
-        x: 1758
-        y: 4690
-        width: 586
+        x: 2055
+        y: 1073
+        width: 437
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1208,29 +1166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 318a412bbc118c74091ffbd6a4cd79a4
-      internalID: 742569254
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_52
-      rect:
-        serializedVersion: 2
-        x: 2344
-        y: 4690
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73ab2485170b063408d30168e0f4dbba
-      internalID: -1960936764
+      spriteID: 17b1c438ecb60e6489709f76aaf58960
+      internalID: 1643962153
       vertices: []
       indices: 
       edges: []
@@ -1239,9 +1176,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_53
       rect:
         serializedVersion: 2
-        x: 2930
-        y: 4690
-        width: 586
+        x: 2715
+        y: 1073
+        width: 431
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1250,8 +1187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9db7c2ff4eccbe48a042ffb9ce25ae4
-      internalID: 1037002877
+      spriteID: 6566d6b2fe237cf49ae8444092135a89
+      internalID: 2093880557
       vertices: []
       indices: 
       edges: []
@@ -1260,9 +1197,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_54
       rect:
         serializedVersion: 2
-        x: 3516
-        y: 4690
-        width: 586
+        x: 3362
+        y: 1073
+        width: 443
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1271,8 +1208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b04dca7fd08f1d74bb1d3e588320d72a
-      internalID: 719581333
+      spriteID: d2a89def7ffed0c42a2a83d2dcc6f3ba
+      internalID: 2134565497
       vertices: []
       indices: 
       edges: []
@@ -1281,9 +1218,9 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_55
       rect:
         serializedVersion: 2
-        x: 4102
-        y: 4690
-        width: 586
+        x: 4012
+        y: 1073
+        width: 443
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1292,8 +1229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5810ace1d295d8f46a99beb12b9ac6a6
-      internalID: -1490263136
+      spriteID: 8a3dda87d77c99941acca495e0c6ea5d
+      internalID: 1692690206
       vertices: []
       indices: 
       edges: []
@@ -1303,8 +1240,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4688
-        y: 4690
-        width: 586
+        y: 1073
+        width: 405
         height: 938
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1313,71 +1250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f88b556c0640b61488650371ad17c200
-      internalID: -1034703783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_57
-      rect:
-        serializedVersion: 2
-        x: 5274
-        y: 4690
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb92300c16814424f8676fdf726e7213
-      internalID: 990378950
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_58
-      rect:
-        serializedVersion: 2
-        x: 5860
-        y: 4690
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f44874ea57dddd44acfb53e4f68ccf2
-      internalID: -432602990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_59
-      rect:
-        serializedVersion: 2
-        x: 6446
-        y: 4690
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 40ac99c7165a9634ead4a4ba6c348526
-      internalID: -1990536651
+      spriteID: 9950e0d294f838f42b3f18a0d6885908
+      internalID: -181392581
       vertices: []
       indices: 
       edges: []
@@ -1386,10 +1260,10 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_60
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3752
-        width: 586
-        height: 938
+        x: 77
+        y: 191
+        width: 408
+        height: 882
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1397,8 +1271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28481bcb82b37974b9160b428c311ac2
-      internalID: -194227179
+      spriteID: 235e521b668dd5443a24ed3d7d655b78
+      internalID: -1044726140
       vertices: []
       indices: 
       edges: []
@@ -1407,10 +1281,10 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_61
       rect:
         serializedVersion: 2
-        x: 586
-        y: 3752
-        width: 586
-        height: 938
+        x: 1044
+        y: 186
+        width: 504
+        height: 685
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1418,8 +1292,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a47ada2ece40c4429c55a9a7dd9d3e0
-      internalID: -846461462
+      spriteID: 275ab395236d28e48a940626e90c4226
+      internalID: -1729547026
       vertices: []
       indices: 
       edges: []
@@ -1428,10 +1302,10 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_62
       rect:
         serializedVersion: 2
-        x: 1172
-        y: 3752
-        width: 586
-        height: 938
+        x: 2054
+        y: 174
+        width: 602
+        height: 488
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1439,50 +1313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f4cf267d7543f64c91ffeff208d5b0c
-      internalID: 764981540
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_63
-      rect:
-        serializedVersion: 2
-        x: 1758
-        y: 3752
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7454be74308c03540973cbf9faffcaad
-      internalID: 1183141927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_64
-      rect:
-        serializedVersion: 2
-        x: 2344
-        y: 3752
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 268d7c1730b5cbd48b893269b94fec2b
-      internalID: -1993945630
+      spriteID: f837e59cd61827b45a044f6d0f5dc2a5
+      internalID: 882527655
       vertices: []
       indices: 
       edges: []
@@ -1491,10 +1323,10 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_65
       rect:
         serializedVersion: 2
-        x: 2930
-        y: 3752
-        width: 586
-        height: 938
+        x: 2838
+        y: 216
+        width: 819
+        height: 442
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1502,8 +1334,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 472ce93b38a4cc5448906d8d4d054ba4
-      internalID: 1963010151
+      spriteID: 022da48f5bef5e048908b04440dbd743
+      internalID: -1222367247
       vertices: []
       indices: 
       edges: []
@@ -1512,10 +1344,10 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_66
       rect:
         serializedVersion: 2
-        x: 3516
-        y: 3752
-        width: 586
-        height: 938
+        x: 3920
+        y: 219
+        width: 857
+        height: 417
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1523,50 +1355,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3acb26f0d9ca57048937b9b31adbe2e6
-      internalID: 1459549731
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_67
-      rect:
-        serializedVersion: 2
-        x: 4102
-        y: 3752
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7448e93a67b9d784a8e4340e02d3c31d
-      internalID: 1414837767
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_68
-      rect:
-        serializedVersion: 2
-        x: 4688
-        y: 3752
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0f0572ea6aa2984a8b034815cf55ad0
-      internalID: -1222301748
+      spriteID: 4dc724cc61dbb634fac77ec75b79fe36
+      internalID: -1572609420
       vertices: []
       indices: 
       edges: []
@@ -1575,10 +1365,10 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_69
       rect:
         serializedVersion: 2
-        x: 5274
-        y: 3752
-        width: 586
-        height: 938
+        x: 4999
+        y: 189
+        width: 876
+        height: 459
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1586,8 +1376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62b72d103d3c2ba429651a411d263cd7
-      internalID: 422657502
+      spriteID: c21086112d10acc4e84a5393f0ca68ef
+      internalID: -884973385
       vertices: []
       indices: 
       edges: []
@@ -1596,10 +1386,10 @@ TextureImporter:
       name: PERSONA_RANDOM_1_-_SPRITESHEET_70
       rect:
         serializedVersion: 2
-        x: 5860
-        y: 3752
-        width: 586
-        height: 938
+        x: 6082
+        y: 194
+        width: 876
+        height: 444
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1607,911 +1397,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9e807b9a644f9c4594c24f5bd9d2c26
-      internalID: -30377166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_71
-      rect:
-        serializedVersion: 2
-        x: 6446
-        y: 3752
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7edba54d74df6a34fa377cc2388d0b75
-      internalID: -1143263868
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_72
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2814
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27672d601e1d68c4ca469da4d6fab43f
-      internalID: 290000586
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_73
-      rect:
-        serializedVersion: 2
-        x: 586
-        y: 2814
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1576b4836011f8740bba0182de5aa991
-      internalID: 2132962638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_74
-      rect:
-        serializedVersion: 2
-        x: 1172
-        y: 2814
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8db1cbaa6faa584cb2797cecb84dad7
-      internalID: 1549941208
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_75
-      rect:
-        serializedVersion: 2
-        x: 1758
-        y: 2814
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d266afeaac18544083449e69b30413e
-      internalID: 1806621101
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_76
-      rect:
-        serializedVersion: 2
-        x: 2344
-        y: 2814
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43eebbaa84c3b524d87fec6105c479a9
-      internalID: -110535827
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_77
-      rect:
-        serializedVersion: 2
-        x: 2930
-        y: 2814
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 373b2913e61fb0149874ca7e1ea0aeaa
-      internalID: 1365930525
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_78
-      rect:
-        serializedVersion: 2
-        x: 3516
-        y: 2814
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7af6f089e8ab8b94295e23bd18d74df1
-      internalID: 830657670
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_79
-      rect:
-        serializedVersion: 2
-        x: 4102
-        y: 2814
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fd5cbecb60b443409b6466c23eb1fd1
-      internalID: 801199300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_80
-      rect:
-        serializedVersion: 2
-        x: 4688
-        y: 2814
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4776dd680c4a4924ab20ebb7b6693e40
-      internalID: -79101955
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_81
-      rect:
-        serializedVersion: 2
-        x: 5274
-        y: 2814
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c168648c836bf0418dd567a08a97bc2
-      internalID: 1893995961
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_82
-      rect:
-        serializedVersion: 2
-        x: 5860
-        y: 2814
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c46327565626de94283d8c0b485bce7b
-      internalID: 200692287
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_83
-      rect:
-        serializedVersion: 2
-        x: 6446
-        y: 2814
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff1c8a13ea2461947820d2a60cdc984f
-      internalID: -862629914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_84
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1876
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d4e9f230da7093148b52c29943f4eecd
-      internalID: 1680516840
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_85
-      rect:
-        serializedVersion: 2
-        x: 586
-        y: 1876
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91262f7129775814bbc327ddc0b57c0f
-      internalID: 203472412
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_86
-      rect:
-        serializedVersion: 2
-        x: 1172
-        y: 1876
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 298382b02180af54ca6905bea0e6ac56
-      internalID: 1118514990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_87
-      rect:
-        serializedVersion: 2
-        x: 1758
-        y: 1876
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65c195ecb7701e544b400b417796ec13
-      internalID: 1576437798
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_88
-      rect:
-        serializedVersion: 2
-        x: 2344
-        y: 1876
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 607467527741e2c48987df5af2d5a2c5
-      internalID: -1841486474
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_89
-      rect:
-        serializedVersion: 2
-        x: 2930
-        y: 1876
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3e7bc839aca52c49856343b01c1089e
-      internalID: 683231630
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_90
-      rect:
-        serializedVersion: 2
-        x: 3516
-        y: 1876
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 228f6f8a116f3f840ae45d15cf866c86
-      internalID: -843979201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_91
-      rect:
-        serializedVersion: 2
-        x: 4102
-        y: 1876
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 139c4617a0c595b48aafeb2c43bcb690
-      internalID: 632541939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_92
-      rect:
-        serializedVersion: 2
-        x: 4688
-        y: 1876
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2729d1dbd8eb87449ac360eec388bc31
-      internalID: -1660587466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_93
-      rect:
-        serializedVersion: 2
-        x: 5274
-        y: 1876
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec00c3490d10495409221ab708694f29
-      internalID: 1846598758
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_94
-      rect:
-        serializedVersion: 2
-        x: 5860
-        y: 1876
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e84434dd7c4ee9047933656ef3db876c
-      internalID: 1795710493
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_95
-      rect:
-        serializedVersion: 2
-        x: 6446
-        y: 1876
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32ff0397569786f46a14ae82f0582c8e
-      internalID: 1355278691
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_96
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 938
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79a05ee8f03bd8d48aa8b75555c2a2a8
-      internalID: -2023068647
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_97
-      rect:
-        serializedVersion: 2
-        x: 586
-        y: 938
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f953f26f790c9094d9dfff92158fa3c4
-      internalID: 434661956
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_98
-      rect:
-        serializedVersion: 2
-        x: 1172
-        y: 938
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56dd5b27af4c7754c8926f8adea7b8c2
-      internalID: 1806282778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_99
-      rect:
-        serializedVersion: 2
-        x: 1758
-        y: 938
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56f22ee68607a7d4e885ffb2ebb48e28
-      internalID: -1985519935
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_100
-      rect:
-        serializedVersion: 2
-        x: 2344
-        y: 938
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea71c86c99e154848ae9269fcf66b1bf
-      internalID: -1714674093
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_101
-      rect:
-        serializedVersion: 2
-        x: 2930
-        y: 938
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4a195f258ed50e42a8eb8e0da91aa65
-      internalID: -647644723
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_102
-      rect:
-        serializedVersion: 2
-        x: 3516
-        y: 938
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e07083bd3a1c69f4191a00e95150277d
-      internalID: 1960937749
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_103
-      rect:
-        serializedVersion: 2
-        x: 4102
-        y: 938
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b068a335e19b4fd4fac64ca79700930a
-      internalID: 1701923635
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_104
-      rect:
-        serializedVersion: 2
-        x: 4688
-        y: 938
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38ea4ffb9e08f784789e84179547d0f9
-      internalID: 661504740
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_105
-      rect:
-        serializedVersion: 2
-        x: 5274
-        y: 938
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a64f4ad0493abe34ea1266748459375e
-      internalID: 457211608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_106
-      rect:
-        serializedVersion: 2
-        x: 5860
-        y: 938
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a73ed02429b4bfe488e7e85f47def81e
-      internalID: 179267836
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_107
-      rect:
-        serializedVersion: 2
-        x: 6446
-        y: 938
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58aa0604477c3624c8c949297f6a368b
-      internalID: -2027973394
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_108
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c174f75777d3abc4cb277ce0b8bf6bc9
-      internalID: 1266126860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_109
-      rect:
-        serializedVersion: 2
-        x: 586
-        y: 0
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37a0d5b611137a94bb9fa10bd39b0b1a
-      internalID: 1003335436
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_110
-      rect:
-        serializedVersion: 2
-        x: 4688
-        y: 0
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49bc4620802669b4aa4acbe9df67a915
-      internalID: 482207683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_111
-      rect:
-        serializedVersion: 2
-        x: 5274
-        y: 0
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff5d0c506cc5a3b419c3d7a371c2d724
-      internalID: -1164006985
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_112
-      rect:
-        serializedVersion: 2
-        x: 5860
-        y: 0
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9801e2178a72c9d45b02aa3cb6cbe7d7
-      internalID: -352585737
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PERSONA_RANDOM_1_-_SPRITESHEET_113
-      rect:
-        serializedVersion: 2
-        x: 6446
-        y: 0
-        width: 586
-        height: 938
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c7bf0a42b1adb684b96fc63ffcb6e65e
-      internalID: 1626104191
+      spriteID: 2462de1232835414a85e987d45be1cbe
+      internalID: 1469061559
       vertices: []
       indices: 
       edges: []
@@ -2530,21 +1417,7 @@ TextureImporter:
       PERSONA_RANDOM_1_-_SPRITESHEET_0: -1838760171
       PERSONA_RANDOM_1_-_SPRITESHEET_1: -213681241
       PERSONA_RANDOM_1_-_SPRITESHEET_10: -1454890649
-      PERSONA_RANDOM_1_-_SPRITESHEET_100: -1714674093
-      PERSONA_RANDOM_1_-_SPRITESHEET_101: -647644723
-      PERSONA_RANDOM_1_-_SPRITESHEET_102: 1960937749
-      PERSONA_RANDOM_1_-_SPRITESHEET_103: 1701923635
-      PERSONA_RANDOM_1_-_SPRITESHEET_104: 661504740
-      PERSONA_RANDOM_1_-_SPRITESHEET_105: 457211608
-      PERSONA_RANDOM_1_-_SPRITESHEET_106: 179267836
-      PERSONA_RANDOM_1_-_SPRITESHEET_107: -2027973394
-      PERSONA_RANDOM_1_-_SPRITESHEET_108: 1266126860
-      PERSONA_RANDOM_1_-_SPRITESHEET_109: 1003335436
       PERSONA_RANDOM_1_-_SPRITESHEET_11: 394798812
-      PERSONA_RANDOM_1_-_SPRITESHEET_110: 482207683
-      PERSONA_RANDOM_1_-_SPRITESHEET_111: -1164006985
-      PERSONA_RANDOM_1_-_SPRITESHEET_112: -352585737
-      PERSONA_RANDOM_1_-_SPRITESHEET_113: 1626104191
       PERSONA_RANDOM_1_-_SPRITESHEET_12: 65361884
       PERSONA_RANDOM_1_-_SPRITESHEET_13: 1313188368
       PERSONA_RANDOM_1_-_SPRITESHEET_14: 664700690
@@ -2558,89 +1431,61 @@ TextureImporter:
       PERSONA_RANDOM_1_-_SPRITESHEET_21: 1741659720
       PERSONA_RANDOM_1_-_SPRITESHEET_22: -2101993029
       PERSONA_RANDOM_1_-_SPRITESHEET_23: -1035207827
-      PERSONA_RANDOM_1_-_SPRITESHEET_24: 658110371
-      PERSONA_RANDOM_1_-_SPRITESHEET_25: 600047576
-      PERSONA_RANDOM_1_-_SPRITESHEET_26: 1944344261
-      PERSONA_RANDOM_1_-_SPRITESHEET_27: -4240746
-      PERSONA_RANDOM_1_-_SPRITESHEET_28: 156940877
-      PERSONA_RANDOM_1_-_SPRITESHEET_29: 487292590
+      PERSONA_RANDOM_1_-_SPRITESHEET_24: -491053550
+      PERSONA_RANDOM_1_-_SPRITESHEET_25: 1644014526
+      PERSONA_RANDOM_1_-_SPRITESHEET_26: 314435997
+      PERSONA_RANDOM_1_-_SPRITESHEET_27: 973934118
+      PERSONA_RANDOM_1_-_SPRITESHEET_28: -220814356
+      PERSONA_RANDOM_1_-_SPRITESHEET_29: -1284023918
       PERSONA_RANDOM_1_-_SPRITESHEET_3: -1329681288
-      PERSONA_RANDOM_1_-_SPRITESHEET_30: -1338396404
-      PERSONA_RANDOM_1_-_SPRITESHEET_31: 1660415400
-      PERSONA_RANDOM_1_-_SPRITESHEET_32: 1793567246
-      PERSONA_RANDOM_1_-_SPRITESHEET_33: -402299622
-      PERSONA_RANDOM_1_-_SPRITESHEET_34: -1270523354
-      PERSONA_RANDOM_1_-_SPRITESHEET_35: 2094896393
-      PERSONA_RANDOM_1_-_SPRITESHEET_36: -967566782
-      PERSONA_RANDOM_1_-_SPRITESHEET_37: 155416820
-      PERSONA_RANDOM_1_-_SPRITESHEET_38: -382342774
-      PERSONA_RANDOM_1_-_SPRITESHEET_39: 2126624365
+      PERSONA_RANDOM_1_-_SPRITESHEET_30: 1834490034
+      PERSONA_RANDOM_1_-_SPRITESHEET_31: -1628151713
+      PERSONA_RANDOM_1_-_SPRITESHEET_32: -1681259942
+      PERSONA_RANDOM_1_-_SPRITESHEET_33: 1452124012
+      PERSONA_RANDOM_1_-_SPRITESHEET_34: 576022316
+      PERSONA_RANDOM_1_-_SPRITESHEET_35: -1490775853
+      PERSONA_RANDOM_1_-_SPRITESHEET_36: -546045222
+      PERSONA_RANDOM_1_-_SPRITESHEET_37: -50700755
+      PERSONA_RANDOM_1_-_SPRITESHEET_38: 1071606606
+      PERSONA_RANDOM_1_-_SPRITESHEET_39: -546825485
       PERSONA_RANDOM_1_-_SPRITESHEET_4: -1279101380
-      PERSONA_RANDOM_1_-_SPRITESHEET_40: 960421415
-      PERSONA_RANDOM_1_-_SPRITESHEET_41: -689092946
-      PERSONA_RANDOM_1_-_SPRITESHEET_42: -472550055
-      PERSONA_RANDOM_1_-_SPRITESHEET_43: -1146318120
-      PERSONA_RANDOM_1_-_SPRITESHEET_44: -255512946
-      PERSONA_RANDOM_1_-_SPRITESHEET_45: -826302123
-      PERSONA_RANDOM_1_-_SPRITESHEET_46: -1082601943
-      PERSONA_RANDOM_1_-_SPRITESHEET_47: 812491137
-      PERSONA_RANDOM_1_-_SPRITESHEET_48: -2012495174
-      PERSONA_RANDOM_1_-_SPRITESHEET_49: 770871676
+      PERSONA_RANDOM_1_-_SPRITESHEET_40: -90360553
+      PERSONA_RANDOM_1_-_SPRITESHEET_41: -971538328
+      PERSONA_RANDOM_1_-_SPRITESHEET_42: 1237337425
+      PERSONA_RANDOM_1_-_SPRITESHEET_43: -1212708698
+      PERSONA_RANDOM_1_-_SPRITESHEET_44: 70776777
+      PERSONA_RANDOM_1_-_SPRITESHEET_45: 730755475
+      PERSONA_RANDOM_1_-_SPRITESHEET_46: 1771956123
+      PERSONA_RANDOM_1_-_SPRITESHEET_47: -1781396374
+      PERSONA_RANDOM_1_-_SPRITESHEET_48: -368063402
+      PERSONA_RANDOM_1_-_SPRITESHEET_49: -1936197970
       PERSONA_RANDOM_1_-_SPRITESHEET_5: -372034208
-      PERSONA_RANDOM_1_-_SPRITESHEET_50: -1790768564
-      PERSONA_RANDOM_1_-_SPRITESHEET_51: 742569254
-      PERSONA_RANDOM_1_-_SPRITESHEET_52: -1960936764
-      PERSONA_RANDOM_1_-_SPRITESHEET_53: 1037002877
-      PERSONA_RANDOM_1_-_SPRITESHEET_54: 719581333
-      PERSONA_RANDOM_1_-_SPRITESHEET_55: -1490263136
-      PERSONA_RANDOM_1_-_SPRITESHEET_56: -1034703783
-      PERSONA_RANDOM_1_-_SPRITESHEET_57: 990378950
-      PERSONA_RANDOM_1_-_SPRITESHEET_58: -432602990
-      PERSONA_RANDOM_1_-_SPRITESHEET_59: -1990536651
+      PERSONA_RANDOM_1_-_SPRITESHEET_50: 1446661183
+      PERSONA_RANDOM_1_-_SPRITESHEET_51: 1643962153
+      PERSONA_RANDOM_1_-_SPRITESHEET_52: -1409313034
+      PERSONA_RANDOM_1_-_SPRITESHEET_53: 2093880557
+      PERSONA_RANDOM_1_-_SPRITESHEET_54: 2134565497
+      PERSONA_RANDOM_1_-_SPRITESHEET_55: 1692690206
+      PERSONA_RANDOM_1_-_SPRITESHEET_56: -181392581
+      PERSONA_RANDOM_1_-_SPRITESHEET_57: 1991478621
+      PERSONA_RANDOM_1_-_SPRITESHEET_58: -1903986950
+      PERSONA_RANDOM_1_-_SPRITESHEET_59: -390954087
       PERSONA_RANDOM_1_-_SPRITESHEET_6: -510423630
-      PERSONA_RANDOM_1_-_SPRITESHEET_60: -194227179
-      PERSONA_RANDOM_1_-_SPRITESHEET_61: -846461462
-      PERSONA_RANDOM_1_-_SPRITESHEET_62: 764981540
-      PERSONA_RANDOM_1_-_SPRITESHEET_63: 1183141927
-      PERSONA_RANDOM_1_-_SPRITESHEET_64: -1993945630
-      PERSONA_RANDOM_1_-_SPRITESHEET_65: 1963010151
-      PERSONA_RANDOM_1_-_SPRITESHEET_66: 1459549731
-      PERSONA_RANDOM_1_-_SPRITESHEET_67: 1414837767
-      PERSONA_RANDOM_1_-_SPRITESHEET_68: -1222301748
-      PERSONA_RANDOM_1_-_SPRITESHEET_69: 422657502
+      PERSONA_RANDOM_1_-_SPRITESHEET_60: -1044726140
+      PERSONA_RANDOM_1_-_SPRITESHEET_61: -1729547026
+      PERSONA_RANDOM_1_-_SPRITESHEET_62: 882527655
+      PERSONA_RANDOM_1_-_SPRITESHEET_63: -1012913039
+      PERSONA_RANDOM_1_-_SPRITESHEET_64: 1340882093
+      PERSONA_RANDOM_1_-_SPRITESHEET_65: -1222367247
+      PERSONA_RANDOM_1_-_SPRITESHEET_66: -1572609420
+      PERSONA_RANDOM_1_-_SPRITESHEET_67: -1267040140
+      PERSONA_RANDOM_1_-_SPRITESHEET_68: 559539880
+      PERSONA_RANDOM_1_-_SPRITESHEET_69: -884973385
       PERSONA_RANDOM_1_-_SPRITESHEET_7: 1137117100
-      PERSONA_RANDOM_1_-_SPRITESHEET_70: -30377166
-      PERSONA_RANDOM_1_-_SPRITESHEET_71: -1143263868
-      PERSONA_RANDOM_1_-_SPRITESHEET_72: 290000586
-      PERSONA_RANDOM_1_-_SPRITESHEET_73: 2132962638
-      PERSONA_RANDOM_1_-_SPRITESHEET_74: 1549941208
-      PERSONA_RANDOM_1_-_SPRITESHEET_75: 1806621101
-      PERSONA_RANDOM_1_-_SPRITESHEET_76: -110535827
-      PERSONA_RANDOM_1_-_SPRITESHEET_77: 1365930525
-      PERSONA_RANDOM_1_-_SPRITESHEET_78: 830657670
-      PERSONA_RANDOM_1_-_SPRITESHEET_79: 801199300
+      PERSONA_RANDOM_1_-_SPRITESHEET_70: 1469061559
+      PERSONA_RANDOM_1_-_SPRITESHEET_71: -821217587
       PERSONA_RANDOM_1_-_SPRITESHEET_8: 1541500202
-      PERSONA_RANDOM_1_-_SPRITESHEET_80: -79101955
-      PERSONA_RANDOM_1_-_SPRITESHEET_81: 1893995961
-      PERSONA_RANDOM_1_-_SPRITESHEET_82: 200692287
-      PERSONA_RANDOM_1_-_SPRITESHEET_83: -862629914
-      PERSONA_RANDOM_1_-_SPRITESHEET_84: 1680516840
-      PERSONA_RANDOM_1_-_SPRITESHEET_85: 203472412
-      PERSONA_RANDOM_1_-_SPRITESHEET_86: 1118514990
-      PERSONA_RANDOM_1_-_SPRITESHEET_87: 1576437798
-      PERSONA_RANDOM_1_-_SPRITESHEET_88: -1841486474
-      PERSONA_RANDOM_1_-_SPRITESHEET_89: 683231630
       PERSONA_RANDOM_1_-_SPRITESHEET_9: -1483484811
-      PERSONA_RANDOM_1_-_SPRITESHEET_90: -843979201
-      PERSONA_RANDOM_1_-_SPRITESHEET_91: 632541939
-      PERSONA_RANDOM_1_-_SPRITESHEET_92: -1660587466
-      PERSONA_RANDOM_1_-_SPRITESHEET_93: 1846598758
-      PERSONA_RANDOM_1_-_SPRITESHEET_94: 1795710493
-      PERSONA_RANDOM_1_-_SPRITESHEET_95: 1355278691
-      PERSONA_RANDOM_1_-_SPRITESHEET_96: -2023068647
-      PERSONA_RANDOM_1_-_SPRITESHEET_97: 434661956
-      PERSONA_RANDOM_1_-_SPRITESHEET_98: 1806282778
-      PERSONA_RANDOM_1_-_SPRITESHEET_99: -1985519935
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
