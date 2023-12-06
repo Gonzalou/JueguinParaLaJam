@@ -60,7 +60,6 @@ MonoBehaviour:
   VelocidadHaciaElLider: 4.522
   SeparacionMinimaDelLider: 8.16
   representanteINDEX: 1
-  anim: {fileID: 0}
   target: {fileID: 0}
   stunTime: -0.02
   tiempoDeDano: 2
@@ -140,8 +139,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1.21
-  MinDistance: 7.63
-  MaxDistance: 500
+  MinDistance: 3.6830292
+  MaxDistance: 13.726044
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -366,6 +365,8 @@ MonoBehaviour:
   anim: {fileID: 0}
   spr: {fileID: 0}
   rb2d: {fileID: 0}
+  dano: {fileID: 0}
+  animSpeed: 0.13
 --- !u!114 &7323134304905143611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,7 +515,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.57
+      scalar: 0.25
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -567,7 +568,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 43.12
+      scalar: 48.52
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -620,8 +621,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 1, g: 0.5811298, b: 0, a: 1}
-      maxColor: {r: 0.8018868, g: 0, b: 0, a: 1}
+      minColor: {r: 1, g: 0.9858037, b: 0, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -1009,7 +1010,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 9.85
+      scalar: 0
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -1062,7 +1063,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 4
+    type: 10
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -1378,7 +1379,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 30
+        scalar: 12.17
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -1756,7 +1757,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxes: 0
   ColorModule:
-    enabled: 1
+    enabled: 0
     gradient:
       serializedVersion: 2
       minMaxState: 1
@@ -4390,13 +4391,13 @@ ParticleSystem:
         m_RotationOrder: 4
     maxLights: 20
   TrailModule:
-    enabled: 0
+    enabled: 1
     mode: 0
     ratio: 1
     lifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.25
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4526,30 +4527,39 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     widthOverTrail:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 1
+      minMaxState: 1
+      scalar: 1.9473301
       minScalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 1
-          inSlope: 0
-          outSlope: 0
+          value: 0
+          inSlope: 1.0246638
+          outSlope: 1.0246638
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.40402666
+          value: 0.4139915
+          inSlope: 0.13863946
+          outSlope: 0.13863946
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
           time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
+          value: 0
+          inSlope: -0.5280514
+          outSlope: -0.5280514
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0.33333334
+          inWeight: 0.16355157
+          outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
@@ -5234,6 +5244,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1cc5000ac50bfe647badabf4a7dce2ad, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5254,7 +5265,7 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 49
-  m_RenderMode: 0
+  m_RenderMode: 5
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0

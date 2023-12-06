@@ -43934,10 +43934,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: FEMINISTA
       objectReference: {fileID: 0}
-    - target: {fileID: 3157228117310322760, guid: 5700eeb5c7a8bfb4c8e54d8b9658c6e0, type: 3}
-      propertyPath: anim
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 4776857147123401513, guid: 5700eeb5c7a8bfb4c8e54d8b9658c6e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -168.2
@@ -43981,37 +43977,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 364031054887643535, guid: 5700eeb5c7a8bfb4c8e54d8b9658c6e0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 580049574876465943}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5700eeb5c7a8bfb4c8e54d8b9658c6e0, type: 3}
---- !u!1 &580049574876465942 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 364031054887643535, guid: 5700eeb5c7a8bfb4c8e54d8b9658c6e0, type: 3}
-  m_PrefabInstance: {fileID: 580049574876465941}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &580049574876465943
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 580049574876465942}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 260ae243ceeac0e4b9c3cc52791194da, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1651170838778816947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44077,7 +44044,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8542942256860128455, guid: 766f8a4c9ba8e1b4487f4e2c5561fde5, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 766f8a4c9ba8e1b4487f4e2c5561fde5, type: 3}
@@ -44246,10 +44214,6 @@ PrefabInstance:
     - target: {fileID: 6288240437488740584, guid: 165f6dcdcf21bbe49b610e9a3e5081a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7111936958127040330, guid: 165f6dcdcf21bbe49b610e9a3e5081a4, type: 3}
-      propertyPath: rangoDeStun
-      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

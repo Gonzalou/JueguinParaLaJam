@@ -20,6 +20,10 @@ public class ColorChanger : MonoBehaviour
     }
     void Start()
     {
+        if (anim.GetBool("Dead"))
+        {
+
+        }
         if (material != null)
         {
             spr.material = material;

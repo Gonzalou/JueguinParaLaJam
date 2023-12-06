@@ -41,7 +41,7 @@ public class MainMenu : MonoBehaviour
     public void PlayButton()
     {
         //SceneManager.LoadScene("Level1");
-        SceneManager.LoadScene("ELIGE_REPRESENTANTE");
+        SceneManager.LoadScene("oyarce2");
     }
     public void creditsButton()
     {

@@ -21,7 +21,7 @@ public class Enemigo : MonoBehaviour
     public int InitialLife;
     public bool stuned;
     public float tiempoStuneado;
-
+    public ParticleSystem stunParts;
     public bool seHizoGay;
     public Enemigo gayTarget;
 
@@ -29,6 +29,7 @@ public class Enemigo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        stunParts.Stop();
         spr = GetComponent<SpriteRenderer>();
         InitialLife = life;
         speed = Random.Range(5, 8);
@@ -61,12 +62,17 @@ public class Enemigo : MonoBehaviour
 
         if (tiempoStuneado > 0)
         {
+            if (!stunParts.isPlaying)
+            {
+                stunParts.Play();
+
+            }
             tiempoStuneado -= Time.deltaTime;
         }
 
         else
         {
-
+            stunParts.Stop(true);
             if (target != null && target.life > 0)  // pasa si está vivo y tiene objetivo
             {
                 if (Vector3.Distance(target.transform.position, transform.position) > rangoDeAtaque)
@@ -157,7 +163,7 @@ public class Enemigo : MonoBehaviour
             // Calcular la dirección de la repulsión al colisionar
             Vector2 repulsionDirection = (transform.position - collision.transform.position).normalized;
 
-            float repulsionDistanceMultiplier = 15000.0f;  // Ajustar este valor si es necesario
+            float repulsionDistanceMultiplier = 10.0f;  // Ajustar este valor si es necesario
             Vector2 repulsionForce = repulsionDirection * repulsion * repulsionDistanceMultiplier;
 
             // Aplicar la fuerza de repulsión al colisionar
@@ -174,7 +180,7 @@ public class Enemigo : MonoBehaviour
         if (collision.gameObject.layer == 12 && seHizoGay)
         {
             anim.SetBool("Atacando", true);
-           Enemigo e= collision.gameObject.GetComponent<Enemigo>();
+            Enemigo e = collision.gameObject.GetComponent<Enemigo>();
             e.MeHacenDano(3);
             e.tiempoStuneado += 0.5f;
         }

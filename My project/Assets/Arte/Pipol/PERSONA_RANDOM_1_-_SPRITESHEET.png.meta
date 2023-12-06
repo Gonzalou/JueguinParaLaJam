@@ -1264,8 +1264,8 @@ TextureImporter:
         y: 191
         width: 408
         height: 882
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.670466, y: 0.00000012110151}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1285,8 +1285,8 @@ TextureImporter:
         y: 186
         width: 504
         height: 685
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.803592, y: 0.006768955}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1306,8 +1306,8 @@ TextureImporter:
         y: 174
         width: 602
         height: 488
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.84659535, y: 0.014252084}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1327,8 +1327,8 @@ TextureImporter:
         y: 216
         width: 819
         height: 442
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.96706456, y: 0.020980524}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1348,8 +1348,8 @@ TextureImporter:
         y: 219
         width: 857
         height: 417
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.9652904, y: 0.027797451}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1369,8 +1369,8 @@ TextureImporter:
         y: 189
         width: 876
         height: 459
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.97686183, y: 0.09113792}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1390,8 +1390,8 @@ TextureImporter:
         y: 194
         width: 876
         height: 444
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.97400516, y: 0.13085948}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

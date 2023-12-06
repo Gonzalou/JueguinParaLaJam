@@ -10,7 +10,7 @@ public class choquelogica : MonoBehaviour
     public float speed;
     public float startWidth;
     public float force;
-
+    private float currentRadius;
     private LineRenderer lineRenderer;
 
     private void Awake()
@@ -18,33 +18,23 @@ public class choquelogica : MonoBehaviour
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.positionCount = pointsCount + 1;
     }
+    private void Start()
+    {
+        StartCoroutine(Choque());
+    }
     private IEnumerator Choque()
     {
-        float currentRadius = 0f;
+        currentRadius = 0f;
 
         while(currentRadius < maxRadius)
         {
             currentRadius += Time.deltaTime * speed;
-            Draw(currentRadius);
-            Damage(currentRadius);
+            Draw(currentRadius);        
             yield return null;
         }
-    }
-    private void Damage(float currentRadius)
-    {
-        Collider[] hittingObjects = Physics.OverlapSphere(transform.position, currentRadius);
         
-        for(int i = 0; i < hittingObjects.Length; i++)
-        {
-            Rigidbody rb= hittingObjects[i].GetComponent<Rigidbody>();
-
-            if (!rb)
-                continue;
-
-            Vector3 direction = (hittingObjects[i].transform.position - transform.position).normalized;
-            rb.AddForce(direction*force,ForceMode.Impulse);
-        }
     }
+   
     private void Draw(float currentRadius)
     {
         float angleBetweenPoints = 360f / pointsCount;
@@ -61,8 +51,11 @@ public class choquelogica : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-            StartCoroutine(Choque());
+        if (currentRadius >= maxRadius)
+        {
+            Destroy(this.gameObject);
+        }
+
     }
     }
 

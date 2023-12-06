@@ -18,9 +18,8 @@ public class multitudNPC : MonoBehaviour
     public float VelocidadHaciaElLider;
     public float SeparacionMinimaDelLider;
     public int representanteINDEX;
-   
  
-    public Animator anim;
+  
     public Transform target;
    
     private Rigidbody2D rb2d;
@@ -37,7 +36,7 @@ public class multitudNPC : MonoBehaviour
         dmg = GetComponent<Dano>();
         representanteINDEX = Random.Range(1, 8);
         rb2d = GetComponent<Rigidbody2D>();
-        anim = GetComponentInChildren<Animator>();
+       
     }
 
     private void Start()
@@ -134,11 +133,7 @@ public class multitudNPC : MonoBehaviour
             }
 
         }
-        else
-        {
-           
-            anim.speed = 0;
-        }
+      
 
     }
 

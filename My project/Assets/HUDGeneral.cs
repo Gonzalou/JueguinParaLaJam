@@ -19,12 +19,10 @@ public class HUDGeneral : MonoBehaviour
     {
         WinHud.SetActive(false);
         LoseHud.SetActive(false);
-        List<Skills> repres = new List<Skills>();
-        repres.AddRange( GameObject.FindObjectsOfType<Skills>());
-        foreach(Skills rep in repres )
-        {
-            rep.buttons = listaBotones;
-        }
+        Skills myRepre;
+        myRepre = (GameObject.FindObjectOfType<Skills>());
+        myRepre.buttons = listaBotones;
+
     }
 
     // Update is called once per frame
@@ -44,18 +42,20 @@ public class HUDGeneral : MonoBehaviour
             totalpipol.text = (pp.pipolCount + pp.repres.Length + 1) + " personas se presentaron frente a la Casa de Gobierno!";
         }
 
-        if (laBarra.valorActual <= 0)
+       /* if (laBarra.valorActual <= 0)
         {
             LoseHud.SetActive(true);
-            Time.timeScale = 0.5f;
-        }
+           
+        }*/
     }
     public void playAgain()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void Credits()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Credits");
     }
 

@@ -32,7 +32,7 @@ public class IntroducirReclamo : MonoBehaviour
             GameManager.reclamo = reclamo;
 
             // Cargar la escena Level1
-            SceneManager.LoadScene("Level1");
+            SceneManager.LoadScene("oyace2");
 
             // Imprime la dificultad elegida
             Debug.Log("Dificultad: " + GameManager.dificultad);

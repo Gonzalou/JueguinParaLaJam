@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class representanteview : MonoBehaviour
-   
+
 {
     public SpriteRenderer spr;
     public Animator anim;
     public Rigidbody2D rb2d;
+    public float animSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,8 @@ public class representanteview : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (rb2d.velocity.x > 0)
+       
+        if (rb2d.velocity.x > 0.5)
         {
             spr.flipX = true;
         }
@@ -28,13 +30,15 @@ public class representanteview : MonoBehaviour
         {
             spr.flipX = false;
         }
-        if (rb2d.velocity.magnitude >0)
+        if (rb2d.velocity.magnitude > 0)
         {
-            anim.SetBool("walk", false);
+            anim.speed=animSpeed*rb2d.velocity.magnitude;
+            anim.SetBool("walk", true);
         }
         else
         {
-            anim.SetBool("walk", true);
+            anim.speed = 1;
+            anim.SetBool("walk", false);
         }
     }
 }

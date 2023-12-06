@@ -5,11 +5,13 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
+
 
 public class Skills : MonoBehaviour
 {
-    public GameObject desaparecido;
+    public GameObject Desaparecido;
+    public GameObject marcaGay;
+    public GameObject explosionGremio;
     public int cantidadDeDesaparecidos;
     public int randoDeAparicion;
     public int buttonNum;
@@ -21,6 +23,9 @@ public class Skills : MonoBehaviour
 
     public ParticleSystem panfletosParticle;
     public int fuerzaDeEmpuje;
+
+
+    public int myRepresentantIndex;
     // Start is called before the first frame update
     void Start()
     {
@@ -148,7 +153,7 @@ public class Skills : MonoBehaviour
         int r = randoDeAparicion;
         for (int i = 0; i < cantidadDeDesaparecidos; i++)
         {
-            Instantiate(desaparecido, transform.position + Vector3.right * Random.Range(-r, r) + Vector3.up * Random.Range(-r, r), transform.rotation);
+            Instantiate(Desaparecido, transform.position + Vector3.right * Random.Range(-r, r) + Vector3.up * Random.Range(-r, r), transform.rotation);
 
         }
     }
@@ -158,6 +163,9 @@ public class Skills : MonoBehaviour
         {
             if (item.myIndex == 2)
             {
+                GameObject grafico = Instantiate(explosionGremio, transform.position, transform.rotation);
+                choquelogica ch = grafico.GetComponent<choquelogica>();
+                ch.maxRadius = rangoDeStun;
                 Collider2D[] enemigos = Physics2D.OverlapCircleAll(item.transform.position, rangoDeStun, 1 << 12);
                 foreach (var enemy in enemigos)
                 {
@@ -180,8 +188,8 @@ public class Skills : MonoBehaviour
                     Enemigo e = enemigos[0].GetComponent<Enemigo>();
                     e.gameObject.layer = 22;
                     e.seHizoGay = true;
-                   Instantiate(desaparecido,e.transform); //en el lgbt cambio el prefab desaparecido por el de la bandera
-                   
+                    Instantiate(marcaGay, e.transform); //en el lgbt cambio el prefab desaparecido por el de la bandera
+
                 }
             }
         }

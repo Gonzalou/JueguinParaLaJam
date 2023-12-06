@@ -22,7 +22,7 @@ public class Representante : MonoBehaviour
     public bool MouseSOBREMI;
 
 
-    public SpriteRenderer spr;  
+    public SpriteRenderer spr;
 
 
     public bool sumoInfluencia;
@@ -33,18 +33,22 @@ public class Representante : MonoBehaviour
     public float maxInfluence;
     public float minInfluence;
 
-    public bool habilidadOn=false;
+    public bool habilidadOn = false;
     public Button myButton;
-    
+
     // Start is called before the first frame update
     private void Awake()
     {
-        rb2d = GetComponent<Rigidbody2D>();
-        myInfluence = Random.Range(minInfluence, maxInfluence);
+        if (gameObject.GetComponent<Lider>() == null)
+        {
+            rb2d = GetComponent<Rigidbody2D>();
+            myInfluence = Random.Range(minInfluence, maxInfluence);
+
+        }
         UnlockSkill();
     }
     void Start()
-    {        
+    {
         lider = GameObject.Find("Lider").GetComponent<Lider>();
         mousePosition = GameObject.Find("Puntero").GetComponent<MousePosition>();
     }
@@ -52,7 +56,18 @@ public class Representante : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (gameObject.GetComponent<Lider>() == null)
+        {
 
+            MovimientoRepresentante();
+
+        }
+
+    }
+
+
+    void MovimientoRepresentante()
+    {
         highLight.SetActive(MouseSOBREMI);
         if (Vector3.Distance(lider.transform.position, transform.position) < lider.influenceRadius && !sumoInfluencia) //sistema para agrandar el rango de influencia
         {
@@ -74,12 +89,12 @@ public class Representante : MonoBehaviour
 
                 // Aplica el movimiento a la entidad
                 habilidadOn = true;
-                
-                
+
+
 
                 if (Vector3.Distance(transform.position, lider.transform.position) >= separacionMinimaDelTarget)
                 {
-                    rb2d.velocity += (new Vector2(myTarget.transform.position.x, myTarget.transform.position.y) - new Vector2(transform.position.x, transform.position.y)).normalized * speed*Time.deltaTime;
+                    rb2d.velocity += (new Vector2(myTarget.transform.position.x, myTarget.transform.position.y) - new Vector2(transform.position.x, transform.position.y)).normalized * speed * Time.deltaTime;
                 }
                 else
                 {
@@ -120,10 +135,9 @@ public class Representante : MonoBehaviour
         }
         else
         {
-            habilidadOn = false;    
+            habilidadOn = false;
 
         }
-
     }
 
     private void LateUpdate()
@@ -180,7 +194,7 @@ public class Representante : MonoBehaviour
 
     public void UnlockSkill()
     {
-      myButton= GameObject.Find("Habilidad "+myIndex).GetComponent<Button>();
+        myButton = GameObject.Find("Habilidad " + myIndex).GetComponent<Button>();
     }
 
 
