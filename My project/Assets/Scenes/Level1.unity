@@ -6482,6 +6482,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ENVIROMENT
       objectReference: {fileID: 0}
+    - target: {fileID: 6199380909688236133, guid: b12149f21c7b5a54fa406bfc383ca51a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7183342960681788377, guid: b12149f21c7b5a54fa406bfc383ca51a, type: 3}
       propertyPath: m_SortingOrder
       value: -77
